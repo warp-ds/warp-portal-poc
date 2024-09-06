@@ -4,6 +4,7 @@ import { presetWarp } from '@warp-ds/uno';
 
 export default defineConfig({
   srcDir: 'src',
+  base: '/warp-portal-poc',
   vite: {
     plugins: [
       UnoCSS({
