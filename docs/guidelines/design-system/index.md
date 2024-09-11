@@ -6,7 +6,7 @@ Don't limit your ideas to fit into an existing system in the early stages of you
 
 ## The power of zooming out
 
-The problems we face in Nordic Marketplaces never exist only in one area of a vertical. Zooming out when solving problems allows you to get a better understanding of the problem you are currently trying to solve. You need to consider your vertical as a whole when designing for its parts. You can create better designs and leverage on our existing patterns if you first do your homework and familiarise yourself with the Warp documentation.
+The problems we face in Schibsted Marketplaces never exist only in one area of a vertical. Zooming out when solving problems allows you to get a better understanding of the problem you are currently trying to solve. You need to consider your vertical as a whole when designing for its parts. You can create better designs and leverage on our existing patterns if you first do your homework and familiarise yourself with the Warp documentation.
 
 ## Be free to explore
 

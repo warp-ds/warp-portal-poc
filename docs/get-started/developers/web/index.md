@@ -4,7 +4,7 @@
   import React from './react.md';
 </script>
 
-# Getting started for developers
+# Get started for Web developers
 
 This page describes how to get started building a web application with Warp styling and components.
 Warp is using [UnoCSS](https://unocss.dev/), an atomic CSS engine.
@@ -12,7 +12,7 @@ UnoCSS works by searching for the utilities (classes) usages from your codebase 
 The Warp preset contains the utilities UnoCSS will look for.
 Only the used utilities are shipped to your app, ensuring speed and efficiency in any project size.
 
-If you are migrating from Fabric to Warp, please visit the [Migration page](/migration/developers/).
+If you are migrating from Fabric to Warp, please visit the [Migration page](./migrate-from-fabric/).
 
 If you have any questions or need clarification, please don't hesitate to reach out to the Warp team on the [#nmp-warp-design-system](https://sch-chat.slack.com/archives/C04NF2K46LB) channel on Slack!
 
@@ -66,7 +66,7 @@ Below, the two different alternatives are described.
   <details>
     <summary><b>Details about this configuration setup</b></summary>
     When an application consists of several parts (e.g. if you are using [Podium](https://podium-lib.io/)) and each part needs to integrate with UnoCSS and Warp - it's more performant to get styling from an external stylesheet (as this will be cached in the browser) instead of making UnoCSS generate the same CSS multiple times.
-    In the example above we pass external classes and skip resets, because we import components.css and reset.css as mentioned [below](/getting-started/developers/#make-sure-you-import-the-resets-and-components-classes-from-eik-cdn).
+    In the example above we pass external classes and skip resets, because we import components.css and reset.css as mentioned [below](#make-sure-you-import-the-resets-and-components-classes-from-eik-cdn).
   
     See all configuration options for `presetWarp` at https://github.com/warp-ds/drive#plugin-api.
   </details>

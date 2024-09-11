@@ -184,7 +184,7 @@ export default defineConfig({
       copyright: 'Copyright © 2023-present Schibsted',
     },
     nav: [
-      { text: 'Get started', link: '/getting-started' },
+      { text: 'Get started', link: '/get-started' },
       { text: 'Foundations', link: '/foundations' },
       { text: 'Components', link: '/components' },
       { text: 'POCs', link: '/pocs' },
@@ -217,26 +217,31 @@ export default defineConfig({
           ],
         },
       ],
-      '/getting-started/': [
+      '/get-started/': [
         {
-          text: 'Getting started',
+          text: 'Get started',
           items: [
-            { text: 'About', link: '/getting-started/' },
+            { text: 'About', link: '/get-started/' },
             { text: 'Developers',
               items: [
-                { text: 'Web', link: '/getting-started/developers/' },
-                { text: 'Android', link: '/getting-started/android/' },
-                { text: 'iOS', link: '/getting-started/ios/' },
+                { text: 'Overview', link: '/get-started/developers/' },
+                { text: 'Web',
+                  items: [
+                    { text: 'Get started', link: '/get-started/developers/web/' },
+                    { text: 'Migrate from Fabric', link: '/get-started/developers/web/migrate-from-fabric/' },
+                  ],
+                },
+                { text: 'Android', link: '/get-started/developers/android/' },
+                { text: 'iOS', link: '/get-started/developers/ios/' },
               ],
             },
-            { text: 'Designers', link: '/getting-started/designers/' },
-            { text: 'FAQ', link: '/getting-started/faq/' },
+            { text: 'Designers', link: '/get-started/designers/' },
+            { text: 'FAQ', link: '/get-started/faq/' },
           ],
         },    
         {
           text: 'Migration to Warp',
           items: [
-            { text: 'Developers guide', link: '/migration/developers/' },
             { text: 'Designers guide', link: '/migration/designers/' },
           ],
         },

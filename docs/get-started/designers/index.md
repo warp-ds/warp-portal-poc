@@ -1,6 +1,6 @@
-# Getting started for designers
+# Get started for designers
 
-Hello 👋 welcome to Warp! If you are just getting started with designing for Nordic Marketplaces you are in the right place. Warp is the design system for all different marketplaces.
+Hello 👋 welcome to Warp! If you are just getting started with designing for Schibsted Marketplaces you are in the right place. Warp is the design system for all different marketplaces.
 
 ## Checklist to get you started
 
@@ -18,11 +18,11 @@ For a more visual introduction, check out [the 'Start here' file in Figma](https
 
 ## Figma, Warp component overview & libraries
 
-In Nordic Marketplaces we use Figma as the main tool for all our design related tasks. Licenses are provided by e-tech and you will find the Figma application while logging in to [Okta](https://schibsted.okta.com/app/UserHome). Please see [Figma Downloads](https://www.figma.com/downloads/) to get started with the desktop application of your choice.
+In Schibsted Marketplaces we use Figma as the main tool for all our design related tasks. Licenses are provided by e-tech and you will find the Figma application while logging in to [Okta](https://schibsted.okta.com/app/UserHome). Please see [Figma Downloads](https://www.figma.com/downloads/) to get started with the desktop application of your choice.
 
 ### Warp components overview
 
-The work as a designer in Nordic marketplaces comes in various shapes and sizes and therefore we have created an overview for components with things we think you need to get you started.
+The work as a designer in Schibsted Marketplaces comes in various shapes and sizes and therefore we have created an overview for components with things we think you need to get you started.
 
 The overview contains all our components, their variants, existing themes and documentation for usage. We suggest you start exploring the documentation of the Warp components to get familiar with the Warp design system.
 
@@ -30,7 +30,7 @@ Here you can find the [Warp Components overview in Figma](https://www.figma.com/
 
 ## Foundations documentation
 
-The foundations of Warp are currently based on the Fabric design system and therefore have a FINN flavour. The future plans for the foundations of the system is to create a shared design language within Nordic Marketplaces.
+The foundations of Warp are currently based on the Fabric design system and therefore have a FINN flavour. The future plans for the foundations of the system is to create a shared design language within Schibsted Marketplaces.
 
 To get you started we have collected links to all the different brand guidelines, read up on the ones that you currently are working with:
 

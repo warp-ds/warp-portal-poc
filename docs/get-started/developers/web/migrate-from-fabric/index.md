@@ -1,4 +1,4 @@
-# Migrating from Fabric
+# Migrate from Fabric
 
 ## CSS changes
 
@@ -18,7 +18,7 @@ Before migrating to Warp, this may affect or break the styling for other teams t
 3. Change the prefixes `f-` to `w-` for your component names. The icons should still use the `f-` prefix.
    Use the [migration plugin](https://github.com/warp-ds/preset-migrate) to help with this (see further down this page for instructions on using the plugin).
 4. Make sure to install Warp to your project.
-   Follow the instructions on [getting started page](/getting-started/developers/).
+   Follow the instructions on [get started page](../).
 5. If using external classes in Warp components, be aware of potential conflicts with classes applied to the component itself.
    These classes share CSS specificity, and precedence is determined by order.
    For instance, in React components, the 'winning' class is based on the @warp-ds/uno rule sequence, which could differ from Fabric's.

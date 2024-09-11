@@ -1,5 +1,5 @@
 
-# Getting started for Android developers
+# Get started for Android developers
 
 This page describes how to get started building an application with Warp components.
 
