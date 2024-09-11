@@ -223,9 +223,11 @@ export default defineConfig({
           items: [
             { text: 'About', link: '/get-started/' },
             { text: 'Developers',
+              collapsed: true,
               items: [
                 { text: 'Overview', link: '/get-started/developers/' },
                 { text: 'Web',
+                  collapsed: true,
                   items: [
                     { text: 'Get started', link: '/get-started/developers/web/' },
                     { text: 'Migrate from Fabric', link: '/get-started/developers/web/migrate-from-fabric/' },
@@ -235,16 +237,16 @@ export default defineConfig({
                 { text: 'iOS', link: '/get-started/developers/ios/' },
               ],
             },
-            { text: 'Designers', link: '/get-started/designers/' },
+            { text: 'Designers', 
+              collapsed: true,
+              items: [
+                { text: 'Get started', link: '/get-started/designers/' },
+                { text: 'Migrate from Fabric', link: '/get-started/designers/migrate-from-fabric/' },
+              ]
+            },
             { text: 'FAQ', link: '/get-started/faq/' },
           ],
         },    
-        {
-          text: 'Migration to Warp',
-          items: [
-            { text: 'Designers guide', link: '/migration/designers/' },
-          ],
-        },
         {
           text: 'Guidelines',
           items: [
