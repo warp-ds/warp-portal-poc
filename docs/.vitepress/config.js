@@ -5,7 +5,7 @@ import uno from 'unocss/vite';
 import { classes as componentClasses } from '@warp-ds/css/component-classes/classes';
 import { supported as supportedClasses } from '../supported.js';
 
-const base = '/documentation';
+const base = '/warp-portal-poc';
 
 const pdColorClasses = ['blue', 'cyan', 'fuchsia', 'indigo', 'pink', 'purple', 'sky', 'violet'].reduce(
   (colorResult, color) => [
