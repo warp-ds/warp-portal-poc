@@ -21,7 +21,7 @@ All the icons (react, vue and elements) support i18n 🌍 The newest version als
 
 Based on the feedback from the accessibility team, we have done a lot of a11y improvements in several of our components!
 
-We have Eik support for React, Vue and Elements, check it out [here](https://warp-ds.github.io/tech-docs/getting-started/developers/#eik-support).
+We have Eik support for React, Vue and Elements, check it out [here](/get-started/developers/web/#eik-support).
 
 Make sure you have the newest versions of our packages to get the latest changes:
 

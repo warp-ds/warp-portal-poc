@@ -1,6 +1,6 @@
 import { createContentLoader } from "vitepress";
 
-const base = '/tech-docs';
+const base = '/warp-portal-poc';
 
 export default createContentLoader("/blog/posts/**/*.md", {
   includeSrc: true, // include raw markdown source?
