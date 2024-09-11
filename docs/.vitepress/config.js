@@ -225,7 +225,6 @@ export default defineConfig({
             { text: 'Developers',
               collapsed: true,
               items: [
-                { text: 'Overview', link: '/get-started/developers/' },
                 { text: 'Web',
                   collapsed: true,
                   items: [

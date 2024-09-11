@@ -8,7 +8,7 @@ hero:
   actions:
   - theme: brand
     text: Get Started →
-    link: /get-started/developers/
+    link: /get-started/developers/web
   - theme: alt
     text: View on GitHub
     link: https://github.com/warp-ds/drive
