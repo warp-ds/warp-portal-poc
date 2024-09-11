@@ -187,7 +187,6 @@ export default defineConfig({
       { text: 'Get started', link: '/getting-started' },
       { text: 'Foundations', link: '/foundations' },
       { text: 'Components', link: '/components' },
-      { text: 'NavLevels', link: '/navlevels' },
       { text: 'POCs', link: '/pocs' },
       {
         text: 'Implementations',
@@ -231,6 +230,7 @@ export default defineConfig({
               ],
             },
             { text: 'Designers', link: '/getting-started/designers/' },
+            { text: 'FAQ', link: '/getting-started/faq/' },
           ],
         },    
         {
