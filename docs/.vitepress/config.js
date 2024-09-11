@@ -254,28 +254,6 @@ export default defineConfig({
           items: [
             { text: 'Designing with a system', link: '/guidelines/design-system/' },
             { text: 'Building Custom Elements with Warp', link: '/guidelines/custom-elements-warp/' },
-            {
-              text: 'Data visualisation',
-              collapsed: true,
-              items: [
-                {
-                  text: 'Getting Started',
-                  link: '/guidelines/data-visualization/getting-started/',
-                },
-                {
-                  text: 'Chart types',
-                  link: '/guidelines/data-visualization/chart-types/',
-                },
-                {
-                  text: 'Colour Usage',
-                  link: '/guidelines/data-visualization/colour-usage/',
-                },
-                {
-                  text: 'Success criteria',
-                  link: '/guidelines/data-visualization/success-criteria/',
-                },
-              ],
-            },
           ],
         },
       ],
@@ -293,6 +271,28 @@ export default defineConfig({
           { text: 'Accessibility', link: '/foundations/accessibility/' },
           { text: 'Design Princples', link: '/foundations/design-principles/' },
           { text: 'Brands', link: '/foundations/brands/' },
+          {
+            text: 'Data visualisation',
+            collapsed: true,
+            items: [
+              {
+                text: 'Getting Started',
+                link: '/foundations/data-visualization/getting-started/',
+              },
+              {
+                text: 'Chart types',
+                link: '/foundations/data-visualization/chart-types/',
+              },
+              {
+                text: 'Colour Usage',
+                link: '/foundations/data-visualization/colour-usage/',
+              },
+              {
+                text: 'Success criteria',
+                link: '/foundations/data-visualization/success-criteria/',
+              },
+            ],
+          },
           {
             text: 'CSS',
             collapsed: true,

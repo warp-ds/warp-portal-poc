@@ -4,7 +4,7 @@ Colour plays a pivotal role in data visualisation. It is among the initial aspec
 
 Not only does colour capture attention, but it also serves as a tool to convey information. This can be achieved by assigning different colours to represent distinct values, or to indicate positive or negative outcomes.
 
-Nonetheless, considering the variability in colour perception among individuals (including those who may not perceive it at all), it's crucial to ensure that the information remains accessible to all (see [Success criteria](/guidelines/data-visualization/success-criteria/) for further details).
+Nonetheless, considering the variability in colour perception among individuals (including those who may not perceive it at all), it's crucial to ensure that the information remains accessible to all (see [Success criteria](/foundations/data-visualization/colour-usage/) for further details).
 
 <br>
 <br>
