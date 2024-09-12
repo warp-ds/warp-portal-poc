@@ -189,14 +189,6 @@ export default defineConfig({
       { text: 'Components', link: '/components' },
       { text: 'POCs', link: '/pocs' },
       {
-        text: 'Implementations',
-        items: [
-          { text: 'React', link: 'https://github.com/warp-ds/react' },
-          { text: 'Vue', link: 'https://github.com/warp-ds/vue' },
-          { text: 'Elements', link: 'https://github.com/warp-ds/elements' },
-        ],
-      },
-      {
         text: 'What\'s new',
         link: '/blog/',
         activeMatch: '/blog/$',
