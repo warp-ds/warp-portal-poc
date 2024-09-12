@@ -251,7 +251,6 @@ export default defineConfig({
         {
           text: 'Guidelines',
           items: [
-            { text: 'Designing with a system', link: '/guidelines/design-system/' },
             { text: 'Building Custom Elements with Warp', link: '/guidelines/custom-elements-warp/' },
           ],
         },
