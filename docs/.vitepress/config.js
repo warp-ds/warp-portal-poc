@@ -216,16 +216,16 @@ export default defineConfig({
             { text: 'Developers',
               collapsed: true,
               items: [
-                { 
+                {
                   text: 'Web',
                   collapsed: true,
                   items: [
                     { text: 'Setup', link: '/get-started/developers/web/' },
                     { text: 'Migrate from Fabric', link: '/get-started/developers/web/migrate-from-fabric/' },
-                    { text: 'Building custom components with Warp', link: '/get-started/developers/web/custom-components/' },        
+                    { text: 'Building custom components with Warp', link: '/get-started/developers/web/custom-components/' },
                   ],
                 },
-                { 
+                {
                   text: 'Android',
                   collapsed: true,
                   items: [
@@ -233,7 +233,7 @@ export default defineConfig({
                     { text: 'Building custom components with Warp', link: '/get-started/developers/android/custom-components/' },
                   ]
                 },
-                { 
+                {
                   text: 'iOS',
                   collapsed: true,
                   items: [
@@ -243,7 +243,7 @@ export default defineConfig({
                 },
               ],
             },
-            { text: 'Designers', 
+            { text: 'Designers',
               collapsed: true,
               items: [
                 { text: 'Overview', link: '/get-started/designers/overview' },
@@ -255,7 +255,7 @@ export default defineConfig({
             },
             { text: 'FAQ', link: '/get-started/faq/' },
           ],
-        },    
+        },
       ],
       '/foundations/': [ {
         text: 'Foundations',
@@ -553,6 +553,7 @@ export default defineConfig({
         {
           text: 'Components',
           items: [
+            { text: 'Component Overview', link: '/components/' },
             { text: 'Alert', link: '/components/alert/' },
             { text: 'Attention', link: '/components/attention/' },
             { text: 'Badge', link: '/components/badge/' },

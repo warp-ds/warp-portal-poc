@@ -16,6 +16,8 @@ import '../bootExamples.js';
 import './custom.css';
 import 'uno.css';
 import warpThemeSwitcher from "../warp-theme-switcher.js";
+import Card from "../Card.vue";
+import Cards from "../Cards.vue";
 
 export default {
   ...DefaultTheme,
@@ -39,6 +41,9 @@ export default {
     app.component('QrTable', QrTable);
     app.component('QrColorTable', QrColorTable);
     app.component('IconStarFull32', IconStarFull32);
+    app.component('Cards', Cards);
+    app.component('Card', Card);
+
 
     if (!import.meta.env.SSR) {
       const component = await import('../poc-1-div.js');
