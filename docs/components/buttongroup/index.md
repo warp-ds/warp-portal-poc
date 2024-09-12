@@ -10,6 +10,7 @@ Button Group is used to group and align clickable elements, applying different v
 
 ## Example
 
+<ThemeSwitcher />
 <buttongroup-example />
 
 ## Usage
@@ -21,7 +22,7 @@ For a React equivalent that serves a similar purpose, use the `Toggle` in [Radio
 
 ## Frameworks
 
-<tabs-content> 
+<tabs-content>
   <template #vue>
     <vue />
   </template>

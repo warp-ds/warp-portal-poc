@@ -19,12 +19,12 @@ import warpThemeSwitcher from "../warp-theme-switcher.js";
 
 export default {
   ...DefaultTheme,
-  Layout() {
-    return h(DefaultTheme.Layout, null, {
-      'nav-bar-content-before': () => h(ThemeSwitcher),
-      'nav-screen-content-before': () => h(ThemeSwitcher)
-    })
-  },
+  //Layout() {
+  //  return h(DefaultTheme.Layout, null, {
+  //    'nav-bar-content-before': () => h(ThemeSwitcher),
+  //    'nav-screen-content-before': () => h(ThemeSwitcher)
+  //  })
+  //},
   async enhanceApp({ app }) {
     app.use(warpThemeSwitcher);
     app.component('ApiTable', ApiTable);
@@ -39,10 +39,10 @@ export default {
     app.component('QrTable', QrTable);
     app.component('QrColorTable', QrColorTable);
     app.component('IconStarFull32', IconStarFull32);
-    
+
     if (!import.meta.env.SSR) {
       const component = await import('../poc-1-div.js');
-     
+
 
       app.use(component)
     }
