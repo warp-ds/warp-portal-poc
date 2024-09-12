@@ -224,15 +224,31 @@ export default defineConfig({
             { text: 'Developers',
               collapsed: true,
               items: [
-                { text: 'Web',
+                { 
+                  text: 'Web',
                   collapsed: true,
                   items: [
-                    { text: 'Get started', link: '/get-started/developers/web/' },
+                    { text: 'Setup', link: '/get-started/developers/web/' },
                     { text: 'Migrate from Fabric', link: '/get-started/developers/web/migrate-from-fabric/' },
+                    { text: 'Building custom components with Warp', link: '/get-started/developers/web/custom-components/' },        
                   ],
                 },
-                { text: 'Android', link: '/get-started/developers/android/' },
-                { text: 'iOS', link: '/get-started/developers/ios/' },
+                { 
+                  text: 'Android',
+                  collapsed: true,
+                  items: [
+                    { text: 'Setup', link: '/get-started/developers/android/' },
+                    { text: 'Building custom components with Warp', link: '/get-started/developers/android/custom-components/' },
+                  ]
+                },
+                { 
+                  text: 'iOS',
+                  collapsed: true,
+                  items: [
+                    { text: 'Setup', link: '/get-started/developers/ios/' },
+                    { text: 'Building custom components with Warp', link: '/get-started/developers/ios/custom-components/' },
+                  ]
+                },
               ],
             },
             { text: 'Designers', 
@@ -241,19 +257,13 @@ export default defineConfig({
                 { text: 'Overview', link: '/get-started/designers/overview' },
                 { text: 'Styles', link: '/get-started/designers/styles' },
                 { text: 'Multibrand design', link: '/get-started/designers/multibrand-design' },
-                { text: 'Todo: remove - Get started', link: '/get-started/designers/' },
                 { text: 'Migrate from Fabric', link: '/get-started/designers/migrate-from-fabric/' },
+                { text: 'Building custom components with Warp', link: '/get-started/designers/custom-components/' },
               ]
             },
             { text: 'FAQ', link: '/get-started/faq/' },
           ],
         },    
-        {
-          text: 'Guidelines',
-          items: [
-            { text: 'Building Custom Elements with Warp', link: '/guidelines/custom-elements-warp/' },
-          ],
-        },
       ],
       '/foundations/': [ {
         text: 'Foundations',

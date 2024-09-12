@@ -1,6 +1,6 @@
 # Contribute to the growth of Warp
 
-Start by reading the guidelines **[Designing with a design system](/guidelines/design-system/)** and **[When to use Warp](/guidelines/design-system/#when-to-use-warp).**
+Start by reading the guidelines **[Designing with a design system](/get-started/)** and **[When to use Warp](/get-started/#when-to-use-warp).**
 If you have decided that you want to use Warp, but you need to extend the design system to fit your needs.
 This is the guide for you.
 
