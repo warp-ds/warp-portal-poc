@@ -6,6 +6,7 @@ import ThemeSwitcher from '../ThemeSwitcher.vue';
 import ComponentDesignGuidelines from '../../components/ComponentDesignGuidelines.md';
 import ComponentQuestions from '../../components/ComponentQuestions.md';
 import ComponentsStatus from '../ComponentsStatus.vue';
+import Footer from '../Footer.vue';
 import Do from '../Do.vue';
 import DoDont from '../DoDont.vue';
 import QrTable from '../qr-table.vue';
@@ -21,14 +22,16 @@ import Cards from "../Cards.vue";
 
 export default {
   ...DefaultTheme,
-  //Layout() {
-  //  return h(DefaultTheme.Layout, null, {
-  //    'nav-bar-content-before': () => h(ThemeSwitcher),
-  //    'nav-screen-content-before': () => h(ThemeSwitcher)
-  //  })
-  //},
+  Layout() {
+   return h(DefaultTheme.Layout, null, {
+    //  'nav-bar-content-before': () => h(ThemeSwitcher),
+    //  'nav-screen-content-before': () => h(ThemeSwitcher)
+    'layout-bottom': () => h(Footer),
+   })
+  },
   async enhanceApp({ app }) {
     app.use(warpThemeSwitcher);
+    app.config.globalProperties.$base = globalBaseUrl;
     app.component('ApiTable', ApiTable);
     app.component('ThemeSwitcher', ThemeSwitcher);
     app.component('TabsContent', TabsContent);
