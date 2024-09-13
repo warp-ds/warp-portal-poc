@@ -131,9 +131,6 @@ export default defineConfig({
         safelist: [...componentClasses, ...supportedClasses, ...docsClasses],
       }),
     ],
-    define: {
-      'globalBaseUrl': JSON.stringify(`${base}`),
-    }
   },
   head: [
     [

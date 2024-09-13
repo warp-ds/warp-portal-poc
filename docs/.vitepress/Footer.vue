@@ -4,26 +4,32 @@
       <img src="/warp-logo.svg" alt="Warp Logo" width="122" />
     </div>
     <div class="footer-column">
-      <h3 class='footer-column-title'>Collaborate</h3>
+      <h3 class="footer-column-title">Collaborate</h3>
       <ul>
-        <li class='footer-link'><a :href="`${$base}/collaborate/contribute/#adding-a-new-component`">Request new component</a></li>
-        <li class='footer-link'><a :href="`${$base}/collaborate/contribute/#requesting-changes-to-an-existing-component`">Request changes to a component</a></li>
+        <li class="footer-link">
+          <a :href="`${baseUrl}collaborate/contribute/#adding-a-new-component`">Request new component</a>
+        </li>
+        <li class="footer-link">
+          <a :href="`${baseUrl}collaborate/contribute/#requesting-changes-to-an-existing-component`">Request changes to a component</a>
+        </li>
       </ul>
     </div>
     <div class="footer-column">
-      <h3 class='footer-column-title'>Help</h3>
+      <h3 class="footer-column-title">Help</h3>
       <ul>
-        <li class='footer-link'><a :href="`${$base}/help/support`">Support</a></li>
-        <li class='footer-link'><a :href="`${$base}/help/report-bugs`">Report bugs/errors</a></li>
+        <li class="footer-link">
+          <a :href="`${baseUrl}help/support`">Support</a>
+        </li>
+        <li class="footer-link">
+          <a :href="`${baseUrl}help/report-bugs`">Report bugs/errors</a>
+        </li>
       </ul>
     </div>
   </footer>
 </template>
 
-<script>
-export default {
-  name: "Footer",
-};
+<script setup>
+const baseUrl = import.meta.env.BASE_URL
 </script>
 
 <style scoped>

@@ -31,7 +31,6 @@ export default {
   },
   async enhanceApp({ app }) {
     app.use(warpThemeSwitcher);
-    app.config.globalProperties.$base = globalBaseUrl;
     app.component('ApiTable', ApiTable);
     app.component('ThemeSwitcher', ThemeSwitcher);
     app.component('TabsContent', TabsContent);
