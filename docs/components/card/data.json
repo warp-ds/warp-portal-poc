@@ -1,0 +1,26 @@
+{
+  "title": "Card",
+  "description": "Card is a layout component used for a traditional card look and feel.",
+  "image": {
+    "src": "/warp-portal-poc/css/la07.jpg",
+    "alt": "Card component"
+  },
+  "frameworks": [
+    {
+      "name": "React",
+      "status": "released"
+    },
+    {
+      "name": "Vue",
+      "status": "released"
+    },
+    {
+      "name": "Elements",
+      "status": "released"
+    },
+    {
+      "name": "Figma"
+    }
+  ],
+  "category": "Layout"
+}

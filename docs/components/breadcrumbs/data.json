@@ -1,0 +1,26 @@
+{
+  "title": "Breadcrumbs",
+  "description": "Breadcrumbs show the navigation structure for the current location.",
+  "image": {
+    "src": "/warp-portal-poc/css/la05.jpg",
+    "alt": "Breadcrumbs component"
+  },
+  "frameworks": [
+    {
+      "name": "React",
+      "status": "released"
+    },
+    {
+      "name": "Vue",
+      "status": "released"
+    },
+    {
+      "name": "Elements",
+      "status": "released"
+    },
+    {
+      "name": "Figma"
+    }
+  ],
+  "category": "Layout"
+}

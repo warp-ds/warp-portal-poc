@@ -556,6 +556,7 @@ export default defineConfig({
             { text: 'Component Overview', link: '/components/' },
             { text: 'Alert', link: '/components/alert/' },
             { text: 'Attention', link: '/components/attention/' },
+            { text: 'Avatar', link: '/components/avatar/' },
             { text: 'Badge', link: '/components/badge/' },
             { text: 'Box', link: '/components/box/' },
             { text: 'Breadcrumbs', link: '/components/breadcrumbs/' },

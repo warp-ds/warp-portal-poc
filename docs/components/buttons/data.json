@@ -1,0 +1,34 @@
+{
+  "title": "Button",
+  "description": "Buttons are used to perform actions, with different visuals for different needs.",
+  "image": {
+    "src": "/warp-portal-poc/css/la06.jpg",
+    "alt": "Button component"
+  },
+  "frameworks": [
+    {
+      "name": "React",
+      "status": "released"
+    },
+    {
+      "name": "Vue",
+      "status": "released"
+    },
+    {
+      "name": "Elements",
+      "status": "released"
+    },
+    {
+      "name": "Android",
+      "status": "released"
+    },
+    {
+      "name": "iOS",
+      "status": "released"
+    },
+    {
+      "name": "Figma"
+    }
+  ],
+  "category": "Actions"
+}

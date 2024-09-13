@@ -1,0 +1,34 @@
+{
+  "title": "Badge",
+  "description": "Badge is used for showing a small amount of non-interactive color-categorized metadata, like a status or count.",
+  "image": {
+    "src": "/warp-portal-poc/css/la03.jpg",
+    "alt": "Badge component"
+  },
+  "frameworks": [
+    {
+      "name": "React",
+      "status": "released"
+    },
+    {
+      "name": "Vue",
+      "status": "released"
+    },
+    {
+      "name": "Elements",
+      "status": "released"
+    },
+    {
+      "name": "Android",
+      "status": "released"
+    },
+    {
+      "name": "iOS",
+      "status": "released"
+    },
+    {
+      "name": "Figma"
+    }
+  ],
+  "category": "Layout"
+}
