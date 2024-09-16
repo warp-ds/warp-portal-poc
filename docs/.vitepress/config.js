@@ -179,10 +179,6 @@ export default defineConfig({
     logo: '/warp-logo-small.svg',
     outline: 'deep',
     socialLinks: [{ icon: 'github', link: 'https://github.com/warp-ds' }],
-    footer: {
-      message: 'Released under the Apache 2.0 License.',
-      copyright: 'Copyright © 2023-present Schibsted',
-    },
     nav: [
       { text: 'Get started', link: '/get-started' },
       { text: 'Foundations', link: '/foundations' },
@@ -197,17 +193,20 @@ export default defineConfig({
     sidebar: {
       '/': [
         {
-          text: 'Welcome to Warp',
-          link: '/welcome/',
-        },
-        {
-          text: 'Collaborate with us',
+          text: 'Collaborate',
           collapsed: true,
           items: [
             { text: 'Contribute to Warp', link: '/collaborate/contribute/' },
-            { text: 'Join the community ', link: '/collaborate/community/' },
+            { text: 'Join the community', link: '/collaborate/community/' },
           ],
         },
+        {
+          text: 'Help',
+          items: [
+            { text: 'Support', link: '/help/support' },
+            { text: 'Report bugs/errors', link: '/help/report-bugs' },
+          ]
+        }
       ],
       '/get-started/': [
         {
