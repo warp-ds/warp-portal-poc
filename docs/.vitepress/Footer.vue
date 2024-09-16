@@ -5,31 +5,19 @@
     </div>
     <div class="footer-column">
       <h3 class="footer-column-title">Collaborate</h3>
-      <ul>
-        <li class="footer-link">
-          <a :href="`${baseUrl}collaborate/contribute/#adding-a-new-component`">Request new component</a>
-        </li>
-        <li class="footer-link">
-          <a :href="`${baseUrl}collaborate/contribute/#requesting-changes-to-an-existing-component`">Request changes to a component</a>
-        </li>
-      </ul>
+      <a class="footer-link" :href="`${baseUrl}collaborate/contribute/#adding-a-new-component`">Request new component</a>
+      <a class="footer-link" :href="`${baseUrl}collaborate/contribute/#requesting-changes-to-an-existing-component`">Request changes to a component</a>
     </div>
     <div class="footer-column">
       <h3 class="footer-column-title">Help</h3>
-      <ul>
-        <li class="footer-link">
-          <a :href="`${baseUrl}help/support`">Support</a>
-        </li>
-        <li class="footer-link">
-          <a :href="`${baseUrl}help/report-bugs`">Report bugs/errors</a>
-        </li>
-      </ul>
+      <a class="footer-link" :href="`${baseUrl}help/support`">Support</a>
+      <a class="footer-link" :href="`${baseUrl}help/report-bugs`">Report bugs/errors</a>
     </div>
   </footer>
 </template>
 
 <script setup>
-const baseUrl = import.meta.env.BASE_URL
+const baseUrl = import.meta.env.BASE_URL;
 </script>
 
 <style scoped>
@@ -53,21 +41,16 @@ const baseUrl = import.meta.env.BASE_URL
   font-weight: 700;
   text-transform: uppercase;
 }
+.footer-link {
+  display: block;
+  margin-bottom: 8px;
+}
+
 .footer-link:hover {
   text-decoration: underline;
 }
 .logo-column {
   display: flex;
   justify-content: flex-start;
-}
-ul {
-  list-style: none;
-  padding: 0;
-}
-li {
-  margin-bottom: 8px;
-}
-h3 {
-  margin-bottom: 12px;
 }
 </style>
