@@ -2,13 +2,15 @@
   import Vue from './vue.md';
   import React from './react.md';
   import Android from './android.md';
+  import data from './data.json';
+  import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
 # Checkbox
 
-Checkboxes allow users to select multiple items from a list of individual items, or to mark one individual item as selected.
+{{ data.description }}
 
-<components-status react='released' vue='released' android='released' />
+<components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Example
 

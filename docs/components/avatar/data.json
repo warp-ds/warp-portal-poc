@@ -1,0 +1,14 @@
+{
+  "title": "Avatar",
+  "description": "Avatars use images, icons or text to visually represent people or entities.",
+  "image": {
+    "src": "/warp-portal-poc/css/la02.jpg",
+    "alt": "Avatar component"
+  },
+  "frameworks": [
+    {
+      "name": "Figma"
+    }
+  ],
+  "category": "Layout"
+}

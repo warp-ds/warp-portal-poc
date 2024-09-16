@@ -1,0 +1,34 @@
+{
+  "title": "Box",
+  "description": "Box is a layout component used for separating content areas on a page.",
+  "image": {
+    "src": "/warp-portal-poc/css/la04.jpg",
+    "alt": "Box component"
+  },
+  "frameworks": [
+    {
+      "name": "React",
+      "status": "released"
+    },
+    {
+      "name": "Vue",
+      "status": "released"
+    },
+    {
+      "name": "Elements",
+      "status": "released"
+    },
+    {
+      "name": "Android",
+      "status": "released"
+    },
+    {
+      "name": "iOS",
+      "status": "released"
+    },
+    {
+      "name": "Figma"
+    }
+  ],
+  "category": "Actions"
+}

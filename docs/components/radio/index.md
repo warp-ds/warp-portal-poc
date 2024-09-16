@@ -1,13 +1,15 @@
 <script setup>
   import Vue from './vue.md';
   import React from './react.md';
+  import data from './data.json';
+  import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
 # Radio
 
-Radios allow users to select a single option from a list of mutually exclusive options. All possible options are exposed up front for users to compare.
+{{ data.description }}
 
-<components-status react='released' vue='released' />
+<components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Example
 
