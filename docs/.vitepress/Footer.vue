@@ -32,6 +32,12 @@ const baseUrl = import.meta.env.BASE_URL;
   width: calc(100% - 264px);
   margin-left: 264px;
 }
+@media (min-width: 1200px) {
+  .has-sidebar ~ .footer {
+    width: calc(100% - 504px);
+    margin-left: 504px;
+  }
+}
 .footer-column {
   flex: 1;
   margin: 0 20px;
