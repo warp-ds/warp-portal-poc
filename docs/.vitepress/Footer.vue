@@ -25,8 +25,38 @@ const baseUrl = import.meta.env.BASE_URL;
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: #f6f6f7;
+  background-color: #0F1728;
   width: 100%;
+  position: relative;
+}
+.footer::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 104px;
+  background: url('stars-background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  pointer-events: none;
+}
+.footer::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 8px;
+  background: url('hero-wavy-line.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: scaleY(-1);
+  z-index: 1;
+  pointer-events: none;
 }
 .has-sidebar ~ .footer {
   width: calc(100% - 264px);
@@ -41,15 +71,20 @@ const baseUrl = import.meta.env.BASE_URL;
 .footer-column {
   flex: 1;
   margin: 0 20px;
+  z-index: 2;
 }
 .footer-column-title {
   font-size: 14px;
   font-weight: 700;
+  color: #F6D553;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .footer-link {
   display: block;
   margin-bottom: 8px;
+  color: #FFFBD5;
+  font-size: 16px;
 }
 
 .footer-link:hover {
