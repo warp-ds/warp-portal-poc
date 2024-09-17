@@ -1,5 +1,6 @@
 {
   "title": "Alert",
+  "mainurl": "/warp-portal-poc/components/alert/",
   "description": "Alert is an inline component used for displaying different types of messages.",
   "image": {
     "src": "/warp-portal-poc/css/la01.jpg",
