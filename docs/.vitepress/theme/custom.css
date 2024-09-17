@@ -78,6 +78,23 @@ html.dark body {
   font-size: 1.28rem !important;
 }
 
+.VPNavBar {
+  --vp-nav-bg-color: #131B2D;
+  background-color: var(--vp-nav-bg-color);
+}
+.VPNavBar::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 8px;
+  background: url('hero-wavy-line.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* weight was 500, finnfont doesnt ship 'medium', but might be fun to actually ship the right fonts here? */
 .VPNavBarMenuLink {
   font-weight: 700 !important;
@@ -107,4 +124,79 @@ html.dark body {
 .VPSidebarItem.has-active.collapsible > .item:hover .text
 {
   color: var(--vp-c-brand-2);
+}
+.VPHero {
+  --vp-c-bg: #0F1728;
+  background-color: var(--vp-c-bg);
+  margin-bottom: 60px;
+  position: relative; /* Ensure relative positioning to use ::after */
+}
+.VPHero::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 8px;
+  background: url('hero-wavy-line.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.VPHero .container .name .clip {
+  --vp-home-hero-name-color: #F6D553;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+}
+.VPHero .container .tagline {
+  --vp-c-text-2: #FFFBD5;
+  max-width: 24ch;
+}
+.VPHomeFeatures .item .VPLink {
+  --vp-c-bg-soft: #131B2D;
+  max-width: 557px;
+  max-height: 351px;
+  border-radius: 8px;
+}
+.VPHomeFeatures .item .VPLink .box {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-areas:
+    "title icon"
+    "details icon"
+    "link icon"
+    "link-text icon";
+  padding: 60px 38px 60px 38px;
+  }
+.VPHomeFeatures .item .VPLink .box .VPImage {
+  grid-area: icon;
+  justify-self: end;
+}
+.VPHomeFeatures .item .VPLink .box .title {
+  grid-area: title;
+  color: #F6D553;
+  font-size: 36px;
+  line-height: 52px;
+}
+.VPHomeFeatures .item .VPLink .box .details {
+--vp-c-text-2: #FFFBD5;
+  grid-area: details;
+  font-size: 22px;
+  line-height: 32px;
+}
+.VPHomeFeatures .item .VPLink .link-text {
+  grid-area: link;
+  color: #FFFBD5;
+}
+.VPHomeFeatures .item .VPLink .link-text-value {
+  --vp-c-text-2: #FFFBD5;
+  grid-area: link-text;
+  color: var(--vp-c-text-2);
+  font-size: 16px;
+  text-decoration: underline;
+}
+.VPButton {
+  --vp-button-brand-text: #FFFBD5;
+  color: var(--vp-button-brand-text);
 }

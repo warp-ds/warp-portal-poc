@@ -176,7 +176,7 @@ export default defineConfig({
       pattern: 'https://github.com/warp-ds/warp-portal-poc/edit/main/docs/src/:path' // Edit link for GitHub
     },
     search: { provider: 'local' },
-    logo: '/warp-logo-small.svg',
+    logo: '/warp-logo.svg',
     outline: 'deep',
     socialLinks: [{ icon: 'github', link: 'https://github.com/warp-ds' }],
     nav: [
