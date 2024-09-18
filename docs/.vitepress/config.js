@@ -516,7 +516,6 @@ export default defineConfig({
                   },
             ]}
           ]},
-          { text: 'Icons', link: '/foundations/icons/' },
           { text: 'Illustrations', link: '/foundations/illustrations/' },
           { text: 'Typography', link: '/foundations/typography/' },
           { text: 'Accessibility', link: '/foundations/accessibility/' },

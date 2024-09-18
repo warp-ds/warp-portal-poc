@@ -12,7 +12,8 @@ Astro is the UX writers guide to create effective, localised, and accessible con
 
 It covers all the nitty-gritty like how to write date and time in different languages, info for development and strings and much more!
 
-Ask questions from the UX writing team on Slack, #smp-uxwritingBrowse the UX writing guidelines: Astro
+Ask questions from the UX writing team on Slack, #smp-uxwriting
+Browse the UX writing guidelines: Astro
 
 ![alt text](https://i.imgur.com/OvMZBs9.jpg)
 
