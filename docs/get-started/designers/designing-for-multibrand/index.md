@@ -1,4 +1,4 @@
-# Multibrand design
+# Designing for multibrand
 WARP is built to support multiple themes and your designs should be able to be used for all nordic Schibsted Marketplace brands.
 
 There are certain principles that are important to follow in order for this to work.

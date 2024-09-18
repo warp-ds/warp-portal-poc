@@ -246,8 +246,8 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { text: 'Overview', link: '/get-started/designers/overview' },
-                { text: 'Styles', link: '/get-started/designers/styles' },
-                { text: 'Multibrand design', link: '/get-started/designers/multibrand-design' },
+                { text: 'Warp in Figma', link: '/get-started/designers/warp-in-figma' },
+                { text: 'Designing for multibrand', link: '/get-started/designers/designing-for-multibrand' },
                 { text: 'Migrate from Fabric', link: '/get-started/designers/migrate-from-fabric/' },
                 { text: 'Building custom components with Warp', link: '/get-started/designers/custom-components/' },
               ]
