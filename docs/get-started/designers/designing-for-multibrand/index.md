@@ -12,19 +12,19 @@ Auto layout is a property you add to frames and components. It lets you create d
 ![img info](https://i.imgur.com/OvMZBs9.jpg)
 
 ### Multibrand
-Since all WARP components have support for multiple brands it’s important that you use auto layout in all your designs.
+Since all WARP components have support for multiple brands it's important that you use auto layout in all your designs.
 
-Differences in the brands like typography, spacing and language can cause the components to be different in sizes and if you don’t use auto layout your designs might break when switching between brands.
+Differences in the brands like typography, spacing and language can cause the components to be different in sizes and if you don't use auto layout your designs might break when switching between brands.
 
 ![img info](https://i.imgur.com/OvMZBs9.jpg)
 
 ### Learn how to use auto layout
-If you don’t already know how it works, consult with a visual designer in your team and see if they can show you the ropes. Otherwise there are several great resources to get you started.
+If you don't already know how it works, consult with a visual designer in your team and see if they can show you the ropes. Otherwise there are several great resources to get you started.
 
 ![img info](https://i.imgur.com/OvMZBs9.jpg)
 
 ## Switch brands
-When working with multiple brands it’s important to be able to see what your designs look like with another brand.
+When working with multiple brands it's important to be able to see what your designs look like with another brand.
 
 ### Default component styling
 The components in Warp are based on the old FINN design system called Fabric and the default styling of every component is therefore in the style of FINN.
@@ -32,7 +32,7 @@ The components in Warp are based on the old FINN design system called Fabric and
 ![img info](https://i.imgur.com/OvMZBs9.jpg)
 
 ### Variables in Figma
-When designing with a multi-brand design system it’s important to see what your designs looks like in a different brand. Luckily with the newly added variables functionality in Figma this is an easy task.
+When designing with a multi-brand design system it's important to see what your designs looks like in a different brand. Luckily with the newly added variables functionality in Figma this is an easy task.
 
 Switching brands will change the tokens for all components which resulting colours, typography, border radiuses and other things to be different for each brand.
 

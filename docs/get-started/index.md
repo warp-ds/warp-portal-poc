@@ -1,27 +1,44 @@
-# Get started
+# Welcome
+TODO: Lorizzle ipsum dolor mammasay mammasa mamma oo sa amizzle, consectetuer adipiscing elit. Nullizzle fizzle velizzle, shiz volutpat, suscipit go to hizzle, gravida vizzle, bling bling. 
 
-## Designing with a design system
+## Intro
+Hello 👋 Welcome to the WARP design system. 
 
-We think of Warp as a foundation that you can start building your house upon. Our design system provides you with building blocks that you can use to piece your home together, and it's 100% up to you to puzzle them together so that they meet the needs of your unique users.
+**WARP design system**
+Whether you are a novice or an expert working with design systems, this Figma file contains everything you need to know to get started with using WARP for SMP
+WARP serves as a single source of truth for designers, developers, and other stakeholders to ensure consistency and coherence across all brands. 
+The goal is to reduce ambiguity, confusion and to save time and resources when building and developing our marketplaces. 
 
-Don't limit your ideas to fit into an existing system in the early stages of your design process. Zoom out and figure out the best solutions to the problem that you are solving today. When you have a solution, check if Warp has all the pieces that you need to design that solution. If you can’t find what you are looking for, it's a great time to **[contribute](/collaborate/contribute/)** to the system and help it grow.
+![alt text](https://i.imgur.com/OvMZBs9.jpg)
 
-## The power of zooming out
+## Vision
+To create a design system that makes designing and developing in SMP so quick and easy that you'd have to be an idiot not to use it.
 
-The problems we face in Schibsted Marketplaces never exist only in one area of a vertical. Zooming out when solving problems allows you to get a better understanding of the problem you are currently trying to solve. You need to consider your vertical as a whole when designing for its parts. You can create better designs and leverage on our existing patterns if you first do your homework and familiarise yourself with the Warp documentation.
+**Our mission**
+To create a multi-brand design system for SMP that:
 
-## Be free to explore
+* Is easy to use
+* Is easy to maintain
+* Prioritises simplicity over complexity
+* Prioritises quality over speed
+* Promotes design consistency
+* Meets accessibility guidelines
+* Considers the needs of all SMP brands and verticals
 
-When you have broad knowledge of the vertical that you belong to, you have the resources you need to explore without constraints. Don't think too much of components, documentation and what patterns we have decided we should use. Start with solving your problem in several different ways before you start thinking about design system consistency.
+![alt text](https://i.imgur.com/OvMZBs9.jpg)
 
-## Align and tweak with the design system
+**What do you mean slow down, are you crazy!?**
+"Successful design systems move more slowly than the products they support. That's a feature, not a bug. The slower pace doesn't mean that design systems have to be a bottleneck to shipping product."
+— Josh Clark, [Ship faster by building design systems slower](https://bigmedium.com/ideas/design-system-pace-layers-slow-fast.html) on bigmedium.com
 
-When you have your potential solutions at hand - talk to your peers. We can help each other out to start aligning more closely with the design system.
+![alt text](https://i.imgur.com/OvMZBs9.jpg)
 
-## When to use Warp 
+**Prioritise Quality over speed**
+By taking our time, working thoroughly, and being certain of the decisions we make (through testing and iteration), we are helping to:
 
-| Use warp        | Extend warp     | Build a custom solution |
-| --------------- | --------------- | --------------- |
-| We aim for a Warp first approach to all our solutions. So anytime Warp can solve your problem, use Warp. | When a change or addition can solve a shared problem | When a unique problem requires a unique solution |
-| Read "Designing with our system" (this page)      | Read "Contribute to the growth of Warp" | Share ideas in #nmp-ux |
-| Review our component guidelines in the Components overview | Send a request to the Warp team | Build with Warp tokens |
+* Ensure that our foundation is solid
+* Curate quality assured components
+* Enable innovation for our users
+* ... eventually provide speed for things that have been tried and tested
+
+![alt text](https://i.imgur.com/OvMZBs9.jpg)
