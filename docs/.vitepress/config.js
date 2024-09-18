@@ -245,7 +245,6 @@ export default defineConfig({
             { text: 'Designers',
               collapsed: true,
               items: [
-                { text: 'Overview', link: '/get-started/designers/overview' },
                 { text: 'Warp in Figma', link: '/get-started/designers/warp-in-figma' },
                 { text: 'Designing for multibrand', link: '/get-started/designers/designing-for-multibrand' },
                 { text: 'Migrate from Fabric', link: '/get-started/designers/migrate-from-fabric/' },
@@ -545,6 +544,9 @@ export default defineConfig({
               },
             ],
           },
+          { text: 'Elevation', link: '/foundations/elevation/' },
+          { text: 'Dark mode', link: '/foundations/dark-mode/' },
+          { text: 'Motion', link: '/foundations/motion/' },
         ]
       },
       ],
