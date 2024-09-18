@@ -4,6 +4,8 @@ import { presetWarp } from '@warp-ds/uno';
 import uno from 'unocss/vite';
 import { classes as componentClasses } from '@warp-ds/css/component-classes/classes';
 import { supported as supportedClasses } from '../supported.js';
+import markdownItContainer from 'markdown-it-container';
+
 
 const base = '/warp-portal-poc';
 
@@ -107,6 +109,17 @@ export default defineConfig({
       light: "github-light",
       dark: "github-dark",
     },
+    config: (md) => {
+      md.use(markdownItContainer, 'image-block', {
+        render: (tokens, idx) => {
+          if (tokens[idx].nesting === 1) {
+            return '<div class="styled-image-block">';
+          } else {
+            return '</div>';
+          }
+        }
+      });
+    }
   },
   vue: {
     template: {
