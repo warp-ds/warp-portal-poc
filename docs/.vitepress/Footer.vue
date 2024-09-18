@@ -58,11 +58,14 @@ const baseUrl = import.meta.env.BASE_URL;
   z-index: 1;
   pointer-events: none;
 }
-.has-sidebar ~ .footer {
-  width: calc(100% - 264px);
-  margin-left: 264px;
+@media (min-width: 960px){
+  .has-sidebar ~ .footer {
+    width: calc(100% - 264px);
+    margin-left: 264px;
+  }
 }
-@media (min-width: 1200px) {
+
+@media (min-width: 1445px) {
   .has-sidebar ~ .footer {
     width: calc(100% - 504px);
     margin-left: 504px;

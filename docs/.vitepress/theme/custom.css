@@ -180,6 +180,14 @@ html.dark body {
 .VPHero .container .image .image-container .VPImage {
   max-width: 578px;
   max-height: 238px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .VPHero .container .image .image-container .VPImage {
+    max-width: 578px;
+    max-height: 238px;
+    width: unset;
+  }
 }
 .VPHomeFeatures .item .VPLink {
   --vp-c-bg-soft: #131B2D;
@@ -227,4 +235,38 @@ html.dark body {
 .VPButton {
   --vp-button-brand-text: #FFFBD5;
   color: var(--vp-button-brand-text);
+}
+.VPNavBarTitle .title {
+  border-bottom: none;
+}
+.VPNavBarTitle .title .VPImage {
+  height: 96px;
+}
+
+.VPNavBarTitle .title span {
+  display: none;
+}
+
+.VPContent .VPDoc .container .aside .aside-curtain {
+  display: none;
+}
+
+.VPNavBar .wrapper .container .content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.VPLink.VPNavBarMenuLink {
+  --vp_c-text-1: #FFFBD5;
+  color: var(--vp_c-text-1);
+}
+.VPLink.VPNavBarMenuLink:hover {
+  --vp_c-text-1: #F6D553;
+  color: var(--vp_c-text-1);
+  
+}
+.VPLink.VPNavBarMenuLink:active {
+  --vp_c-text-1: #F6D553;
+  color: var(--vp_c-text-1);
+  text-decoration: underline;
 }
