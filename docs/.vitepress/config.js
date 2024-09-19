@@ -207,10 +207,9 @@ export default defineConfig({
       '/': [
         {
           text: 'Collaborate',
-          collapsed: true,
           items: [
-            { text: 'Contribute to Warp', link: '/collaborate/contribute/' },
-            { text: 'Join the community', link: '/collaborate/community/' },
+            { text: 'Request new component', link: '/collaborate/request-new-component/' },
+            { text: 'Request component changes', link: '/collaborate/request-component-changes/' },
           ],
         },
         {
@@ -258,9 +257,8 @@ export default defineConfig({
             { text: 'Designers',
               collapsed: true,
               items: [
-                { text: 'Overview', link: '/get-started/designers/overview' },
-                { text: 'Styles', link: '/get-started/designers/styles' },
-                { text: 'Multibrand design', link: '/get-started/designers/multibrand-design' },
+                { text: 'Warp in Figma', link: '/get-started/designers/warp-in-figma' },
+                { text: 'Designing for multibrand', link: '/get-started/designers/designing-for-multibrand' },
                 { text: 'Migrate from Fabric', link: '/get-started/designers/migrate-from-fabric/' },
                 { text: 'Building custom components with Warp', link: '/get-started/designers/custom-components/' },
               ]
@@ -530,7 +528,6 @@ export default defineConfig({
                   },
             ]}
           ]},
-          { text: 'Icons', link: '/foundations/icons/' },
           { text: 'Illustrations', link: '/foundations/illustrations/' },
           { text: 'Typography', link: '/foundations/typography/' },
           { text: 'Accessibility', link: '/foundations/accessibility/' },
@@ -558,6 +555,9 @@ export default defineConfig({
               },
             ],
           },
+          { text: 'Elevation', link: '/foundations/elevation/' },
+          { text: 'Dark mode', link: '/foundations/dark-mode/' },
+          { text: 'Motion', link: '/foundations/motion/' },
         ]
       },
       ],
