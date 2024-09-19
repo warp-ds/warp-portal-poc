@@ -16,12 +16,3 @@
     <slot></slot>
   </article>
 </template>
-
-<style scoped lang="scss">
-
-.docs-card:focus-within{
-  //border: 1px solid red;
-}
-
-</style>
-
