@@ -108,3 +108,23 @@ html.dark body {
 {
   color: var(--vp-c-brand-2);
 }
+
+.styled-image-block {
+    background-color: #f5f5f5; /* Light grey background */
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 8px;
+    width: 100%; /* Full width of parent */
+    position: relative; /* For absolute positioning of image */
+    overflow: hidden; /* To hide any overflow of the image */
+    aspect-ratio: 4 / 3; /* Maintain a 4:3 aspect ratio */
+    display: flex;
+    align-items: center; /* Center image vertically */
+    justify-content: center; /* Center image horizontally */
+}
+
+.styled-image-block img {
+  max-width: 100%; /* Ensure the image scales to fit within the container */
+  height: auto; /* Maintain image aspect ratio */
+  object-fit: cover; /* Cover the container, preserving aspect ratio */
+}
