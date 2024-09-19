@@ -103,7 +103,7 @@ All WARP components for Figma, React, Vue, Elements, iOS, and Android.
   />
 
   <!-- Row of buttons for framework filtering -->
-  <div class="flex flex-wrap gap-4 pt-8">
+  <div class="flex flex-wrap gap-4 pt-8 mb-16">
     <button
       v-for="framework in frameworkNames"
       :key="framework"
@@ -131,28 +131,26 @@ All WARP components for Figma, React, Vue, Elements, iOS, and Android.
   </div>
 
   <!-- Display filtered components -->
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-    <div
+  <cards class="grid grid-cols-1 sm:grid-cols-3 gap-12">
+    <card
       v-for="component in filteredComponents"
       :key="component.title"
       class="flex flex-col border border-gray-200 p-4 rounded-md shadow-sm"
     >
-      <h3 class="text-lg font-semibold mb-2">
+      <h3 class="h4 text-m! static! mt-16! mx-16!">
         <a
           :href="component.href"
-          class="text-blue-600 hover:underline"
+          class="block before:content-empty before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0 focus:outline-0"
         >
           {{ component.title }}
         </a>
       </h3>
       <img
-        class="mb-2 max-w-full h-auto"
+        class="order-first"
         :src="component.image.src"
         :alt="component.image.alt"
       />
-      <p class="text-gray-700">{{ component.description }}</p>
-    </div>
-  </div>
+      <p class="m-16! text-s">{{ component.description }}</p>
+    </card>
+  </cards>
 </div>
-
-
