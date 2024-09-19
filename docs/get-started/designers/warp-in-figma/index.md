@@ -7,19 +7,25 @@ Description of all files in the WARP Figma space.
 **The "WARP Design System" Figma space**
 Contains all libraries and documentation for you to get started with designing for Schibsted Marketplaces.
 
-![alt text](https://i.imgur.com/OvMZBs9.jpg)
+::: image-block
+![Overview of design system file structure in Figma for designers](/public/images/get-started/figma-warp-overview.jpg)
+:::
 
 **Get started**
 Guidance and onboarding to the WARP design system.
 
-![alt text](https://i.imgur.com/OvMZBs9.jpg)
+::: image-block
+![Overview of the "Get started" project in Figma for designers](/public/images/get-started/figma-warp-get-started.jpg)
+:::
 
 **Documentation**
 Component overview: contains all our components, their variants themes and documentation for usage.
 
 Dataviz: contains guidelines for data visualisation
 
-![alt text](https://i.imgur.com/OvMZBs9.jpg)
+::: image-block
+![Overview of the "Documentation" project in Figma for designers](/public/images/get-started/figma-warp-documentation.jpg)
+:::
 
 **Libraries**
 Components 2.0: The latest version of the WARP component library, contains themeable components that are usable by all Schibsted Marketplaces
@@ -30,20 +36,26 @@ Icons: A large icon library containing all old Fabric icons and newer ones
 
 Components (deprecated): An old version of the WARP component library, this will be phased out and should not be used in newer projects
 
-![alt text](https://i.imgur.com/OvMZBs9.jpg)
+::: image-block
+![Overview of the "Libraries" project in Figma for designers](/public/images/get-started/figma-warp-libraries.jpg)
+:::
 
 **Example pages**
 A collection of example pages that shows brand specific tokens in play. Use it to reverse engineer the WARP design tokens if you will!
 These files will most likely be deprecated during 2024 as Figma continuously are releasing updates to the variables functionality.
 
-![alt text](https://i.imgur.com/OvMZBs9.jpg)
+::: image-block
+![Overview of the "Examples" project in Figma for designers](/public/images/get-started/figma-warp-examples.jpg)
+:::
 
 ## Libraries
 In order to use the WARP design system properly you need to enable our libraries.
 ### Libraries needed
 The components and icon libraries are automatically added to every new Figma file created in SMP.
 
-![alt text](https://i.imgur.com/OvMZBs9.jpg)
+::: image-block
+![Figma library overview with 2 added WARP libraries "WARP - Components 2.0" and "WARP - Icons"](/public/images/get-started/figma-warp-libraries-added.jpg)
+:::
 
 ### How to add libraries
 **Open libraries**
@@ -51,7 +63,9 @@ Hotkeys
 Mac: ⌥option + ⌘command + O
 Win: ctrl + alt + O
 
-![alt text](https://i.imgur.com/OvMZBs9.jpg)
+::: image-block
+![Figma dropdown highlighting the option "libraries"](/public/images/get-started/figma-dropdown-libraries.jpg)
+:::
 
 **Enable the libraries**
 Search and enable the following libraries:

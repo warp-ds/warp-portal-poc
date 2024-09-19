@@ -24,13 +24,18 @@ To create a multi-brand design system for SMP that:
 * Meets accessibility guidelines
 * Considers the needs of all SMP brands and verticals
 
-![alt text](https://i.imgur.com/OvMZBs9.jpg)
+::: image-block
+![Sticky notes on a wall](/public/images/get-started/sticky-notes.jpg)
+:::
+
 
 **What do you mean slow down, are you crazy!?**
 "Successful design systems move more slowly than the products they support. That's a feature, not a bug. The slower pace doesn't mean that design systems have to be a bottleneck to shipping product."
 — Josh Clark, [Ship faster by building design systems slower](https://bigmedium.com/ideas/design-system-pace-layers-slow-fast.html) on bigmedium.com
 
-![alt text](https://i.imgur.com/OvMZBs9.jpg)
+::: image-block
+![A quotation "Slow down to speed up"](/public/images/get-started/slow-down-to-speed-up.jpg)
+:::
 
 **Prioritise Quality over speed**
 By taking our time, working thoroughly, and being certain of the decisions we make (through testing and iteration), we are helping to:
@@ -40,4 +45,6 @@ By taking our time, working thoroughly, and being certain of the decisions we ma
 * Enable innovation for our users
 * ... eventually provide speed for things that have been tried and tested
 
-![alt text](https://i.imgur.com/OvMZBs9.jpg)
+::: image-block
+![A quotation "Slow down to speed up"](/public/images/get-started/quality-cant-be-rushed.jpg)
+:::
