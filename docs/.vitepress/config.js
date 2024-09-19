@@ -194,10 +194,9 @@ export default defineConfig({
       '/': [
         {
           text: 'Collaborate',
-          collapsed: true,
           items: [
-            { text: 'Contribute to Warp', link: '/collaborate/contribute/' },
-            { text: 'Join the community', link: '/collaborate/community/' },
+            { text: 'Request new component', link: '/collaborate/request-new-component/' },
+            { text: 'Request component changes', link: '/collaborate/request-component-changes/' },
           ],
         },
         {

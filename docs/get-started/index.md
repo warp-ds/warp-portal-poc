@@ -1,5 +1,4 @@
 # Welcome
-TODO: Lorizzle ipsum dolor mammasay mammasa mamma oo sa amizzle, consectetuer adipiscing elit. Nullizzle fizzle velizzle, shiz volutpat, suscipit go to hizzle, gravida vizzle, bling bling. 
 
 ## Intro
 Hello 👋 Welcome to the WARP design system. 
