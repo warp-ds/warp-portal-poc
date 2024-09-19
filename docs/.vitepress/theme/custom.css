@@ -270,3 +270,35 @@ html.dark body {
   color: var(--vp_c-text-1);
   text-decoration: underline;
 }
+.VPNavBarSearch #local-search .DocSearch {
+  background-color: transparent;
+}
+
+.DocSearch-Button:hover {
+  --docsearch-text-color: #FFFBD5;
+  color: var(--docsearch-text-color);
+}
+
+.VPNavBarSearch #local-search .DocSearch .DocSearch-Button-Keys {
+  display: none;
+}
+
+.VPNavBarSearch #local-search .DocSearch .DocSearch-Button-Container .DocSearch-Button-Placeholder {
+  display: none;
+}
+
+.VPNavBarSearch #local-search .DocSearch .DocSearch-Button-Container .vp-icon {
+  --vp-c-text-2: #FFFBD5;
+}
+
+@media (min-width: 768px) {
+.VPNavBar .wrapper .container .content .content-body {
+  display: grid;
+  grid-template-areas:
+    "get-started foundations components blog search"
+}
+}
+
+ .VPNavBarSearch {
+  grid-area: search;
+ }
