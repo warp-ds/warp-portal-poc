@@ -25,7 +25,7 @@ To create a multi-brand design system for SMP that:
 * Considers the needs of all SMP brands and verticals
 
 ::: image-block
-![Sticky notes on a wall](/public/images/get-started/sticky-notes.jpg)
+![Sticky notes on a wall](/images/get-started/sticky-notes.jpg)
 :::
 
 
@@ -34,7 +34,7 @@ To create a multi-brand design system for SMP that:
 — Josh Clark, [Ship faster by building design systems slower](https://bigmedium.com/ideas/design-system-pace-layers-slow-fast.html) on bigmedium.com
 
 ::: image-block
-![A quotation "Slow down to speed up"](/public/images/get-started/slow-down-to-speed-up.jpg)
+![A quotation "Slow down to speed up"](/images/get-started/slow-down-to-speed-up.jpg)
 :::
 
 **Prioritise Quality over speed**
@@ -46,5 +46,5 @@ By taking our time, working thoroughly, and being certain of the decisions we ma
 * ... eventually provide speed for things that have been tried and tested
 
 ::: image-block
-![A quotation "Slow down to speed up"](/public/images/get-started/quality-cant-be-rushed.jpg)
+![A quotation "Slow down to speed up"](/images/get-started/quality-cant-be-rushed.jpg)
 :::
