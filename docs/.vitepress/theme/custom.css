@@ -274,22 +274,33 @@ html.dark body {
   background-color: transparent;
 }
 
-.DocSearch-Button:hover {
-  --docsearch-text-color: #FFFBD5;
-  color: var(--docsearch-text-color);
-}
-
-.VPNavBarSearch #local-search .DocSearch .DocSearch-Button-Keys {
+.DocSearch .DocSearch-Button-Keys {
   display: none;
 }
 
-.VPNavBarSearch #local-search .DocSearch .DocSearch-Button-Container .DocSearch-Button-Placeholder {
+
+.DocSearch-Button-Container .DocSearch-Button-Placeholder {
   display: none;
 }
 
-.VPNavBarSearch #local-search .DocSearch .DocSearch-Button-Container .vp-icon {
+.DocSearch-Button-Container .vp-icon {
   --vp-c-text-2: #FFFBD5;
 }
+
+.DocSearch-Button:hover {
+  border-color: transparent;
+}
+.DocSearch-Button:hover .DocSearch-Search-Icon {
+  color:#F6D553;
+}
+
+.VPNavBarAppearance.appearance {
+ display: none;
+}
+
+.VPSocialLinks.VPNavBarSocialLinks {
+  display: none;
+ }
 
 @media (min-width: 768px) {
 .VPNavBar .wrapper .container .content .content-body {

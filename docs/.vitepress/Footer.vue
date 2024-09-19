@@ -97,4 +97,26 @@ const baseUrl = import.meta.env.BASE_URL;
   display: flex;
   justify-content: flex-start;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-column {
+    margin: 12px 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  .footer-link {
+    font-size: 14px;
+  }
+
+  .footer-column-title {
+    font-size: 12px;
+  }
+}
+
 </style>
