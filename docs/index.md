@@ -40,26 +40,26 @@ const componentData = [
     title: 'CSS classes',
     href: `${baseUrl}foundations/styling/web/unocss`,
     image: {src: 'css-classes-card.svg', alt: 'A paper with two curly braces.'},
-    description: 'Two liner explaining the contents of this card'
+    description: 'Explore how to use pre-defined utility-first CSS classes'
   },
   {
     title: 'Icons',
     href: `${baseUrl}components/icons/`,
     image: {src: 'icons-card.svg', alt: 'Three talk bubbles that are smiling and have closed eyes'},
-    description: 'Two liner explaining the contents of this card'
+    description: 'Browse our library of UI icons'
   },
   {
     title: 'Colors',
     href: `${baseUrl}foundations/styling/web/background-color#quick-reference`,
     image: {src: 'colors-card.svg', alt: 'Two abstract shapes in grey and black colors, one bigger than the other'},
-    description: 'Two liner explaining the contents of this card'
+    description: 'Get quick access to predefined color palettes for backgrounds, text and border'
   },
   {
     title: 'Tokens',
     href: `${baseUrl}foundations/styling/web/text-color#quick-reference`,
     image: {src: 'tokens-card.svg', alt: 'Two abstract shapes in grey and black colors, one bigger than the other'},
-    description: 'Two liner explaining the contents of this card'
-  },
+    description: 'Discover design tokens for managing color, typography, and spacing'
+  }
 ]
 
 </script>
@@ -117,10 +117,6 @@ const componentData = [
   right: 0;
   bottom: 0;
   left: 0;
-}
-
-.card-link:focus {
-  outline: none;
 }
 
 .card-image {
