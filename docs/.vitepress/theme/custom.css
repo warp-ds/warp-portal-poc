@@ -111,6 +111,11 @@ html.dark body {
 .VPNavBarMenuLink {
   font-weight: 700 !important;
 }
+
+.VPNavBarMenuLink.active {
+  --vp-c-brand-1: #F6D553;
+  text-decoration: underline;
+}
 /* make the border stand out a touch more */
 .vp-doc h2 {
   border-top-width: 2px;
@@ -283,13 +288,25 @@ html.dark body {
   display: none;
 }
 
+.DocSearch-Button .DocSearch-Search-Icon,
 .DocSearch-Button-Container .vp-icon {
   --vp-c-text-2: #FFFBD5;
+  color: var(--vp-c-text-2);
+}
+
+.VPNavBarHamburger {
+  --vp-c-text-1: #FFFBD5;
+}
+
+.VPNavBarHamburger.active {
+  --vp-c-text-2: #F6D553;
+  color: var(--vp-c-text-1);
 }
 
 .DocSearch-Button:hover {
   border-color: transparent;
 }
+
 .DocSearch-Button:hover .DocSearch-Search-Icon {
   color:#F6D553;
 }
