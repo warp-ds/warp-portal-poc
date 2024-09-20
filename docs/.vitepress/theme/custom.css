@@ -352,6 +352,12 @@ html.dark body {
     padding-left: 135px;
   }
 
+
+.VPHome[data-v-0dac6700] {
+  margin-bottom: 0;
+}
+
+
 .styled-image-block {
     background-color: #f5f5f5; /* Light grey background */
     padding: 16px;
