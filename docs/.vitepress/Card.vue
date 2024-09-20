@@ -11,29 +11,8 @@
 // </cards>
 -->
 
-<script setup>
-const props = defineProps({
-  imgurl: String,
-  imgalt: String,
-});
-</script>
-
 <template>
-  <article class="card-wrapper rounded-4 shadow-s overflow-hidden">
-    <div v-if="imgurl" class="flex items-center justify-center gap-8 overflow-hidden img-bg" style="aspect-ratio: 4 / 3">
-      <img :src="imgurl" :alt="imgalt">
-    </div>
-    <div class="do-caption p-16">
-      <slot></slot>
-    </div>
+  <article class="docs-card rounded-4 shadow-s focus-within:shadow-m hover:shadow-m overflow-hidden relative">
+    <slot></slot>
   </article>
 </template>
-
-<style lang="scss">
-.card-wrapper {
-  .img-bg {
-    background-color: #F9F9FA;
-  }
-}
-</style>
-

@@ -46,6 +46,15 @@ Warp's icon set is designed to help users understand actions and information, an
 
 <components-status react='released' vue='released' elements='released' />
 
+## WARP library
+Our icon library contains of ~300 icons. We also have access to the Streamline icon library with more than 17.000 icons that we can use and adjust in any way we like.
+We offer three different sizes, 16px, 24px and 32px.
+
+![alt text](https://i.imgur.com/OvMZBs9.jpg)
+
+### Need new icons?
+If you need a new icon or adjustments to a existing one, please make a request in #nmp-warp-design-system in Slack.
+
 ## Usage
 
 ### Typescript support

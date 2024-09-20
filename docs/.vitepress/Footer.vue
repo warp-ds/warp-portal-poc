@@ -5,8 +5,8 @@
     </div>
     <div class="footer-column">
       <h3 class="footer-column-title">Collaborate</h3>
-      <a class="footer-link" :href="`${baseUrl}collaborate/contribute/#adding-a-new-component`">Request new component</a>
-      <a class="footer-link" :href="`${baseUrl}collaborate/contribute/#requesting-changes-to-an-existing-component`">Request changes to a component</a>
+      <a class="footer-link" :href="`${baseUrl}collaborate/request-new-component`">Request new component</a>
+      <a class="footer-link" :href="`${baseUrl}collaborate/request-component-changes`">Reuqest component changes</a>
     </div>
     <div class="footer-column">
       <h3 class="footer-column-title">Help</h3>
