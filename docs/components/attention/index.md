@@ -3,11 +3,14 @@
   import Vue from './vue.md';
   import Elements from './elements.md';
   import iOS from './ios.md';
+  import data from './data.json';
+  import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
 # Attention
+{{ data.description }}
 
-<components-status react='released' vue='released' elements='released' ios='released' />
+<components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Examples
 

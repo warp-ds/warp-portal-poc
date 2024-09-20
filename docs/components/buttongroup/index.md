@@ -1,12 +1,14 @@
 <script setup>
   import Vue from './vue.md';
+  import data from './data.json';
+  import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
 # Button Group
 
-Button Group is used to group and align clickable elements, applying different visuals for different needs.
+{{ data.description }}
 
-<components-status vue='released' />
+<components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Example
 

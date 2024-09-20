@@ -1,11 +1,15 @@
-<script setup>
+<scrip setup>
   import Elements from './elements.md';
   import iOS from './ios.md';
+  import data from './data.json';
+  import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
-# Broadcast
 
-Broadcast automatically fetches broadcast messages for the current (or a given) url.
+# Broadcast
+{{ data.description }}
+
+<components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 Uses toast apis under the hood.
 

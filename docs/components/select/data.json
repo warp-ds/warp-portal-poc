@@ -1,10 +1,10 @@
 {
-  "title": "Breadcrumbs",
-  "description": "Breadcrumbs show the navigation structure for the current location.",
-  "category": "Layout",
+  "title": "Select",
+  "description": "A dropdown component allows users to choose a single value from a list of options in a limited space.",
+  "category": "Forms",
   "image": {
-    "src": "/warp-portal-poc/css/la05.jpg",
-    "alt": "Breadcrumbs component"
+    "src": "/warp-portal-poc/css/la03.jpg",
+    "alt": "Select component"
   },
   "frameworks": [
     {

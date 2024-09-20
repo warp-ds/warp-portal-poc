@@ -1,13 +1,15 @@
 <script setup>
   import React from './react.md';
   import Vue from './vue.md';
+  import data from './data.json';
+  import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
 # Slider
 
-A slider is an input where the user selects a value from within a given range. The precise value, however, is not necessarily considered important.
+{{ data.description }}
 
-<components-status react='released' vue='released' />
+<components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Examples
 

@@ -1,13 +1,14 @@
 <script setup>
   import Android from './android.md';
   import iOS from './ios.md';
+  import data from './data.json';
+  import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
 # Text
+{{ data.description }}
 
-Text is used for showing text in a layout. Pre-defined styles provide a font and size. 
-
-<components-status android='released' ios='released' />
+<components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Example
 
@@ -21,7 +22,7 @@ Text is used for showing text in a layout. Pre-defined styles provide a font and
 
 ## Frameworks
 
-<tabs-content> 
+<tabs-content>
   <template #android>
     <android />
   </template>

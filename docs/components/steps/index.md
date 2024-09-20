@@ -1,15 +1,17 @@
 <script setup>
-import Vue from './vue.md';
-import React from './react.md';
-import Android from './android.md';
-import iOS from './ios.md';
+  import Vue from './vue.md';
+  import React from './react.md';
+  import Android from './android.md';
+  import iOS from './ios.md';
+  import data from './data.json';
+  import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
 # Steps
 
-The steps component is built to handle user journeys, making it clear to the end user where they are in the process.
+{{ data.description }}
 
-<components-status react='released' vue='released' android='released' ios='released'/>
+<components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Examples
 

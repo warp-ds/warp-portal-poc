@@ -1,10 +1,10 @@
 {
-  "title": "Button",
-  "description": "Buttons are used to perform actions, with different visuals for different needs.",
-  "category": "Actions",
+  "title": "Steps",
+  "description": "The steps component is built to handle user journeys, making it clear to the end user where they are in the process.",
+  "category": "Feedback",
   "image": {
-    "src": "/warp-portal-poc/css/la06.jpg",
-    "alt": "Button component"
+    "src": "/warp-portal-poc/css/la05.jpg",
+    "alt": "Steps component"
   },
   "frameworks": [
     {
@@ -13,10 +13,6 @@
     },
     {
       "name": "Vue",
-      "status": "released"
-    },
-    {
-      "name": "Elements",
       "status": "released"
     },
     {

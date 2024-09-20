@@ -1,0 +1,18 @@
+{
+  "title": "Button Group",
+  "description": "Button group is a grouping concept for buttons",
+  "category": "Actions",
+  "image": {
+    "src": "/warp-portal-poc/css/la13.jpg",
+    "alt": "Button group component"
+  },
+  "frameworks": [
+    {
+      "name": "Vue",
+      "status": "released"
+    },
+    {
+      "name": "Figma"
+    }
+  ]
+}

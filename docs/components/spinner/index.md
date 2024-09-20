@@ -1,16 +1,18 @@
 <script setup>
   import iOS from './ios.md';
+  import data from './data.json';
+  import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
 # Spinner
 
-A spinner is an animated spinning icon that informs users about the loading of content.
+{{ data.description }}
+
+<components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ::: warning iOS only
 For the web implementation of a "spinner", see [CSS - Animation - Spinner](../../foundations/styling/web/animation#spinner).
 :::
-
-<components-status ios='released' />
 
 ## Example
 

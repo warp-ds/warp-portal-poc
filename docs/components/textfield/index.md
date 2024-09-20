@@ -4,13 +4,15 @@
   import Elements from './elements.md';
   import Android from './android.md';
   import iOS from './ios.md';
+  import data from './data.json';
+  import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
 # Text Field
 
-A single-line text input component.
+{{ data.description }}
 
-<components-status react='released' vue='released' elements='released' android='released' ios='released' />
+<components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Example
 

@@ -1,13 +1,14 @@
 <script setup>
   import Vue from './vue.md';
   import React from './react.md';
+  import data from './data.json';
+  import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
 # Radio buttons
+{{ data.description }}
 
-Radio buttons allow users to select a single option from a list of mutually exclusive options that are grouped together.
-
-<components-status react='released' vue='released' />
+<components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Example
 

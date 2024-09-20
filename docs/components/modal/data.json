@@ -1,10 +1,10 @@
 {
-  "title": "Button",
-  "description": "Buttons are used to perform actions, with different visuals for different needs.",
-  "category": "Actions",
+  "title": "Modal",
+  "description": "Modals (or dialogs) display important information that users need to acknowledge.",
+  "category": "Overlays",
   "image": {
-    "src": "/warp-portal-poc/css/la06.jpg",
-    "alt": "Button component"
+    "src": "/warp-portal-poc/css/la10.jpg",
+    "alt": "Modal component"
   },
   "frameworks": [
     {

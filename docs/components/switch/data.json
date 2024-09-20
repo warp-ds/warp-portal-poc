@@ -1,0 +1,22 @@
+{
+  "title": "Switch",
+  "description": "The Switch component allows users to toggle between validity for a condition.",
+  "category": "Forms",
+  "image": {
+    "src": "/warp-portal-poc/css/la06.jpg",
+    "alt": "Switch component"
+  },
+  "frameworks": [
+    {
+      "name": "React",
+      "status": "released"
+    },
+    {
+      "name": "Vue",
+      "status": "released"
+    },
+    {
+      "name": "Figma"
+    }
+  ]
+}

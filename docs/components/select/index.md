@@ -2,14 +2,16 @@
   import Vue from './vue.md';
   import React from './react.md';
   import Elements from './elements.md';
-
+  import data from './data.json';
+  import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
 # Select
+{{ data.description }}
 
-A dropdown component for selecting a single value. Selects (sometimes known as "dropdowns" or "pickers") allow users to choose from a list of options in a limited space. The list of options can change based on the context.
+Selects (sometimes known as "dropdowns" or "pickers") allow users to choose from a list of options in a limited space. The list of options can change based on the context.
 
-<components-status react='released' vue='released' elements='released' />
+<components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Example
 
