@@ -37,14 +37,8 @@ const baseUrl = import.meta.env.BASE_URL;
 }
 @media (min-width: 1440px) {
   .has-sidebar ~ .footer {
-    width: calc(
-      100% - (
-        (100% - (var(--vp-layout-max-width) - 64px)) / 2 + var(--vp-sidebar-width) - 32px
-      )
-    );
-    margin-left: calc(
-      (100% - (var(--vp-layout-max-width) - 64px)) / 2 + var(--vp-sidebar-width) - 32px
-    ); 
+    width: calc(100% - ((100% - (var(--vp-layout-max-width) - 64px)) / 2 + var(--vp-sidebar-width) - 32px));
+    margin-left: calc((100% - (var(--vp-layout-max-width) - 64px)) / 2 + var(--vp-sidebar-width) - 32px); 
   }
 }
 

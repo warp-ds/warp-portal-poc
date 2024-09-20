@@ -107,10 +107,6 @@ html.dark body {
   background-repeat: no-repeat;
 }
 
-/* weight was 500, finnfont doesnt ship 'medium', but might be fun to actually ship the right fonts here? */
-.VPNavBarMenuLink {
-  font-weight: 700 !important;
-}
 
 .VPNavBarMenuLink.active {
   --vp-c-brand-1: #F6D553;
@@ -257,13 +253,13 @@ html.dark body {
 }
 
 .VPNavBar .wrapper .container .content {
-  padding-left: 0;
-  padding-right: 0;
+  background-color: #131B2D;
 }
 
 .VPLink.VPNavBarMenuLink {
   --vp_c-text-1: #FFFBD5;
   color: var(--vp_c-text-1);
+  font-weight: 400;
 }
 .VPLink.VPNavBarMenuLink:hover {
   --vp_c-text-1: #F6D553;
@@ -319,14 +315,41 @@ html.dark body {
   display: none;
  }
 
-@media (min-width: 768px) {
-.VPNavBar .wrapper .container .content .content-body {
-  display: grid;
-  grid-template-areas:
-    "get-started foundations components blog search"
-}
+ @media (min-width: 768px) {
+  .VPNavBar .wrapper .container .content .content-body {
+    display: grid;
+    grid-template-areas: 
+      "navlinks search";
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .VPNavBarSearch {
+    grid-area: search;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .VPNavBar .wrapper .container .content .content-body .VPNavBarMenu {
+    grid-area: navlinks;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .VPLink.VPNavBarMenuLink:nth-child(5) {
+    position: absolute;
+    right: 0;
+  }
 }
 
- .VPNavBarSearch {
-  grid-area: search;
- }
+
+
+
+
+
