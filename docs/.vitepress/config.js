@@ -193,9 +193,9 @@ export default defineConfig({
     outline: 'deep',
     socialLinks: [{ icon: 'github', link: 'https://github.com/warp-ds' }],
     nav: [
-      { text: 'Get started', link: '/get-started' },
-      { text: 'Foundations', link: '/foundations' },
-      { text: 'Components', link: '/components' },
+      { text: 'Get started', link: '/get-started/' },
+      { text: 'Foundations', link: '/foundations/' },
+      { text: 'Components', link: '/components/' },
       { text: 'POCs', link: '/pocs' },
       {
         text: 'What\'s new',
@@ -215,8 +215,8 @@ export default defineConfig({
         {
           text: 'Help',
           items: [
-            { text: 'Support', link: '/help/support' },
-            { text: 'Report bugs/errors', link: '/help/report-bugs' },
+            { text: 'Support', link: '/help/support/' },
+            { text: 'Report bugs/errors', link: '/help/report-bugs/' },
           ]
         }
       ],
@@ -257,8 +257,8 @@ export default defineConfig({
             { text: 'Designers',
               collapsed: true,
               items: [
-                { text: 'Warp in Figma', link: '/get-started/designers/warp-in-figma' },
-                { text: 'Designing for multibrand', link: '/get-started/designers/designing-for-multibrand' },
+                { text: 'Warp in Figma', link: '/get-started/designers/warp-in-figma/' },
+                { text: 'Designing for multibrand', link: '/get-started/designers/designing-for-multibrand/' },
                 { text: 'Migrate from Fabric', link: '/get-started/designers/migrate-from-fabric/' },
                 { text: 'Building custom components with Warp', link: '/get-started/designers/custom-components/' },
               ]
