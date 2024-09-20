@@ -5,7 +5,9 @@ WARP offers light and dark mode for all brands
 ### Support in WARP
 All components and tokens in WARP are built with dark mode in mind. Therefore there’s not much you need to consider when creating your designs.
 
-![alt text](https://i.imgur.com/OvMZBs9.jpg)
+::: image-block
+![Empty input fields, dropdowns and text areas displayed in dark and light mode](/images/foundations/dark-mode.png)
+:::
 
 ## Switch to dark mode
 

@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      markdown-it-container:
+        specifier: ^4.0.0
+        version: 4.0.0
     devDependencies:
       '@itsy/okay':
         specifier: 0.0.4
@@ -81,18 +85,12 @@ packages:
     peerDependencies:
       '@algolia/client-search': '>= 4.9.1 < 6'
       algoliasearch: '>= 4.9.1 < 6'
-    peerDependenciesMeta:
-      '@algolia/client-search':
-        optional: true
 
   '@algolia/autocomplete-shared@1.9.3':
     resolution: {integrity: sha512-Wnm9E4Ye6Rl6sTTqjoymD+l8DjSTHsHboVRYrKgEt8Q7UHm9nYbqhN/i0fhUYA3OAEH7WA8x3jfpnmJm3rKvaQ==}
     peerDependencies:
       '@algolia/client-search': '>= 4.9.1 < 6'
       algoliasearch: '>= 4.9.1 < 6'
-    peerDependenciesMeta:
-      '@algolia/client-search':
-        optional: true
 
   '@algolia/cache-browser-local-storage@4.24.0':
     resolution: {integrity: sha512-t63W9BnoXVrGy9iYHBgObNXqYXM3tYXCjDSHeNwnsc324r4o5UiVKUiAB4THQ5z9U5hTj6qUvwg/Ez43ZD85ww==}
@@ -1150,6 +1148,9 @@ packages:
   mark.js@8.11.1:
     resolution: {integrity: sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==}
 
+  markdown-it-container@4.0.0:
+    resolution: {integrity: sha512-HaNccxUH0l7BNGYbFbjmGpf5aLHAMTinqRZQAEQbMr2cdD3z91Q6kIo1oUn1CQndkT03jat6ckrdRYuwwqLlQw==}
+
   markdown-it@14.1.0:
     resolution: {integrity: sha512-a54IwgWPaeBCAAsv13YgmALOF1elABB08FxO9i+r4VFk5Vl4pKokRPeX8u5TCgSsPi6ec1otfLjdOpVcgbpshg==}
     hasBin: true
@@ -1492,15 +1493,13 @@ snapshots:
   '@algolia/autocomplete-preset-algolia@1.9.3(@algolia/client-search@5.2.5)(algoliasearch@4.24.0)':
     dependencies:
       '@algolia/autocomplete-shared': 1.9.3(@algolia/client-search@5.2.5)(algoliasearch@4.24.0)
-      algoliasearch: 4.24.0
-    optionalDependencies:
       '@algolia/client-search': 5.2.5
+      algoliasearch: 4.24.0
 
   '@algolia/autocomplete-shared@1.9.3(@algolia/client-search@5.2.5)(algoliasearch@4.24.0)':
     dependencies:
-      algoliasearch: 4.24.0
-    optionalDependencies:
       '@algolia/client-search': 5.2.5
+      algoliasearch: 4.24.0
 
   '@algolia/cache-browser-local-storage@4.24.0':
     dependencies:
@@ -1530,8 +1529,7 @@ snapshots:
       '@algolia/requester-common': 4.24.0
       '@algolia/transporter': 4.24.0
 
-  '@algolia/client-common@5.2.5':
-    optional: true
+  '@algolia/client-common@5.2.5': {}
 
   '@algolia/client-personalization@4.24.0':
     dependencies:
@@ -1550,7 +1548,6 @@ snapshots:
       '@algolia/client-common': 5.2.5
       '@algolia/requester-browser-xhr': 5.2.5
       '@algolia/requester-node-http': 5.2.5
-    optional: true
 
   '@algolia/logger-common@4.24.0': {}
 
@@ -1579,7 +1576,6 @@ snapshots:
   '@algolia/requester-browser-xhr@5.2.5':
     dependencies:
       '@algolia/client-common': 5.2.5
-    optional: true
 
   '@algolia/requester-common@4.24.0': {}
 
@@ -1590,7 +1586,6 @@ snapshots:
   '@algolia/requester-node-http@5.2.5':
     dependencies:
       '@algolia/client-common': 5.2.5
-    optional: true
 
   '@algolia/transporter@4.24.0':
     dependencies:
@@ -2674,6 +2669,8 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.5.0
 
   mark.js@8.11.1: {}
+
+  markdown-it-container@4.0.0: {}
 
   markdown-it@14.1.0:
     dependencies:

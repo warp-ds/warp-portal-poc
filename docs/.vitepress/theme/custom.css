@@ -117,7 +117,6 @@ html.dark body {
     width: 100%; /* Full width of parent */
     position: relative; /* For absolute positioning of image */
     overflow: hidden; /* To hide any overflow of the image */
-    aspect-ratio: 4 / 3; /* Maintain a 4:3 aspect ratio */
     display: flex;
     align-items: center; /* Center image vertically */
     justify-content: center; /* Center image horizontally */

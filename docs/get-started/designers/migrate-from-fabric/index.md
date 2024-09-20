@@ -6,7 +6,9 @@ Fabric (the old FINN design system) is being replaced by WARP. You will have to 
 
 Make sure all Fabric libraries are disabled so you don't accidentally use styles or components that are not connected to WARP.
 
-![img info](https://i.imgur.com/OvMZBs9.jpg)
+::: image-block
+![Fabric logo pointed to the WARP logo](/images/get-started/migration.png)
+:::
 
 **FINN first**
 The default styling for all components in WARP is FINN, you can switch to other brands whenever you want thanks to Figma variables and tokens. Read more about this in "Switch brands"

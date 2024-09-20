@@ -7,7 +7,9 @@ The products we build in SMP should be accessible and inclusive for everyone. SM
 
 We’re aiming for WARP to meet the accessibility standards and component and style we provide should be accessible.
 
-![alt text](https://i.imgur.com/OvMZBs9.jpg)
+::: image-block
+![Overview of different types font styles](/images/foundations/a11y-icon.png)
+:::
 
 ### Accessibility playbook
 The SMP a11y team is working on a playbook which contains what we need to know in order to work efficiently with accessibility. We will link to that here when available.
