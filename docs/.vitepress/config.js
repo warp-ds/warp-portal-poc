@@ -180,9 +180,9 @@ export default defineConfig({
     outline: 'deep',
     socialLinks: [{ icon: 'github', link: 'https://github.com/warp-ds' }],
     nav: [
-      { text: 'Get started', link: '/get-started' },
-      { text: 'Foundations', link: '/foundations' },
-      { text: 'Components', link: '/components' },
+      { text: 'Get started', link: '/get-started',  activeMatch: '/get-started/$', },
+      { text: 'Foundations', link: '/foundations',  activeMatch: '/foundations/$', },
+      { text: 'Components', link: '/components',  activeMatch: '/components/$', },
       {
         text: 'What\'s new',
         link: '/blog/',
