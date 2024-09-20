@@ -307,7 +307,7 @@ html.dark body {
   color:#F6D553;
 }
 
-.VPNavBarAppearance.appearance {
+.VPNavBarAppearance.appearance,.VPNavScreenAppearance.appearance {
  display: none;
 }
 
@@ -347,6 +347,13 @@ html.dark body {
     right: 0;
   }
 }
+
+  .VPNavBar.has-sidebar .content[data-v-3a828f6b] {
+    padding-left: 135px;
+  }
+
+
+
 
 
 
