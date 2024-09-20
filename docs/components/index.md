@@ -34,7 +34,9 @@ const filteredComponents = computed(() => {
   return componentData.filter(component => {
     const matchesQuery = component.title.toLowerCase().includes(lowerQuery);
     const matchesFramework = frameworks.length === 0 ||
-      component.frameworks.some(framework => frameworks.includes(framework.name));
+      frameworks.every(framework =>
+        component.frameworks.some(componentFramework => componentFramework.name === framework)
+      );
     return matchesQuery && matchesFramework;
   });
 });
@@ -64,6 +66,8 @@ const showAll = () => {
     --w-text: #333;
     --w-text-inverted: #eee;
     --w-border-radius: 4px;
+    --w-panel-bg: #f9f9f9;
+    --w-input-bg: #fff;
   }
   /* set up as custom default styling somewhere else, default.css perhaps?  */
   .input-text{
@@ -71,6 +75,7 @@ const showAll = () => {
     color: var(--w-text);
     padding: 4px 8px;
     border-radius: var(--w-border-radius);
+    background-color: var(--w-input-bg);
   }
   .input-text:focus{
     border: 1px solid var(--w-border-focus);
@@ -94,40 +99,46 @@ const showAll = () => {
 # Overview
 All WARP components for Figma, React, Vue, Elements, iOS, and Android.
 
-<div>
-  <!-- Input field for text filtering -->
-  <input
-    v-model="query"
-    placeholder="Filter components"
-    class="input-text"
-  />
-
-  <!-- Row of buttons for framework filtering -->
-  <div class="flex flex-wrap gap-4 pt-8 mb-16">
-    <button
-      v-for="framework in frameworkNames"
-      :key="framework"
-      @click="toggleFramework(framework)"
-      :class="[
-        'button',
-        selectedFrameworks.includes(framework)
-          ? 'button-active'
-          : ''
-      ]"
-    >
-      {{ framework }}
-    </button>
-    <button
-      @click="showAll"
-      :class="[
-        'button',
-        selectedFrameworks.length === 0
-          ? 'button-active'
-          : ''
-      ]"
-    >
-      All
-    </button>
+## Filters
+<section>
+  <div class="p-16 rounded-8 mb-16" style="background-color:var(--w-panel-bg)">
+    <div class="pt-8 mb-16">
+      <!-- Input field for text filtering -->
+      <label class="block bold" for="filter-input">By name</label>
+      <input
+        v-model="query"
+        name="filter-input"
+        class="input-text"
+      />
+    </div>
+    <p class="block bold mb-4!">Supported on platform</p>
+    <!-- Row of buttons for framework filtering -->
+    <div class="flex flex-wrap mb-16 gap-4 align-right">
+      <button
+        v-for="framework in frameworkNames"
+        :key="framework"
+        @click="toggleFramework(framework)"
+        :class="[
+          'button',
+          selectedFrameworks.includes(framework)
+            ? 'button-active'
+            : ''
+        ]"
+      >
+        {{ framework }}
+      </button>
+      <button
+        @click="showAll"
+        :class="[
+          'button',
+          selectedFrameworks.length === 0
+            ? 'button-active'
+            : ''
+        ]"
+      >
+        All
+      </button>
+    </div>
   </div>
 
   <!-- Display filtered components -->
@@ -153,4 +164,4 @@ All WARP components for Figma, React, Vue, Elements, iOS, and Android.
       <p class="m-16! text-s">{{ component.description }}</p>
     </card>
   </cards>
-</div>
+</section>

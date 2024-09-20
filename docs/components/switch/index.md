@@ -1,13 +1,14 @@
 <script setup>
   import Vue from './vue.md';
   import React from './react.md';
+  import data from './data.json';
+  import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
 # Switch
+{{ data.description }}
 
-The Switch component allows users to toggle between validity for a condition.
-
-<components-status react='released' vue='released' />
+<components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Examples
 
@@ -21,7 +22,7 @@ The Switch component allows users to toggle between validity for a condition.
 
 ## Frameworks
 
-<tabs-content> 
+<tabs-content>
   <template #react>
     <react />
   </template>

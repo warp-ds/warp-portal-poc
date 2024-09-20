@@ -3,6 +3,8 @@
   import Elements from './elements.md';
   import React from './react.md';
   import OtherTable from '../../.vitepress/OtherTable.vue';
+  import data from './data.json';
+  import { mapFrameworkStatuses } from '../utils.js';
 
   const deprecatedIcons = [
   { old: 'AlertWarning', new: 'Warning' },
@@ -41,10 +43,9 @@
 </script>
 
 # Icons
+{{ data.description }}
 
-Warp's icon set is designed to help users understand actions and information, and to draw attention to elements.
-
-<components-status react='released' vue='released' elements='released' />
+<components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## WARP library
 Our icon library contains of ~300 icons. We also have access to the Streamline icon library with more than 17.000 icons that we can use and adjust in any way we like.

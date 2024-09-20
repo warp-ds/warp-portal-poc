@@ -1,0 +1,19 @@
+{
+  "title": "Text",
+  "description": "Text is used for showing text in a layout. Pre-defined styles provide a font and size.",
+  "category": "Layout",
+  "image": {
+    "src": "/warp-portal-poc/css/la08.jpg",
+    "alt": "Text component"
+  },
+  "frameworks": [
+    {
+      "name": "Android",
+      "status": "released"
+    },
+    {
+      "name": "iOS",
+      "status": "released"
+    }
+  ]
+}

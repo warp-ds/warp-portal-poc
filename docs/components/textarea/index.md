@@ -1,13 +1,14 @@
 <script setup>
   import Vue from './vue.md';
   import React from './react.md';
+  import data from './data.json';
+  import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
 # Text Area
+{{ data.description }}
 
-A multiline text input component.
-
-<components-status react='released' vue='released' />
+<components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Example
 
@@ -26,7 +27,7 @@ If the field is labeled by a separate element, an `aria-labelledby` prop must be
 
 ## Frameworks
 
-<tabs-content> 
+<tabs-content>
   <template #react>
    <react />
   </template>
