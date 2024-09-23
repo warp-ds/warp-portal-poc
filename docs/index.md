@@ -56,7 +56,7 @@ const componentData = [
   },
   {
     title: 'Tokens',
-    href: `${baseUrl}foundations/styling/web/text-color#quick-reference`,
+    href: `${baseUrl}foundations/tokens`,
     image: {src: 'tokens-card.svg', alt: 'Two abstract shapes in grey and black colors, one bigger than the other'},
     description: 'Discover design tokens for managing color, typography, and spacing'
   }
