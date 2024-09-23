@@ -4,13 +4,14 @@
   import Elements from './elements.md';
   import Android from './android.md';
   import iOS from './ios.md';
+  import data from './data.json';
+  import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
 # Pill
+{{ data.description }}
 
-Pill is a type of button that is often used as a filter, but can also be used as a rounded button for overlays, etc.
-
-<components-status react='released' vue='released' elements='released' android='released' ios='released' />
+<components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Example
 
@@ -24,7 +25,7 @@ Pill is a type of button that is often used as a filter, but can also be used as
 
 ## Frameworks
 
-<tabs-content> 
+<tabs-content>
   <template #react>
     <react />
   </template>

@@ -1,10 +1,10 @@
 {
-  "title": "Button",
-  "description": "Buttons are used to perform actions, with different visuals for different needs.",
-  "category": "Actions",
+  "title": "Attention",
+  "description": "",
+  "category": "Overlays",
   "image": {
-    "src": "/warp-portal-poc/css/la06.jpg",
-    "alt": "Button component"
+    "src": "/warp-portal-poc/css/la12.jpg",
+    "alt": "Attention component"
   },
   "frameworks": [
     {
@@ -17,10 +17,6 @@
     },
     {
       "name": "Elements",
-      "status": "released"
-    },
-    {
-      "name": "Android",
       "status": "released"
     },
     {

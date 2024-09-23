@@ -1,3 +1,24 @@
+
+/*  Warp color tokens  */
+
+/* set light mode colors here as default value */
+:root {
+   --w-bg-color: #ffffff;
+
+}
+
+/* set dark mode color here */
+@media (prefers-color-scheme: dark) {
+  :root{
+    /* --w-bg-color: #000000; */
+  }
+}
+
+body {
+  --vp-c-bg: var(--w-bg-color);
+}
+
+
 :root {
   --vp-c-brand-1: #BE3830;
   --vp-c-brand-2: #c63f36;

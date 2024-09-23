@@ -3,13 +3,14 @@
   import Elements from './elements.md';
   import React from './react.md';
   import iOS from './ios.md';
+  import data from './data.json';
+  import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
 # Expandable
+{{ data.description }}
 
-Expandable is a layout component used for creating expandable content areas on a page.
-
-<components-status react='released' vue='released' elements='released' ios='released'/>
+<components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Examples
 
