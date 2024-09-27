@@ -44,5 +44,5 @@ component's documentation page. For example, here's the [button page](/component
 ## Eik support
 We publish `@warp-ds/vue` package to EIK cdn, eg:
 ```
-https://assets.finn.no/pkg/@warp-ds/vue/v1/warp-vue.eik.js
+https://assets.finn.no/pkg/@warp-ds/vue/v2/warp-vue.eik.js
 ```

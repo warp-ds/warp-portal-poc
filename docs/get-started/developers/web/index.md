@@ -178,15 +178,16 @@ Add this to your `index.html`:
 In order to apply your application's theme, a respective brand CSS should be added to the document.
 Brand specific stylesheets are available via our Eik CDN server:
 
-- Finn: https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/finn-no.css
-- Tori: https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/tori-fi.css
+- Finn: https://assets.finn.no/pkg/@warp-ds/css/v2/tokens/finn-no.css
+- Tori: https://assets.finn.no/pkg/@warp-ds/css/v2/tokens/tori-fi.css
+- DBA: https://assets.finn.no/pkg/@warp-ds/css/v2/tokens/dba-dk.css
 
 Add this to your `index.html`:
 
 ```html
 <link
   rel="stylesheet"
-  href="https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/finn-no.css"
+  href="https://assets.finn.no/pkg/@warp-ds/css/v2/tokens/finn-no.css"
 />
 ```
 
@@ -195,11 +196,11 @@ Add this to your `index.html`:
 ```html
 <link
   rel="stylesheet"
-  href="https://assets.finn.no/pkg/@warp-ds/css/v1/resets.css"
+  href="https://assets.finn.no/pkg/@warp-ds/css/v2/resets.css"
 />
 <link
   rel="stylesheet"
-  href="https://assets.finn.no/pkg/@warp-ds/css/v1/components.css"
+  href="https://assets.finn.no/pkg/@warp-ds/css/v2/components.css"
 />
 ```
 
