@@ -67,16 +67,12 @@ Win: ctrl + alt + O
 ![Figma dropdown highlighting the option "libraries"](/images/get-started/figma-dropdown-libraries.jpg)
 :::
 
-#### Enable the libraries
-Search and enable the following libraries:
+#### Enabled libraries
+We've automatically added the following libraries whenever you create a new file within the Nordic Marketplaces organisation:
 
-* Warp - Components 2.0 (automatically added)
-* Warp - Icons (automatically added)
-* FINN - Design tokens (optional library for typography styles)
-* Tori - Design tokens (optional library for typography styles) 
-* DBA - Design tokens (optional library for typography styles) 
+* Warp - Components
+* Warp - Icons
 
 ### Removing other libraries
 
-#### Non WARP libraries
-You might want to consider disabling other libraries to not accidentally pick any non WARP components. All WARP libraries are marked with the "Warp"-prefix
+You might want to consider disabling other libraries to not accidentally pick any non-WARP components. All WARP libraries are marked with the "Warp"-prefix.
