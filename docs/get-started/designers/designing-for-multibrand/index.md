@@ -23,9 +23,12 @@ Differences in the brands like typography, spacing and language can cause the co
 :::
 
 ### Learn how to use auto layout
-If you don't already know how it works, consult with a visual designer in your team and see if they can show you the ropes. Otherwise there are several great resources to get you started.
+If you don't already know how it works, consult with a visual designer in your team and see if they can show you the ropes. Otherwise there are several great resources to get you started:
 
-![img info](https://i.imgur.com/OvMZBs9.jpg)
+- [How to use auto layout](https://www.figma.com/file/exuWKnSIbdxvMBCRdyl6A9/Auto-layout-Guidelines?type=design&node-id=0-1&mode=design)
+- [Learn Figma Auto Layout in 10 Minutes (Everything You Need To Know)](https://www.youtube.com/watch?v=To_ADCVSg5g)
+- [Using auto layout](https://help.figma.com/hc/en-us/articles/5731482952599-Using-auto-layout)
+
 
 ## Switch brands
 When working with multiple brands it's important to be able to see what your designs look like with another brand.
@@ -49,13 +52,13 @@ Switching brands will change the tokens for all components which resulting colou
 Switching brands will change the tokens for all components which resulting colours, typography, border radiuses and other things to be different for each brand.
 
 ::: image-block
-![Figna interface of a selected button pointing to the switch brand functionality](/images/get-started/variables-in-figma2.png)
+![Figma interface of a selected button pointing to the switch brand functionality](/images/get-started/variables-in-figma2.png)
 :::
 
 Select a WARP component and select change variable mode in Layer settings in the right sidebar.
 
 ::: image-block
-![Figna interface higtligting the selected frame is set to "Tori Light"](/images/get-started/variables-in-figma3.png)
+![Figma interface higtligting the selected frame is set to "Tori Light"](/images/get-started/variables-in-figma3.png)
 :::
 
 Tip! You can also switch brands on entire frames and everything using variables will change.
