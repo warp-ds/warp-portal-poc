@@ -1,50 +1,35 @@
-# Welcome
+# Get started
+Begin crafting and building great product experiences with the WARP design system’s UI foundations, components, and patterns.
 
-## Intro
-Hello 👋 Welcome to the WARP design system. 
-
-**WARP design system**
-Whether you are a novice or an expert working with design systems, this Figma file contains everything you need to know to get started with using WARP for SMP
-WARP serves as a single source of truth for designers, developers, and other stakeholders to ensure consistency and coherence across all brands. 
-The goal is to reduce ambiguity, confusion and to save time and resources when building and developing our marketplaces. 
-
-![alt text](https://i.imgur.com/OvMZBs9.jpg)
+## Mission
+Our mission is to equip teams with high-quality tools and help them conquer must-win battles.
 
 ## Vision
-To create a design system that makes designing and developing in SMP so quick and easy that you'd have to be an idiot not to use it.
+Our vision is to be an inclusive design system that helps teams maintain consistency and minimize waste with clearly defined building blocks. We provide efficient tools to succeed through structured flexibility.
 
-**Our mission**
-To create a multi-brand design system for SMP that:
+## Values
+Our values drive to create things with humility, clarity, accessibility, collaboration and intent in mind.
 
-* Is easy to use
-* Is easy to maintain
-* Prioritises simplicity over complexity
-* Prioritises quality over speed
-* Promotes design consistency
-* Meets accessibility guidelines
-* Considers the needs of all SMP brands and verticals
+- **Humility:** we acknowledge that building and using a system properly is hard. Users do their best to understand every implication of the system – we do our best to help them understand.
 
-::: image-block
-![Sticky notes on a wall](/images/get-started/sticky-notes.jpg)
-:::
+- **Clarity:** we avoid ambiguity. We help people act with confidence by clarifying the details and eliminating doubt.
+
+- **Accessibility:** we provide quality through clear standards, and we go beyond compliance and bare minimums.
+
+- **Collaboration:** we recognize the importance of contributions, and we actively build a thriving community.
+
+- **Intent:** we make decisions confidently and with clear intent, and we don't shy away from them in fear of failure. We celebrate and learn from our mistakes.
 
 
-**What do you mean slow down, are you crazy!?**
-"Successful design systems move more slowly than the products they support. That's a feature, not a bug. The slower pace doesn't mean that design systems have to be a bottleneck to shipping product."
-— Josh Clark, [Ship faster by building design systems slower](https://bigmedium.com/ideas/design-system-pace-layers-slow-fast.html) on bigmedium.com
+## Principles
+Our principles direct our actions to ensure they reflect our values.
 
-::: image-block
-![A quotation "Slow down to speed up"](/images/get-started/slow-down-to-speed-up.jpg)
-:::
+- **Composability over rigidity:** we believe in structured flexibility and we offer it by breaking down building blocks into smaller parts. We believe that opinionated but adaptable building blocks provide sufficient consistency without being overly rigid. We focus on building modular rather than rigid components with complicated configurations.
 
-**Prioritise Quality over speed**
-By taking our time, working thoroughly, and being certain of the decisions we make (through testing and iteration), we are helping to:
+- **Quality & stability over quantity & speed:** we invest time and effort to equip product teams with the tools they need to speed up their process rather than chasing quick wins. We minimize waste by thoroughly codifying patterns. We make sure our existing components maintain high quality before creating new ones.
 
-* Ensure that our foundation is solid
-* Curate quality assured components
-* Enable innovation for our users
-* ... eventually provide speed for things that have been tried and tested
+- **Accessibility over aesthetics:** we focus on inclusive rather than visually dazzling patterns and elements. We ensure quality through clear standards for accessibility. We strive to go beyond compliance and bare minimums to lay a foundation for true inclusivity.
 
-::: image-block
-![A quotation "Slow down to speed up"](/images/get-started/quality-cant-be-rushed.jpg)
-:::
+- **Coherence over infinite freedom:** we take care of the complexity and do the heavy lifting so you don't have to. We help teams maintain consistency and a holistic user experience. We optimize the system by learning about the needs of product teams rather than solving their problems.
+
+- **Community over isolation:** we maintain and govern the system to ensure a holistic product experience. We fail and learn together with the teams rather than chasing dreams of technical excellence in isolation. We foster a strong community of people rather than a walled garden of technology.
