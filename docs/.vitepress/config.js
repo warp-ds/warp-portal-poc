@@ -239,18 +239,12 @@ export default defineConfig({
                 {
                   text: 'Android',
                   collapsed: true,
-                  items: [
-                    { text: 'Setup', link: '/get-started/developers/android/' },
-                    { text: 'Building custom components with Warp', link: '/get-started/developers/android/custom-components/' },
-                  ]
+                  link: '/get-started/developers/android/'
                 },
                 {
                   text: 'iOS',
                   collapsed: true,
-                  items: [
-                    { text: 'Setup', link: '/get-started/developers/ios/' },
-                    { text: 'Building custom components with Warp', link: '/get-started/developers/ios/custom-components/' },
-                  ]
+                  link: '/get-started/developers/ios/'
                 },
               ],
             },
