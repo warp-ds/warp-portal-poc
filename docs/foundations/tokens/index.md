@@ -1,12 +1,23 @@
 # Tokens
-TODO: description
+Design tokens serve as the definitive source for naming and storing visual properties.
 
 ## Supported brands
 WARP is supporting multiple Schibsted Marketplace brands, we’re currently working on adding more brands and support for each brand.
 
-::: image-block
-![Status overview showing FINN and Tori is live](/images/foundations/supported-brands.png)
-:::
+<!--- 
+TODO
+Add token support status on brands: https://nmp-jira.atlassian.net/browse/WARP-591
+(dtalakoubi404 - Sep 30 2024)
+-->
+
+| Brand       | Status      |
+| ----------- | ----------- |
+| FINN        | Live ✅     |
+| Tori        | Live ✅     |
+| DBA         | Live ✅     |
+| Blocket     | TBA ⌛      |
+| Bilbasen    | TBA ⌛      |
+| Oikotie     | TBA ⌛      |
 
 ## Design tokens
 
@@ -19,35 +30,4 @@ By defining design tokens, we establish a common language that can be easily tra
 
 ::: image-block
 ![Displays how the hexvalue "#0063FB" points to the color token "Blue-600", used in the conponent token "color-button-primary-background", ultimately pointing to the button component](/images/foundations/design-token-structure.png)
-:::
-
-### Semantic tokens
-TODO: description
-
-### Custom components and design
-Semantic tokens are not connected to any specific component and can be used to create custom designs that are still multi-brand friendly.
-
-If you are building a component that doesn’t exist in WARP you can still use semantic tokens and get support for dark mode and all other SMP brands for free.
-
-::: image-block
-![A sample design where "Background/Primary-Subtle" and "Border-Primary-Subtle" are highligted](/images/foundations/custom-components-and-design.png)
-:::
-
-### Access the semantic tokens
-You find the semantic tokens in the right sidebar and they practically work like a normal Figma style.
-
-We are working on a more in-depth guide on semantic tokens, it will be linked from here.
-
-::: image-block
-![Figma interface showing multiple backgorund options and "Primary-Subtle" is highligted](/images/foundations/access-the-semantic-tokens.png)
-:::
-
-### Modes
-TODO: description
-
-**Switch modes**
-Connecting the design tokens to Figma variables makes it possible to easily switch between brands and light/dark modes. This is also available in the right sidebar, more on mode switching in the “Switch brands” section
-
-::: image-block
-![Figma interface showing a selected button and the available modes for NMP brands and light/dark mode options](/images/foundations/switch-modes.png)
 :::

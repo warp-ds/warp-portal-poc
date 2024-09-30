@@ -28,7 +28,7 @@ Dataviz: contains guidelines for data visualisation
 :::
 
 ### Libraries
-Components 2.0: The latest version of the WARP component library, contains themeable components that are usable by all Schibsted Marketplaces
+Components: The latest version of the WARP component library, contains themeable components that are usable by all Schibsted Marketplaces
 
 Design tools: Generic design elements that you can use in presentations, mockups, or to help organise things in your Figma files
 

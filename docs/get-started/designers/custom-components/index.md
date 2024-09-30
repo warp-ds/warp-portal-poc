@@ -21,3 +21,13 @@ We are working on a more in-depth guide on semantic tokens, it will be linked fr
 ::: image-block
 ![Figma interface showing multiple backgorund options and "Primary-Subtle" is highligted](/images/get-started/access-the-semantic-tokens.png)
 :::
+
+### Modes
+TODO: description
+
+**Switch modes**
+Connecting the design tokens to Figma variables makes it possible to easily switch between brands and light/dark modes. This is also available in the right sidebar, more on mode switching in the “Switch brands” section
+
+::: image-block
+![Figma interface showing a selected button and the available modes for NMP brands and light/dark mode options](/images/foundations/switch-modes.png)
+:::
