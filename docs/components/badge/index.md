@@ -1,14 +1,12 @@
 <script setup>
-  import Vue from './vue.md';
-  import Elements from './elements.md';
-  import React from './react.md';
-  import Android from './android.md';
-  import iOS from './ios.md';
   import data from './data.json';
-  import { mapFrameworkStatuses } from '../utils.js';
+  import { mapFrameworkStatuses, useFrameworkDocs } from '../utils.js';
+
+  // Get the dynamically imported markdown components
+  const { vueDoc, reactDoc, elementsDoc, androidDoc, iosDoc } = useFrameworkDocs(data);
 </script>
 
-# Badge
+# {{ data.title }}
 
 {{ data.description }}
 
@@ -26,20 +24,23 @@
 
 ## Frameworks
 
-<tabs-content> 
-  <template #react>
-    <react />
-  </template>
-  <template #vue>
-    <vue />
-  </template>
-  <template #elements>
-    <elements />
-  </template>
-  <template #android>
-    <android />
-  </template>
-    <template #iOS>
-    <iOS />
-  </template>
-</tabs-content>
+<!-- Use keep-alive to cache components and avoid blinking -->
+<keep-alive>
+  <tabs-content>
+    <template #react>
+      <component :is="reactDoc" v-if="reactDoc" />
+    </template>
+    <template #vue>
+      <component :is="vueDoc" v-if="vueDoc" />
+    </template>
+    <template #elements>
+      <component :is="elementsDoc" v-if="elementsDoc" />
+    </template>
+    <template #android>
+      <component :is="androidDoc" v-if="androidDoc" />
+    </template>
+    <template #ios>
+      <component :is="iosDoc" v-if="iosDoc" />
+    </template>
+  </tabs-content>
+</keep-alive>
