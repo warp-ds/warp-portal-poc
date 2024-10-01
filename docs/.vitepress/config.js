@@ -189,14 +189,13 @@ export default defineConfig({
       pattern: 'https://github.com/warp-ds/warp-portal-poc/edit/main/docs/src/:path' // Edit link for GitHub
     },
     search: { provider: 'local' },
-    logo: '/warp-logo-small.svg',
+    logo: '/warp-logo.svg',
     outline: 'deep',
     socialLinks: [{ icon: 'github', link: 'https://github.com/warp-ds' }],
     nav: [
-      { text: 'Get started', link: '/get-started/' },
-      { text: 'Foundations', link: '/foundations/' },
-      { text: 'Components', link: '/components/' },
-      { text: 'POCs', link: '/pocs' },
+      { text: 'Get started', link: '/get-started/',  activeMatch: '/get-started/$', },
+      { text: 'Foundations', link: '/foundations/',  activeMatch: '/foundations/$', },
+      { text: 'Components', link: '/components/',  activeMatch: '/components/$', },
       {
         text: 'What\'s new',
         link: '/blog/',

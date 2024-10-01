@@ -99,9 +99,39 @@ html.dark body {
   font-size: 1.28rem !important;
 }
 
-/* weight was 500, finnfont doesnt ship 'medium', but might be fun to actually ship the right fonts here? */
-.VPNavBarMenuLink {
-  font-weight: 700 !important;
+.VPNavBar {
+  --vp-nav-bg-color: #131B2D;
+  background-color: var(--vp-nav-bg-color);
+}
+.VPNavBar::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 104px;
+  background: url('stars-background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.VPNavBar::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 8px;
+  background: url('hero-wavy-line.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.VPNavBarMenuLink.active {
+  --vp-c-brand-1: #F6D553;
+  text-decoration: underline;
 }
 /* make the border stand out a touch more */
 .vp-doc h2 {
@@ -129,6 +159,225 @@ html.dark body {
 {
   color: var(--vp-c-brand-2);
 }
+.VPHero {
+  --vp-c-bg: #0F1728;
+  background-color: var(--vp-c-bg);
+  margin-bottom: 60px;
+  position: relative;
+}
+.VPHero::before {
+  content: '';
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 104px;
+  background: url('stars-background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.VPHero::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 8px;
+  background: url('hero-wavy-line.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.VPHero .container .main .name .clip {
+  --vp-home-hero-name-color: #F6D553;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+}
+.VPHero .container .main .tagline {
+  --vp-c-text-2: #FFFBD5;
+  max-width: 24ch;
+}
+.VPHero .container .image .image-container .VPImage {
+  max-width: 578px;
+  max-height: 238px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .VPHero .container .image .image-container .VPImage {
+    max-width: 578px;
+    max-height: 238px;
+    width: unset;
+  }
+}
+.VPHomeFeatures .item .VPLink {
+  --vp-c-bg-soft: #131B2D;
+  max-width: 557px;
+  max-height: 351px;
+  border-radius: 8px;
+}
+.VPHomeFeatures .item .VPLink .box {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-areas:
+    "title icon"
+    "details icon"
+    "link icon"
+    "link-text icon";
+  padding: 60px 38px 60px 38px;
+  }
+.VPHomeFeatures .item .VPLink .box .VPImage {
+  grid-area: icon;
+  justify-self: end;
+}
+.VPHomeFeatures .item .VPLink .box .title {
+  grid-area: title;
+  color: #F6D553;
+  font-size: 36px;
+  line-height: 52px;
+}
+.VPHomeFeatures .item .VPLink .box .details {
+--vp-c-text-2: #FFFBD5;
+  grid-area: details;
+  font-size: 22px;
+  line-height: 32px;
+}
+.VPHomeFeatures .item .VPLink .link-text {
+  grid-area: link;
+  color: #FFFBD5;
+}
+.VPHomeFeatures .item .VPLink .link-text-value {
+  --vp-c-text-2: #FFFBD5;
+  grid-area: link-text;
+  color: var(--vp-c-text-2);
+  font-size: 16px;
+  text-decoration: underline;
+}
+.VPButton {
+  --vp-button-brand-text: #FFFBD5;
+  color: var(--vp-button-brand-text);
+}
+.VPNavBarTitle .title {
+  border-bottom: none;
+}
+.VPNavBarTitle .title .VPImage {
+  height: 96px;
+}
+
+.VPNavBarTitle .title span {
+  display: none;
+}
+
+.VPContent .VPDoc .container .aside .aside-curtain {
+  display: none;
+}
+
+.VPNavBar .wrapper .container .content {
+  background-color: #131B2D;
+}
+
+.VPLink.VPNavBarMenuLink {
+  --vp_c-text-1: #FFFBD5;
+  color: var(--vp_c-text-1);
+  font-weight: 400;
+}
+.VPLink.VPNavBarMenuLink:hover {
+  --vp_c-text-1: #F6D553;
+  color: var(--vp_c-text-1);
+  
+}
+.VPLink.VPNavBarMenuLink:active {
+  --vp_c-text-1: #F6D553;
+  color: var(--vp_c-text-1);
+  text-decoration: underline;
+}
+.VPNavBarSearch #local-search .DocSearch {
+  background-color: transparent;
+}
+
+.DocSearch .DocSearch-Button-Keys {
+  display: none;
+}
+
+
+.DocSearch-Button-Container .DocSearch-Button-Placeholder {
+  display: none;
+}
+
+.DocSearch-Button .DocSearch-Search-Icon,
+.DocSearch-Button-Container .vp-icon {
+  --vp-c-text-2: #FFFBD5;
+  color: var(--vp-c-text-2);
+}
+
+.VPNavBarHamburger {
+  --vp-c-text-1: #FFFBD5;
+}
+
+.VPNavBarHamburger.active {
+  --vp-c-text-2: #F6D553;
+  color: var(--vp-c-text-1);
+}
+
+.DocSearch-Button:hover {
+  border-color: transparent;
+}
+
+.DocSearch-Button:hover .DocSearch-Search-Icon {
+  color:#F6D553;
+}
+
+.VPNavBarAppearance.appearance,.VPNavScreenAppearance.appearance {
+ display: none;
+}
+
+.VPSocialLinks.VPNavBarSocialLinks {
+  display: none;
+ }
+
+ @media (min-width: 768px) {
+  .VPNavBar .wrapper .container .content .content-body {
+    display: grid;
+    grid-template-areas: 
+      "navlinks search";
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .VPNavBarSearch {
+    grid-area: search;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .VPNavBar .wrapper .container .content .content-body .VPNavBarMenu {
+    grid-area: navlinks;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .VPLink.VPNavBarMenuLink:nth-child(5) {
+    position: absolute;
+    right: 0;
+  }
+}
+
+  .VPNavBar.has-sidebar .content[data-v-3a828f6b] {
+    padding-left: 135px;
+  }
+
+
+.VPHome[data-v-0dac6700] {
+  margin-bottom: 0;
+}
+
 
 .styled-image-block {
     background-color: #f5f5f5; /* Light grey background */
