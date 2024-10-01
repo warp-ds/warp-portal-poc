@@ -3,46 +3,26 @@ const pages = [{
   title: "Mission, values, principles",
   description: "The Warp Design System mission reflecting its values and principles",
   href: "mission-values-principles",
-  image: {
-    src: "/warp-portal-poc/css/la03.jpg",
-    alt: "AI-generated image"
-  },
 },
 {
   title: "Web Developers",
   description: "Getting started guide for Web developers",
   href: "developers/web/",
-    image: {
-    src: "/warp-portal-poc/css/la04.jpg",
-    alt: "AI-generated image"
-  },
 },
 {
   title: "iOS Developers",
   description: "Getting started guide for iOS developers",
   href: "developers/ios/",
-    image: {
-    src: "/warp-portal-poc/css/la05.jpg",
-    alt: "AI-generated image"
-  },
 },
 {
   title: "Android Developers",
   description: "Getting started guide for Android developers",
   href: "developers/android/",
-    image: {
-    src: "/warp-portal-poc/css/la06.jpg",
-    alt: "AI-generated image"
-  },
 },
 {
   title: "Designers",
   description: "Getting started guide for designers",
   href: "designers/warp-in-figma/",
-    image: {
-    src: "/warp-portal-poc/css/la08.jpg",
-    alt: "AI-generated image"
-  },
 }]
 </script>
 
