@@ -224,6 +224,7 @@ export default defineConfig({
         {
           text: 'Get started',
           items: [
+            { text: 'Mission, Values, Principles', link: '/get-started/mission-values-principles/' },
             { text: 'Developers',
               collapsed: true,
               items: [
