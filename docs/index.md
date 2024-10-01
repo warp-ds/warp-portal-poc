@@ -75,30 +75,32 @@ const componentData = [
 </cards>
 
 <div class="banner-container">
-  <div class="banner-icon-column">
-    <img src="/collaborate-icon.svg" alt="Collaborate icon" class="banner-icon"/>
-  </div>
-  
- <div class="banner-column">
-  <h2 class="banner-title">Collaborate</h2>
-  <p>Contributing to the WARP design system, requesting new components or adjustments to existing ones.</p>
-  <a :href="`${baseUrl}collaborate/request-new-component`" class="banner-link collaborate">
-    Collaborate with us
-    <span class="vpi-arrow-right link-text-icon"></span>
-  </a>
-</div>
-
-  
-  <div class="banner-icon-column">
-    <img src="/get-in-touch-icon.svg" alt="Get in touch icon" class="banner-icon"/>
-  </div>
-
+  <div class="banner-content-wrapper">
+    <div class="banner-icon-column">
+      <img src="/collaborate-icon.svg" alt="Collaborate icon" class="banner-icon"/>
+    </div>
+    
   <div class="banner-column">
-    <h2 class="banner-title">Get in touch</h2>
-    <p>Need help or support? The best way to get in touch with the team is through Slack.</p>
-    <div class="slack-section">
-      <img src="/slack-icon.svg" alt="Slack icon" width="24px" class="slack-icon"/> 
-      <a href="https://sch-chat.slack.com/archives/C04P0GYTHPV" target="_blank" class="banner-link">#nmp-warp-design-system</a>
+    <h2 class="banner-title">Collaborate</h2>
+    <p class="banner-content">Contributing to the WARP design system, requesting new components or adjustments to existing ones.</p>
+    <a :href="`${baseUrl}collaborate/request-new-component`" class="banner-link collaborate">
+      Collaborate with us
+      <span class="vpi-arrow-right link-text-icon"></span>
+    </a>
+  </div>
+
+    
+  <div class="banner-icon-column">
+      <img src="/get-in-touch-icon.svg" alt="Get in touch icon" class="banner-icon"/>
+   </div>
+
+   <div class="banner-column">
+      <h2 class="banner-title">Get in touch</h2>
+      <p class="banner-content">Need help or support? The best way to get in touch with the team is through Slack.</p>
+      <div class="slack-section">
+        <img src="/slack-icon.svg" alt="Slack icon" width="24px" class="slack-icon"/> 
+        <a href="https://sch-chat.slack.com/archives/C04P0GYTHPV" target="_blank" class="banner-link">#nmp-warp-design-system</a>
+      </div>
     </div>
   </div>
 </div>
@@ -125,9 +127,7 @@ const componentData = [
 
 .card-title {
   font-size: 16px;
-  margin-top: 16px;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin: 16px 16px 0 16px;
   position: static;
 }
 
@@ -159,20 +159,49 @@ const componentData = [
 }
 
 /* Banner styling */
+.vp-doc.container .banner-container {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 0 23px;
+}
+
 .banner-container {
+  background-color: #f6f6f7;
+}
+
+.banner-content-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #f6f6f7;
-  padding: 40px 20px;
   margin-top: 40px;
+  padding-bottom: 40px;
   width: 100%;
   gap: 8px;
-  align-items: start; 
+  align-items: start;
 }
 
 @media (min-width: 640px) {
-  .banner-container {
-    grid-template-columns: .25fr 1.75fr 0.25fr 1.75fr;
+  .banner-content-wrapper {
+    padding: 40px 20px;
+    grid-template-columns: .25fr 1.75fr .25fr 1.75fr;
+  }
+}
+
+@media (min-width: 960px) {
+  .banner-content-wrapper {
+    padding: 40px 112px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .banner-content-wrapper {
+    padding: 40px 213px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .banner-content-wrapper {
+    padding: 40px 335px;
   }
 }
 
@@ -201,11 +230,20 @@ const componentData = [
 }
 
 .banner-title {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   border-top: none;
   font-size: 36px;
   font-weight: 700;
+}
+
+.banner-content {
+  font-size: 18px;
+}
+
+@media (min-width: 960px) {
+  .banner-content {
+    max-width: 40ch;
+  }
 }
 
 .vp-doc p {
@@ -243,5 +281,5 @@ const componentData = [
   margin-right: 6px;
   align-self: flex-end;
 }
-
 </style>
+
