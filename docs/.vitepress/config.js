@@ -215,6 +215,7 @@ export default defineConfig({
         {
           text: 'Help',
           items: [
+            { text: 'FAQ', link: '/help/faq/' },
             { text: 'Support', link: '/help/support/' },
             { text: 'Report bugs/errors', link: '/help/report-bugs/' },
           ]
@@ -258,7 +259,6 @@ export default defineConfig({
                 { text: 'Building custom components with Warp', link: '/get-started/designers/custom-components/' },
               ]
             },
-            { text: 'FAQ', link: '/get-started/faq/' },
           ],
         },
       ],

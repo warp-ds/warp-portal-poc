@@ -10,6 +10,7 @@
     </div>
     <div class="footer-column">
       <h3 class="footer-column-title">Help</h3>
+      <a class="footer-link" :href="`${baseUrl}help/faq`">FAQ</a>
       <a class="footer-link" :href="`${baseUrl}help/support`">Support</a>
       <a class="footer-link" :href="`${baseUrl}help/report-bugs`">Report bugs/errors</a>
     </div>
