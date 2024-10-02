@@ -12,10 +12,12 @@ The optimal line length for body text is 50-75 characters, shorter or longer can
 ## Astro Portal
 Astro is the UX writers guide to create effective, localised, and accessible content across all SMP brands and languages.
 
-It covers all the nitty-gritty like how to write date and time in different languages, info for development and strings and much more!
+It covers all the nitty-gritty like how to write date and time in different languages, info for development and strings and much more.
 
-Ask questions from the UX writing team on Slack, #smp-uxwriting
-Browse the UX writing guidelines: Astro
+[Astro Portal link](https://zeroheight.com/05b2d7be6/p/3162dd-astro-content-style-guide)
+
+**Need UX writing support?** You can ask questions here in Slack, #smp-uxwriting [#smp-uxwriting](https://sch-chat.slack.com/archives/C05A5JGK269)
+
 
 ::: image-block
 ![Text spelling "Astro"](/images/foundations/astro.png)

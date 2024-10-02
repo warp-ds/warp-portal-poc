@@ -10,7 +10,7 @@ Auto layout is a property you add to frames and components. It lets you create d
 Auto layout is a property you add to frames and components. It lets you create designs that grow to fill or shrink to fit, and reflow as their contents change.
 
 ::: image-block
-![Content transistioning from small screen to large screen](/public/images/get-started/be-an-effective-designer.png)
+![Content transistioning from small screen to large screen](/images/get-started/be-an-effective-designer.png)
 :::
 
 ### Multibrand
@@ -19,7 +19,7 @@ Since all WARP components have support for multiple brands it's important that y
 Differences in the brands like typography, spacing and language can cause the components to be different in sizes and if you don't use auto layout your designs might break when switching between brands.
 
 ::: image-block
-![WARP alert components displayed in the FINN brand and Tori brand](/public/images/get-started/multibrand-alerts.png)
+![WARP alert components displayed in the FINN brand and Tori brand](/images/get-started/multibrand-alerts.png)
 :::
 
 ### Learn how to use auto layout
@@ -37,7 +37,7 @@ When working with multiple brands it's important to be able to see what your des
 The components in Warp are based on the old FINN design system called Fabric and the default styling of every component is therefore in the style of FINN.
 
 ::: image-block
-![FINN button with the text "Confirm"](/public/images/get-started/default-component-styling.png)
+![FINN button with the text "Confirm"](/images/get-started/default-component-styling.png)
 :::
 
 ### Variables in Figma
@@ -49,16 +49,14 @@ Switching brands will change the tokens for all components which resulting colou
 ![FINN confirm button with a pointing arrow to a Tori confirm button](/images/get-started/variables-in-figma.png)
 :::
 
-Switching brands will change the tokens for all components which resulting colours, typography, border radiuses and other things to be different for each brand.
-
+Select a WARP component and select change variable mode in Layer settings in the right sidebar.
 ::: image-block
 ![Figma interface of a selected button pointing to the switch brand functionality](/images/get-started/variables-in-figma2.png)
 :::
 
-Select a WARP component and select change variable mode in Layer settings in the right sidebar.
+You can also switch brands on entire frames and everything using variables will change.
 
 ::: image-block
 ![Figma interface higtligting the selected frame is set to "Tori Light"](/images/get-started/variables-in-figma3.png)
 :::
 
-Tip! You can also switch brands on entire frames and everything using variables will change.

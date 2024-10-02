@@ -2,8 +2,9 @@
 Elevation is the distance between different surfaces on the z-axis.
 
 ## The basics
-### Visualising the height difference
-Elevation is a concept used to visually differentiate the height between different elements. In light mode this is easy with the use of shadows but in dark mode we can’t rely as much on shadows to show the height difference.Think of dark mode as a dark room with a small light source on the ceiling: the closer an object is to the light, the lighter its surface appears.In light mode, we can use shadows to make this clear. However, in dark mode shadows are less effective for showing differences in height.
+Elevation is a concept used to visually differentiate the height between different elements. In light mode this is easy with the use of shadows but in dark mode we can’t rely as much on shadows to show the height difference. 
+
+Think of dark mode as a dark room with a small light source on the ceiling: the closer an object is to the light, the lighter its surface appears. In light mode, we can use shadows to make this clear. However, in dark mode shadows are less effective for showing differences in height.
 
 ::: image-block
 ![Illustration a plain interface with one half in light mode and the other in dark mode](/images/foundations/elevation.png)
@@ -27,7 +28,7 @@ Designers can easily switch between light and dark modes without needing to rede
 ![A card component where the semantic tokens "Surface/Default" and "Surface/Elevated-200" are visualised in both light and dark mode](/images/foundations/why-use-elevation.png)
 :::
 
-## Surfaces 
+## Surface types 
 In WARP there are five surfaces that all represent a different elevation value. The ones elevated above “Default” have a shadow as well.
 
 All SMP brands use the same grayscale to make accessibility easier to maintain.

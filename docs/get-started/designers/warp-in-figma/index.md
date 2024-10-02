@@ -1,10 +1,7 @@
-# Overview
-TODO: Lorizzle ipsum dolor mammasay mammasa mamma oo sa amizzle, consectetuer adipiscing elit. Nullizzle fizzle velizzle, shiz volutpat, suscipit go to hizzle, gravida vizzle, bling bling. 
-
-## WARP in Figma
+# WARP in Figma
 Description of all files in the WARP Figma space.
 
-### The "WARP Design System" Figma space
+## The "WARP Design System" Figma space
 Contains all libraries and documentation for you to get started with designing for Schibsted Marketplaces.
 
 ::: image-block

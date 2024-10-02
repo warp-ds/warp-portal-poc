@@ -265,7 +265,11 @@ export default defineConfig({
       '/foundations/': [ {
         text: 'Foundations',
         items: [
-          { text: 'Tokens', link: '/foundations/tokens/' },
+          { text: 'Tokens', collapsed: true, items: [
+            { text: 'Intro', link: '/foundations/tokens/intro/' },
+            { text: 'Overview', link: '/foundations/tokens/overview/' },
+          ] 
+        },
           { text: 'Styling', collapsed: true, items: [
             { text: 'Native', link: '/foundations/styling/native/' },
             { text: 'Web', collapsed: true, items: [
