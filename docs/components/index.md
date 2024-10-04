@@ -3,13 +3,27 @@ import { ref, computed } from 'vue';
 
 // Import all JSON data
 const components = import.meta.glob('./*/data.json', { eager: true });
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrl = import.meta.env.BASE_URL || '/'; // Fallback to '/' if BASE_URL is undefined
 
-// Map JSON data to include href and correct paths
-const componentData = Object.keys(components).map(path => ({
-  ...components[path].default,
-  href: `${baseUrl}components/${path.replace('/data.json', '')}`
-}));
+// Clean up the base URL to avoid double slashes
+const cleanBaseUrl = baseUrl.replace(/\/+$/, ''); // Remove trailing slashes
+
+// Map JSON data to include href and dynamically generate image paths
+const componentData = Object.keys(components).map(path => {
+  // Clean up folderPath by removing './' and leading slashes
+  const folderPath = path.replace('/data.json', '').replace(/^\.\/+/, '');
+
+  return {
+    ...components[path].default,
+    // Clean up href by removing './' if it exists
+    href: `${cleanBaseUrl}/components/${folderPath}`,
+    image: {
+      // Clean up image path by removing './' if it exists
+      src: `${cleanBaseUrl}/components/${folderPath}/placeholder.png`,
+      alt: components[path].default.title
+    }
+  };
+});
 
 // Reactive variables for query and selected frameworks
 const query = ref('');
@@ -101,7 +115,7 @@ All WARP components for Figma, React, Vue, Elements, iOS, and Android.
 
 ## Filters
 <section>
-  <div class="p-16 rounded-8 mb-16" style="background-color:var(--w-panel-bg)">
+  <div class="p-16 rounded-8 mb-16"  style="background-color: var(--vp-c-bg-soft);">
     <div class="pt-8 mb-16">
       <!-- Input field for text filtering -->
       <label class="block bold" for="filter-input">By name</label>
@@ -142,11 +156,11 @@ All WARP components for Figma, React, Vue, Elements, iOS, and Android.
   </div>
 
   <!-- Display filtered components -->
-  <cards class="grid grid-cols-1 sm:grid-cols-3 gap-12">
+  <cards class="grid grid-cols-1 sm:grid-cols-3 gap-12" >
     <card
       v-for="component in filteredComponents"
       :key="component.title"
-      class="flex flex-col border border-gray-200 p-4 rounded-md shadow-sm"
+      class="flex flex-col border border-gray-200 rounded-md shadow-sm"
     >
       <h3 class="h4 text-m! static! mt-16! mx-16!">
         <a
@@ -156,11 +170,11 @@ All WARP components for Figma, React, Vue, Elements, iOS, and Android.
           {{ component.title }}
         </a>
       </h3>
-      <img
-        class="order-first"
+      <div class="order-first" style="aspect-ratio:4/3; display: flex; justify-content: center; align-items: center; background-color: var(--vp-c-bg-soft);">
+      <img class="max-w-[80%] max-h-[80%]"
         :src="component.image.src"
         :alt="component.image.alt"
-      />
+      /></div>
       <p class="m-16! text-s">{{ component.description }}</p>
     </card>
   </cards>
