@@ -42,9 +42,9 @@ We publish `@warp-ds/react` package to EIK cdn in 2 variants, eg:
 
 For react 18:
 ```
-https://assets.finn.no/pkg/@warp-ds/react/v1/warp-react-18.js
+https://assets.finn.no/pkg/@warp-ds/react/v2/warp-react-18.js
 ```
 For react 17:
 ```
-https://assets.finn.no/pkg/@warp-ds/react/v1/warp-react-17.js
+https://assets.finn.no/pkg/@warp-ds/react/v2/warp-react-17.js
 ```

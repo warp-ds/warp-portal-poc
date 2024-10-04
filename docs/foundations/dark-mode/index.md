@@ -9,7 +9,7 @@ All components and tokens in WARP are built with dark mode in mind. Therefore th
 ![Empty input fields, dropdowns and text areas displayed in dark and light mode](/images/foundations/dark-mode.png)
 :::
 
-## Switch to dark mode
+## Figma: Switch to dark mode
 
 ### Switching modes
 You can switch to dark mode whenever you want, either for a specific component or an entire frame. This is available in the right sidebar.

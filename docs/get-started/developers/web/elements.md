@@ -39,5 +39,5 @@ Then they can be used in your HTML markup.
 ## Eik support
 We publish `@warp-ds/elements` package to EIK cdn, eg:
 ```
-https://assets.finn.no/pkg/@warp-ds/elements/v1/index.js
+https://assets.finn.no/pkg/@warp-ds/elements/v2/index.js
 ```

@@ -1,5 +1,5 @@
 <template>
-  <section class="gap-24 ">
+  <section>
     <slot></slot>
   </section>
 </template>

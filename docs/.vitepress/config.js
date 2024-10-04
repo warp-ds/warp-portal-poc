@@ -215,6 +215,7 @@ export default defineConfig({
         {
           text: 'Help',
           items: [
+            { text: 'FAQ', link: '/help/faq/' },
             { text: 'Support', link: '/help/support/' },
             { text: 'Report bugs/errors', link: '/help/report-bugs/' },
           ]
@@ -224,6 +225,7 @@ export default defineConfig({
         {
           text: 'Get started',
           items: [
+            { text: 'Mission, Values, Principles', link: '/get-started/mission-values-principles/' },
             { text: 'Developers',
               collapsed: true,
               items: [
@@ -239,18 +241,12 @@ export default defineConfig({
                 {
                   text: 'Android',
                   collapsed: true,
-                  items: [
-                    { text: 'Setup', link: '/get-started/developers/android/' },
-                    { text: 'Building custom components with Warp', link: '/get-started/developers/android/custom-components/' },
-                  ]
+                  link: '/get-started/developers/android/'
                 },
                 {
                   text: 'iOS',
                   collapsed: true,
-                  items: [
-                    { text: 'Setup', link: '/get-started/developers/ios/' },
-                    { text: 'Building custom components with Warp', link: '/get-started/developers/ios/custom-components/' },
-                  ]
+                  link: '/get-started/developers/ios/'
                 },
               ],
             },
@@ -263,14 +259,17 @@ export default defineConfig({
                 { text: 'Building custom components with Warp', link: '/get-started/designers/custom-components/' },
               ]
             },
-            { text: 'FAQ', link: '/get-started/faq/' },
           ],
         },
       ],
       '/foundations/': [ {
         text: 'Foundations',
         items: [
-          { text: 'Tokens', link: '/foundations/tokens/' },
+          { text: 'Tokens', collapsed: true, items: [
+            { text: 'Intro', link: '/foundations/tokens/intro/' },
+            { text: 'Overview', link: '/foundations/tokens/overview/' },
+          ] 
+        },
           { text: 'Styling', collapsed: true, items: [
             { text: 'Native', link: '/foundations/styling/native/' },
             { text: 'Web', collapsed: true, items: [

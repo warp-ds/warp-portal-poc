@@ -1,13 +1,8 @@
 # Building custom components with WARP
-TODO: description
+If you are building a component that doesn't exist in WARP you can still use semantic tokens and get support for dark mode and all other SMP brands for free.
 
 ## Semantic tokens
-TODO: description
-
-### Custom components and design
 Semantic tokens are not connected to any specific component and can be used to create custom designs that are still multi-brand friendly.
-
-If you are building a component that doesn't exist in WARP you can still use semantic tokens and get support for dark mode and all other SMP brands for free.
 
 ::: image-block
 ![A sample design where "Background/Primary-Subtle" and "Border-Primary-Subtle" are highligted](/images/get-started/custom-components-and-design.png)
@@ -20,4 +15,12 @@ We are working on a more in-depth guide on semantic tokens, it will be linked fr
 
 ::: image-block
 ![Figma interface showing multiple backgorund options and "Primary-Subtle" is highligted](/images/get-started/access-the-semantic-tokens.png)
+:::
+
+### Modes
+**Switch modes**
+Connecting the design tokens to Figma variables makes it possible to easily switch between brands and light/dark modes. This is also available in the right sidebar, more on mode switching in the “Switch brands” section
+
+::: image-block
+![Figma interface showing a selected button and the available modes for NMP brands and light/dark mode options](/images/foundations/switch-modes.png)
 :::

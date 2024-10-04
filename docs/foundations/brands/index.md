@@ -9,6 +9,13 @@ WARP is a design system that supports multiple brands within the Schibsted Marke
 :::
 
 ## Brand guidelines
-TODO: Doesn't make sense to add the image here as it will have clickable links.
+An overview with links to our brand guidelines.
 
-![alt text](https://i.imgur.com/OvMZBs9.jpg)
+| Brand       | Figma          |
+| ----------- | -------------- |
+| FINN        | [Designmanual.pdf](https://drive.google.com/file/d/1MdBcQfseDJTOeSINDP8hmCiDGMNNSY0P/view)      |
+| Tori        | [Brand guidesliens.pdf](https://drive.google.com/file/d/1MdBcQfseDJTOeSINDP8hmCiDGMNNSY0P/view) |
+| DBA         | [Designmanual.pdf](https://drive.google.com/file/d/1eSLUXIK3mapZaipWgy5oicOD0Mq1P2Sw/view)      |
+| Blocket     | [Designmanual.pdf](https://drive.google.com/file/d/1qLoyCEaSZ4bBUOd5IGrbDpUHBKlb81cD/view)      |
+| Bilbasen    | Does not exist |
+| Oikotie     | Does not exist |

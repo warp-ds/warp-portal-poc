@@ -1,50 +1,48 @@
-# Welcome
+<script setup>
+const pages = [{
+  title: "Mission, values, principles",
+  description: "The Warp Design System mission reflecting its values and principles",
+  href: "mission-values-principles",
+},
+{
+  title: "Web Developers",
+  description: "Getting started guide for Web developers",
+  href: "developers/web/",
+},
+{
+  title: "iOS Developers",
+  description: "Getting started guide for iOS developers",
+  href: "developers/ios/",
+},
+{
+  title: "Android Developers",
+  description: "Getting started guide for Android developers",
+  href: "developers/android/",
+},
+{
+  title: "Designers",
+  description: "Getting started guide for designers",
+  href: "designers/warp-in-figma/",
+}]
+</script>
 
-## Intro
-Hello 👋 Welcome to the WARP design system. 
+# Get started
+Begin crafting and building great product experiences with the WARP design system’s UI foundations, components, and patterns.
 
-**WARP design system**
-Whether you are a novice or an expert working with design systems, this Figma file contains everything you need to know to get started with using WARP for SMP
-WARP serves as a single source of truth for designers, developers, and other stakeholders to ensure consistency and coherence across all brands. 
-The goal is to reduce ambiguity, confusion and to save time and resources when building and developing our marketplaces. 
-
-![alt text](https://i.imgur.com/OvMZBs9.jpg)
-
-## Vision
-To create a design system that makes designing and developing in SMP so quick and easy that you'd have to be an idiot not to use it.
-
-**Our mission**
-To create a multi-brand design system for SMP that:
-
-* Is easy to use
-* Is easy to maintain
-* Prioritises simplicity over complexity
-* Prioritises quality over speed
-* Promotes design consistency
-* Meets accessibility guidelines
-* Considers the needs of all SMP brands and verticals
-
-::: image-block
-![Sticky notes on a wall](/images/get-started/sticky-notes.jpg)
-:::
-
-
-**What do you mean slow down, are you crazy!?**
-"Successful design systems move more slowly than the products they support. That's a feature, not a bug. The slower pace doesn't mean that design systems have to be a bottleneck to shipping product."
-— Josh Clark, [Ship faster by building design systems slower](https://bigmedium.com/ideas/design-system-pace-layers-slow-fast.html) on bigmedium.com
-
-::: image-block
-![A quotation "Slow down to speed up"](/images/get-started/slow-down-to-speed-up.jpg)
-:::
-
-**Prioritise Quality over speed**
-By taking our time, working thoroughly, and being certain of the decisions we make (through testing and iteration), we are helping to:
-
-* Ensure that our foundation is solid
-* Curate quality assured components
-* Enable innovation for our users
-* ... eventually provide speed for things that have been tried and tested
-
-::: image-block
-![A quotation "Slow down to speed up"](/images/get-started/quality-cant-be-rushed.jpg)
-:::
+<cards class="grid grid-cols-1 sm:grid-cols-2 gap-12">
+  <card
+    v-for="page in pages"
+    :key="page.title"
+    class="flex flex-col border border-gray-200 p-4 rounded-md shadow-sm"
+  >
+    <h3 class="h4 text-m! static! mt-16! mx-16!">
+      <a
+        :href="page.href"
+        class="block before:content-empty before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0 focus:outline-0"
+      >
+        {{ page.title }}
+      </a>
+    </h3>
+    <p class="m-16! text-s">{{ page.description }}</p>
+  </card>
+</cards>

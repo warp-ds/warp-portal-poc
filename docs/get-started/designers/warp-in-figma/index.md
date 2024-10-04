@@ -1,10 +1,7 @@
-# Overview
-TODO: Lorizzle ipsum dolor mammasay mammasa mamma oo sa amizzle, consectetuer adipiscing elit. Nullizzle fizzle velizzle, shiz volutpat, suscipit go to hizzle, gravida vizzle, bling bling. 
-
-## WARP in Figma
+# WARP in Figma
 Description of all files in the WARP Figma space.
 
-### The "WARP Design System" Figma space
+## The "WARP Design System" Figma space
 Contains all libraries and documentation for you to get started with designing for Schibsted Marketplaces.
 
 ::: image-block
@@ -28,7 +25,7 @@ Dataviz: contains guidelines for data visualisation
 :::
 
 ### Libraries
-Components 2.0: The latest version of the WARP component library, contains themeable components that are usable by all Schibsted Marketplaces
+Components: The latest version of the WARP component library, contains themeable components that are usable by all Schibsted Marketplaces
 
 Design tools: Generic design elements that you can use in presentations, mockups, or to help organise things in your Figma files
 
@@ -67,16 +64,12 @@ Win: ctrl + alt + O
 ![Figma dropdown highlighting the option "libraries"](/images/get-started/figma-dropdown-libraries.jpg)
 :::
 
-#### Enable the libraries
-Search and enable the following libraries:
+#### Enabled libraries
+We've automatically added the following libraries whenever you create a new file within the Nordic Marketplaces organisation:
 
-* Warp - Components 2.0 (automatically added)
-* Warp - Icons (automatically added)
-* FINN - Design tokens (optional library for typography styles)
-* Tori - Design tokens (optional library for typography styles) 
-* DBA - Design tokens (optional library for typography styles) 
+* Warp - Components
+* Warp - Icons
 
 ### Removing other libraries
 
-#### Non WARP libraries
-You might want to consider disabling other libraries to not accidentally pick any non WARP components. All WARP libraries are marked with the "Warp"-prefix
+You might want to consider disabling other libraries to not accidentally pick any non-WARP components. All WARP libraries are marked with the "Warp"-prefix.

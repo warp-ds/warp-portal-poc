@@ -1,15 +1,83 @@
+<script setup>
+const pages = [{
+  title: "Tokens",
+  description: "Todo",
+  href: "tokens",
+},
+{
+  title: "Native styling",
+  description: "Todo",
+  href: "styling/native/",
+},
+{
+  title: "Web styling",
+  description: "Todo",
+  href: "styling/web/unocss",
+},
+{
+  title: "Illustrations",
+  description: "Todo",
+  href: "illustrations/",
+},
+{
+  title: "Typography",
+  description: "Todo",
+  href: "typography/",
+},
+{
+  title: "Accessibility",
+  description: "Todo",
+  href: "accessibility/",
+},
+{
+  title: "Design principles",
+  description: "Todo",
+  href: "design-principles/",
+},
+{
+  title: "Brands",
+  description: "Todo",
+  href: "brands/",
+},
+{
+  title: "Data visualisation",
+  description: "Todo",
+  href: "data-visualization/getting-started/",
+},
+{
+  title: "Elevation",
+  description: "Todo",
+  href: "elevation/",
+},
+{
+  title: "Dark mode",
+  description: "Todo",
+  href: "dark-mode",
+},
+{
+  title: "Motion",
+  description: "Todo",
+  href: "motion/",
+}]
+</script>
+
 # Foundations
+Foundations are the visual components essential for crafting captivating end-to-end user experiences.
 
-## What are the foundations of the warp?
-
-## Warp Ipsum
-
-::: image-block
-![Alt text go here](/css/matter.jpg)
-:::
-
-Nulla portalis magnus quantum fluxus, et interdimensional nexus stabilis. Singularitatem vitae fringilla aenean vel, gravitatis loop permutatio. Non-stop phasing, omni-directional communication relay cursus ut nisl. Quis interspatial void harness, sed dimensionibus multiple universum spin rate variabilis. Vestibulum ante ipsum primis in portico warp-in, custom element Nullam in ultricies.
-
-Hyper-speed oscillation elementum, dilatation tempus orci tempor at. In graviton torsion ligula, nec dimensional rift congue in. Nullam magna torque stabilizer tempor nec. Exponential wormhole implosio risus, nec cursus lorem. Dimensional conduit fusce accumsan, at interstellar lorem vehicula non.
-
-Aliquam at magna rift generator, porta suspendisse. Entropic time shift mauris a ligula ultricies portale. Quantum variabilis ratio, element command Vel orci sagittis vehicula. Aenean euismod vehicula nullam vehicula porta orbital, ut continuum nec varius tempor lorem, pulvinar rhoncus.
+<cards class="grid grid-cols-1 sm:grid-cols-2 gap-12">
+  <card
+    v-for="page in pages"
+    :key="page.title"
+    class="flex flex-col border border-gray-200 p-4 rounded-md shadow-sm"
+  >
+    <h3 class="h4 text-m! static! mt-16! mx-16!">
+      <a
+        :href="page.href"
+        class="block before:content-empty before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0 focus:outline-0"
+      >
+        {{ page.title }}
+      </a>
+    </h3>
+    <p class="m-16! text-s">{{ page.description }}</p>
+  </card>
+</cards>
