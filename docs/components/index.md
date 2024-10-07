@@ -5,23 +5,13 @@ import { ref, computed } from 'vue';
 const components = import.meta.glob('./*/data.json', { eager: true });
 const baseUrl = import.meta.env.BASE_URL || '/'; // Fallback to '/' if BASE_URL is undefined
 
-// Clean up the base URL to avoid double slashes
-const cleanBaseUrl = baseUrl.replace(/\/+$/, ''); // Remove trailing slashes
-
-// Map JSON data to include href and dynamically generate image paths
+// Map JSON data to include href and correct paths, and add image path for placeholder.png
 const componentData = Object.keys(components).map(path => {
-  // Clean up folderPath by removing './' and leading slashes
-  const folderPath = path.replace('/data.json', '').replace(/^\.\/+/, '');
-
+  const folderPath = path.replace('/data.json', '');
   return {
     ...components[path].default,
-    // Clean up href by removing './' if it exists
-    href: `${cleanBaseUrl}/components/${folderPath}`,
-    image: {
-      // Clean up image path by removing './' if it exists
-      src: `${cleanBaseUrl}/components/${folderPath}/placeholder.png`,
-      alt: components[path].default.title
-    }
+    href: `${baseUrl}components/${folderPath}`,
+    imagePath: `${baseUrl}components/${folderPath}/placeholder.png`
   };
 });
 
@@ -110,6 +100,7 @@ const showAll = () => {
 </style>
 
 
+
 # Overview
 All WARP components for Figma, React, Vue, Elements, iOS, and Android.
 
@@ -154,13 +145,20 @@ All WARP components for Figma, React, Vue, Elements, iOS, and Android.
       </button>
     </div>
   </div>
+<button>
+  Default Button
+</button>
 
+<button>
+  Primary Button
+</button>
   <!-- Display filtered components -->
   <cards class="grid grid-cols-1 sm:grid-cols-3 gap-12" >
     <card
       v-for="component in filteredComponents"
       :key="component.title"
       class="flex flex-col border border-gray-200 rounded-md shadow-sm"
+      style="background-color: var(--vp-c-muted-bg)"
     >
       <h3 class="h4 text-m! static! mt-16! mx-16!">
         <a
@@ -172,9 +170,10 @@ All WARP components for Figma, React, Vue, Elements, iOS, and Android.
       </h3>
       <div class="order-first" style="aspect-ratio:4/3; display: flex; justify-content: center; align-items: center; background-color: var(--vp-c-bg-soft);">
       <img class="max-w-[80%] max-h-[80%]"
-        :src="component.image.src"
-        :alt="component.image.alt"
-      /></div>
+        :src="component.imagePath"
+        :alt="component.image?.alt || 'Component as a wireframe'"
+      />
+      </div>
       <p class="m-16! text-s">{{ component.description }}</p>
     </card>
   </cards>
