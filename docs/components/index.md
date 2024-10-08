@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 <script setup>
 import { ref, computed } from 'vue';
 
@@ -145,13 +149,7 @@ All WARP components for Figma, React, Vue, Elements, iOS, and Android.
       </button>
     </div>
   </div>
-<button>
-  Default Button
-</button>
 
-<button>
-  Primary Button
-</button>
   <!-- Display filtered components -->
   <cards class="grid grid-cols-1 sm:grid-cols-3 gap-12" >
     <card
