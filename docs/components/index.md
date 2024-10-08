@@ -9,13 +9,18 @@ import { ref, computed } from 'vue';
 const components = import.meta.glob('./*/data.json', { eager: true });
 const baseUrl = import.meta.env.BASE_URL || '/'; // Fallback to '/' if BASE_URL is undefined
 
-// Map JSON data to include href and correct paths, and add image path for placeholder.png
+// Clean up the base URL to avoid double slashes
+const cleanBaseUrl = baseUrl.replace(/\/+$/, ''); // Remove trailing slashes
+
+// Map JSON data to include href and correct paths, and add image path for placeholder.svg
 const componentData = Object.keys(components).map(path => {
-  const folderPath = path.replace('/data.json', '');
+  const folderPath = path.replace('/data.json', '').replace(/^\.\/+/, '');
+
   return {
     ...components[path].default,
-    href: `${baseUrl}components/${folderPath}`,
-    imagePath: `${baseUrl}components/${folderPath}/placeholder.svg`
+    href: `${cleanBaseUrl}/components/${folderPath}`, // Full path for href
+    // Full path for image, ensuring it's based on BASE_URL to work in production
+    imagePath: `${cleanBaseUrl}/components/${folderPath}/placeholder.svg`.replace(/\/\.\//g, '/'),
   };
 });
 
