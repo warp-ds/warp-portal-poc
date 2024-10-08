@@ -11,7 +11,7 @@ const componentData = Object.keys(components).map(path => {
   return {
     ...components[path].default,
     href: `${baseUrl}components/${folderPath}`,
-    imagePath: `${baseUrl}components/${folderPath}/placeholder.png`
+    imagePath: `${baseUrl}components/${folderPath}/placeholder.svg`
   };
 });
 

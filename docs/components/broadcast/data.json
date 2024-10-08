@@ -3,7 +3,6 @@
   "description": "Broadcast automatically fetches broadcast messages for the current (or a given) url.",
   "category": "Layout",
   "image": {
-    "src": "/warp-portal-poc/css/la05.jpg",
     "alt": "Broadcast component"
   },
   "frameworks": [

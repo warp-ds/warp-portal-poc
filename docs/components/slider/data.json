@@ -3,7 +3,7 @@
   "description": "A slider is an input where the user selects a value from within a given range. The precise value, however, is not necessarily considered important.",
   "category": "Forms",
   "image": {
-    "src": "/warp-portal-poc/css/la01.jpg",
+
     "alt": "Slider component"
   },
   "frameworks": [
