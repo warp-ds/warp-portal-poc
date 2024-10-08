@@ -1,15 +1,23 @@
+---
+editLink: false
+---
+
 <script setup>
 import { ref, computed } from 'vue';
 
 // Import all JSON data
 const components = import.meta.glob('./*/data.json', { eager: true });
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrl = import.meta.env.BASE_URL || '/'; // Fallback to '/' if BASE_URL is undefined
 
-// Map JSON data to include href and correct paths
-const componentData = Object.keys(components).map(path => ({
-  ...components[path].default,
-  href: `${baseUrl}components/${path.replace('/data.json', '')}`
-}));
+// Map JSON data to include href and correct paths, and add image path for placeholder.png
+const componentData = Object.keys(components).map(path => {
+  const folderPath = path.replace('/data.json', '');
+  return {
+    ...components[path].default,
+    href: `${baseUrl}components/${folderPath}`,
+    imagePath: `${baseUrl}components/${folderPath}/placeholder.svg`
+  };
+});
 
 // Reactive variables for query and selected frameworks
 const query = ref('');
@@ -96,12 +104,13 @@ const showAll = () => {
 </style>
 
 
+
 # Overview
 All WARP components for Figma, React, Vue, Elements, iOS, and Android.
 
 ## Filters
 <section>
-  <div class="p-16 rounded-8 mb-16" style="background-color:var(--w-panel-bg)">
+  <div class="p-16 rounded-8 mb-16"  style="background-color: var(--vp-c-bg-soft);">
     <div class="pt-8 mb-16">
       <!-- Input field for text filtering -->
       <label class="block bold" for="filter-input">By name</label>
@@ -142,11 +151,12 @@ All WARP components for Figma, React, Vue, Elements, iOS, and Android.
   </div>
 
   <!-- Display filtered components -->
-  <cards class="grid grid-cols-1 sm:grid-cols-3 gap-12">
+  <cards class="grid grid-cols-1 sm:grid-cols-3 gap-12" >
     <card
       v-for="component in filteredComponents"
       :key="component.title"
-      class="flex flex-col border border-gray-200 p-4 rounded-md shadow-sm"
+      class="flex flex-col border border-gray-200 rounded-md shadow-sm"
+      style="background-color: var(--vp-c-muted-bg)"
     >
       <h3 class="h4 text-m! static! mt-16! mx-16!">
         <a
@@ -156,11 +166,12 @@ All WARP components for Figma, React, Vue, Elements, iOS, and Android.
           {{ component.title }}
         </a>
       </h3>
-      <img
-        class="order-first"
-        :src="component.image.src"
-        :alt="component.image.alt"
+      <div class="order-first" style="aspect-ratio:4/3; display: flex; justify-content: center; align-items: center; background-color: var(--vp-c-bg-soft);">
+      <img class="max-w-[80%] max-h-[80%]"
+        :src="component.imagePath"
+        :alt="component.image?.alt || 'Component as a wireframe'"
       />
+      </div>
       <p class="m-16! text-s">{{ component.description }}</p>
     </card>
   </cards>

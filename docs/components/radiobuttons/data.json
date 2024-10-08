@@ -3,7 +3,6 @@
   "description": "Radio buttons allow users to select a single option from a list of mutually exclusive options that are grouped together.",
   "category": "Forms",
   "image": {
-    "src": "/warp-portal-poc/css/la05.jpg",
     "alt": "Radio buttons component"
   },
   "frameworks": [

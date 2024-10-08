@@ -3,7 +3,6 @@
   "description": "Breadcrumbs show the navigation structure for the current location.",
   "category": "Layout",
   "image": {
-    "src": "/warp-portal-poc/css/la05.jpg",
     "alt": "Breadcrumbs component"
   },
   "frameworks": [

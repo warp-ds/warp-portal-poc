@@ -3,7 +3,6 @@
   "description": "",
   "category": "Overlays",
   "image": {
-    "src": "/warp-portal-poc/css/la12.jpg",
     "alt": "Attention component"
   },
   "frameworks": [

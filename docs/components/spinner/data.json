@@ -3,7 +3,6 @@
   "description": "A spinner is an animated spinning icon that informs users about the loading of content.",
   "category": "Overlays",
   "image": {
-    "src": "/warp-portal-poc/css/la10.jpg",
     "alt": "Spinner component"
   },
   "frameworks": [

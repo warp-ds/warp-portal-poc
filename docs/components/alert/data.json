@@ -3,7 +3,6 @@
   "description": "Alert is an inline component used for displaying different types of messages.",
   "category": "Feedback",
   "image": {
-    "src": "/warp-portal-poc/css/la01.jpg",
     "alt": "Alert component"
   },
   "frameworks": [

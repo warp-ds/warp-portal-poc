@@ -3,7 +3,6 @@
   "description": "Modals (or dialogs) display important information that users need to acknowledge.",
   "category": "Overlays",
   "image": {
-    "src": "/warp-portal-poc/css/la10.jpg",
     "alt": "Modal component"
   },
   "frameworks": [

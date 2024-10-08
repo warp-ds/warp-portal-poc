@@ -1,9 +1,8 @@
 {
-  "title": "Button",
+  "title": "Buttons",
   "description": "Buttons are used to perform actions, with different visuals for different needs.",
   "category": "Actions",
   "image": {
-    "src": "/warp-portal-poc/css/la06.jpg",
     "alt": "Button component"
   },
   "frameworks": [
