@@ -3,6 +3,7 @@
   "description": "A multiline text input component.",
   "category": "Forms",
   "image": {
+    "src": "/warp-portal-poc/components/textarea.svg",
     "alt": "Text area component"
   },
   "frameworks": [

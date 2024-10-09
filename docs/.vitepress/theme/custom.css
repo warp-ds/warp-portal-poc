@@ -1,31 +1,71 @@
+/* --[vp]-[c]- prefix */
+/* [vp] = vitepress, tokens used in the documentation interface itself */
+/* [c] = color, omit if not a color */
 
-/*  Warp color tokens  */
+/* Todo: Clean everything up to follow this prefix  */
 
-/* set light mode colors here as default value */
-:root {
-   --w-bg-color: #ffffff;
-
-}
-
-/* set dark mode color here */
-@media (prefers-color-scheme: dark) {
-  :root{
-    /* --w-bg-color: #000000; */
-  }
-}
-
-body {
-  --vp-c-bg: var(--w-bg-color);
-}
 
 
 :root {
-  --vp-c-bg-alt: #f5f5f5;
+  /* Tokens that are the same in light and dark mode */
+  --vp-radius: 4px;
+
+  /* Light mode */
   --vp-c-brand-1: #BE3830;
   --vp-c-brand-2: #c63f36;
   --vp-c-brand-3: #CF4840;
   --vp-c-brand-soft: rgba(255,72,64,.14);
   --vp-custom-block-tip-bg: rgba(var(--w-s-rgb-background-info), .10);
+  --vp-c-text-1: #3c3c43;
+  --vp-c-text-1-inverted: #FFFBD5;
+  --vp-c-border: #C0C0D1;
+  --vp-c-bg: #FFFFFF;
+  --vp-c-bg-inverted: #131B2D;
+  --vp-c-bg-soft: #f6f6f7;
+  --vp-c-bg-soft-inverted: #182237;  
+  --vp-c-bg-alt: #f5f5f5;
+}
+
+/* Dark mode */
+html.dark {
+  --vp-c-brand-1: #F6D553;
+  --vp-c-brand-2: #F6D553;
+  --vp-c-brand-3: #F6D553;
+  --vp-c-brand-soft: var(--vp-c-indigo-soft);
+  --vp-home-hero-name-color: #F6D553;
+  --vp-c-text-1: #FFFBD5;
+  --vp-c-text-1-inverted: #3c3c43;
+  --vp-sidebar-bg-color: #182237;
+  --vp-c-bg: #131B2D;
+  --vp-c-bg-inverted: #FFFFFF;
+  --vp-c-bg-soft: #182237;
+  --vp-c-bg-soft-inverted: #f6f6f7;
+  --vp-c-bg-alt: #0b0f1d;
+  --vp-nav-bg-color: #131B2D;
+  --vp-code-color: #EFC2BF;
+  --vp-c-tip-1: var(--vp-code-color);
+  --vp-code-bg: #0b0f1d;
+  --vp-custom-block-tip-code-bg: var(--vp-code-bg);
+  --vp-code-block-bg: #0b0f1d;
+
+  --vp-c-border: #5C5C66;
+}
+
+/* Map the custom doc content to the --vp tokens, or set them directly */
+:root {
+  --vp-c-input-bg: var(--vp-c-bg);
+  --vp-c-input-border: var(--vp-c-border);
+  --vp-c-input-border-focus: var(--vp-c-brand-1);
+  --vp-c-input-text: var(--vp-c-text-1);
+  --vp-c-input-text-inverted: var(--vp-c-text-1-inverted);
+
+  --vp-input-radius: var(--vp-radius);
+
+  --vp-c-button-bg: var(--vp-c-bg);
+  --vp-c-button-bg-active: var(--vp-bg-inverted);
+
+  --vp-c-pill-bg: var(--vp-c-bg-soft);
+  --vp-c-pill-bg-active: var(--vp-c-bg-soft-inverted);
 }
 
 html {
@@ -42,22 +82,7 @@ body {
 html.dark body {
   background-color: var(--vp-c-bg);
   color: var(--vp-c-text-1);
-  --vp-c-brand-1: #F6D553;
-  --vp-c-brand-2: #F6D553;
-  --vp-c-brand-3: #F6D553;
-  --vp-c-brand-soft: var(--vp-c-indigo-soft);
-  --vp-home-hero-name-color: #F6D553;
-  --vp-c-text-1: #FFFBD5;
-  --vp-sidebar-bg-color: #182237;
-  --vp-c-bg: #131B2D;
-  --vp-c-bg-soft: #182237;
-  --vp-c-bg-alt: #0b0f1d;
-  --vp-nav-bg-color: #131B2D;
-  --vp-code-color: #EFC2BF;
-  --vp-c-tip-1: var(--vp-code-color);
-  --vp-code-bg: #0b0f1d;
-  --vp-custom-block-tip-code-bg: var(--vp-code-bg);
-  --vp-code-block-bg: #0b0f1d;
+
 }
 
 .dark .VPNavBarTitle {
@@ -156,4 +181,56 @@ html.dark body {
   max-width: 100%; /* Ensure the image scales to fit within the container */
   height: auto; /* Maintain image aspect ratio */
   object-fit: cover; /* Cover the container, preserving aspect ratio */
+}
+
+
+/* Plain html elements with general styling for the whole doc */
+/* Use on all standard buttons */
+.doc-button {
+  background-color: var(--vp-c-bg);
+  color: var(--vp-c-input-text);
+  padding: 4px 8px;
+  border-radius: var(--vp-input-radius);
+}
+
+.doc-button-active {
+  /* For a toggled on state */
+  background-color: var(--vp-c-button-bg-active);
+  color: var(--vp-c-input-text-inverted);
+}
+
+.doc-button:focus {
+  outline: 1px solid var(--vp-c-brand-1);
+}
+
+/* Use on all pill formed buttons */
+.doc-pill {
+  background-color: var(--vp-c-pill-bg);
+  color: var(--vp-c-input-text);
+  padding: 4px 8px;
+  border-radius: 9999px;
+  min-width: 60px
+}
+
+.doc-pill-active {
+  /* For a toggled on state */
+  background-color: var(--vp-c-pill-bg-active);
+  color: var(--vp-c-input-text-inverted);
+}
+
+.doc-pill:focus {
+  outline: 1px solid var(--vp-c-brand-1);
+}
+
+/* Use on all input fields */
+.doc-input {
+  border: 1px solid var(--vp-c-input-border);
+  color: var(--vp-c-input-text);
+  padding: 4px 8px;
+  border-radius: var(--vp-input-radius);
+  background-color: var(--vp-c-input-bg);
+}
+
+.doc-input:focus {
+  border: 1px solid var(--vp-c-input-border-focus);
 }

@@ -3,6 +3,7 @@
   "description": "",
   "category": "Layout",
   "image": {
+    "src": "/warp-portal-poc/components/tabs.svg",
     "alt": "Tabs component"
   },
   "frameworks": [

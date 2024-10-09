@@ -3,6 +3,7 @@
   "description": "Expandable is a layout component used for creating expandable content areas on a page.",
   "category": "layout",
   "image": {
+    "src": "/warp-portal-poc/components/expandable.svg",
     "alt": "Expandable component"
   },
   "frameworks": [

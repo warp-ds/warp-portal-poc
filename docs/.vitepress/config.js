@@ -268,7 +268,7 @@ export default defineConfig({
           { text: 'Tokens', collapsed: true, items: [
             { text: 'Intro', link: '/foundations/tokens/intro/' },
             { text: 'Overview', link: '/foundations/tokens/overview/' },
-          ] 
+          ]
         },
           { text: 'Styling', collapsed: true, items: [
             { text: 'Native', link: '/foundations/styling/native/' },
@@ -567,7 +567,6 @@ export default defineConfig({
             { text: 'Component Overview', link: '/components/' },
             { text: 'Alert', link: '/components/alert/' },
             { text: 'Attention', link: '/components/attention/' },
-            { text: 'Avatar', link: '/components/avatar/' },
             { text: 'Badge', link: '/components/badge/' },
             { text: 'Box', link: '/components/box/' },
             { text: 'Breadcrumbs', link: '/components/breadcrumbs/' },

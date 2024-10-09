@@ -3,6 +3,7 @@
   "description": "",
   "category": "Overlays",
   "image": {
+    "src": "/warp-portal-poc/components/attention.svg",
     "alt": "Attention component"
   },
   "frameworks": [

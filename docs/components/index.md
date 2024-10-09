@@ -7,20 +7,14 @@ import { ref, computed } from 'vue';
 
 // Import all JSON data
 const components = import.meta.glob('./*/data.json', { eager: true });
-const baseUrl = import.meta.env.BASE_URL || '/'; // Fallback to '/' if BASE_URL is undefined
 
-// Clean up the base URL to avoid double slashes
-const cleanBaseUrl = baseUrl.replace(/\/+$/, ''); // Remove trailing slashes
-
-// Map JSON data to include href and correct paths, and add image path for placeholder.svg
+// Map JSON data to include href and correct paths
 const componentData = Object.keys(components).map(path => {
-  const folderPath = path.replace('/data.json', '').replace(/^\.\/+/, '');
+  const folderPath = path.replace('/data.json', '');
 
   return {
     ...components[path].default,
-    href: `${cleanBaseUrl}/components/${folderPath}`, // Full path for href
-    // Full path for image, ensuring it's based on BASE_URL to work in production
-    imagePath: `${cleanBaseUrl}/components/${folderPath}/placeholder.svg`.replace(/\/\.\//g, '/'),
+    href: `/warp-portal-poc/components/${folderPath}` // Direct href
   };
 });
 
@@ -69,60 +63,19 @@ const showAll = () => {
 };
 </script>
 
-<style>
-  /* remove these to custom.css and replace with warp-doc color tokens */
-  :root{
-    --w-border: #999;
-    --w-border-focus: #00F;
-    --w-button-bg: #eee;
-    --w-button-bg-active: #333;
-    --w-text: #333;
-    --w-text-inverted: #eee;
-    --w-border-radius: 4px;
-    --w-panel-bg: #f9f9f9;
-    --w-input-bg: #fff;
-  }
-  /* set up as custom default styling somewhere else, default.css perhaps?  */
-  .input-text{
-    border: 1px solid var(--w-border);
-    color: var(--w-text);
-    padding: 4px 8px;
-    border-radius: var(--w-border-radius);
-    background-color: var(--w-input-bg);
-  }
-  .input-text:focus{
-    border: 1px solid var(--w-border-focus);
-  }
-  .button{
-    background-color: var(--w-button-bg);
-    color: var(--w-text);
-    padding: 4px 8px;
-    border-radius: var(--w-border-radius);
-  }
-  .button-active{
-    background-color: var(--w-button-bg-active);
-    color: var(--w-text-inverted);
-  }
-  .button:focus{
-    outline:1px solid red;
-  }
-</style>
-
-
-
 # Overview
 All WARP components for Figma, React, Vue, Elements, iOS, and Android.
 
 ## Filters
 <section>
-  <div class="p-16 rounded-8 mb-16"  style="background-color: var(--vp-c-bg-soft);">
+  <div class="py-16 rounded-8 mb-16">
     <div class="pt-8 mb-16">
       <!-- Input field for text filtering -->
       <label class="block bold" for="filter-input">By name</label>
       <input
         v-model="query"
         name="filter-input"
-        class="input-text"
+        class="doc-input"
       />
     </div>
     <p class="block bold mb-4!">Supported on platform</p>
@@ -133,9 +86,9 @@ All WARP components for Figma, React, Vue, Elements, iOS, and Android.
         :key="framework"
         @click="toggleFramework(framework)"
         :class="[
-          'button',
+          'doc-pill',
           selectedFrameworks.includes(framework)
-            ? 'button-active'
+            ? 'doc-pill-active'
             : ''
         ]"
       >
@@ -144,9 +97,9 @@ All WARP components for Figma, React, Vue, Elements, iOS, and Android.
       <button
         @click="showAll"
         :class="[
-          'button',
+          'doc-pill',
           selectedFrameworks.length === 0
-            ? 'button-active'
+            ? 'doc-pill-active'
             : ''
         ]"
       >
@@ -156,7 +109,7 @@ All WARP components for Figma, React, Vue, Elements, iOS, and Android.
   </div>
 
   <!-- Display filtered components -->
-  <cards class="grid grid-cols-1 sm:grid-cols-3 gap-12" >
+  <cards class="grid grid-cols-1 sm:grid-cols-3 gap-12">
     <card
       v-for="component in filteredComponents"
       :key="component.title"
@@ -172,10 +125,11 @@ All WARP components for Figma, React, Vue, Elements, iOS, and Android.
         </a>
       </h3>
       <div class="order-first" style="aspect-ratio:4/3; display: flex; justify-content: center; align-items: center; background-color: var(--vp-c-bg-soft);">
-      <img class="max-w-[80%] max-h-[80%]"
-        :src="component.imagePath"
-        :alt="component.image?.alt || 'Component as a wireframe'"
-      />
+        <!-- Directly use component.image.src here -->
+        <img class="max-w-[80%] max-h-[80%]"
+          :src="component.image.src"
+          :alt="component.image.alt || 'Component as a wireframe'"
+        />
       </div>
       <p class="m-16! text-s">{{ component.description }}</p>
     </card>

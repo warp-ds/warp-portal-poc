@@ -3,6 +3,7 @@
   "description": "The steps component is built to handle user journeys, making it clear to the end user where they are in the process.",
   "category": "Feedback",
   "image": {
+    "src": "/warp-portal-poc/components/steps.svg",
     "alt": "Steps component"
   },
   "frameworks": [

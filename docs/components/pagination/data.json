@@ -3,6 +3,7 @@
   "description": "Pagination is used to split up long datasets into multiple 'pages'",
   "category": "Navigation",
   "image": {
+    "src": "/warp-portal-poc/components/pagination.svg",
     "alt": "Navigation component"
   },
   "frameworks": [

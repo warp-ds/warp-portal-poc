@@ -3,6 +3,7 @@
   "description": "A single-line text input component.",
   "category": "Forms",
   "image": {
+    "src": "/warp-portal-poc/components/textfield.svg",
     "alt": "Text field component"
   },
   "frameworks": [
