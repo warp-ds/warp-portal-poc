@@ -22,7 +22,8 @@
   --vp-c-bg: #FFFFFF;
   --vp-c-bg-inverted: #131B2D;
   --vp-c-bg-soft: #f6f6f7;
-  --vp-c-bg-soft-inverted: #182237;
+  --vp-c-bg-soft-inverted: #182237;  
+  --vp-c-bg-alt: #f5f5f5;
 }
 
 /* Dark mode */
@@ -87,7 +88,15 @@ html.dark body {
 .dark .VPNavBarTitle {
   --vp-c-text-1: #F6D553;
 }
-
+.dark .VPNavBarTitle .title {
+  border-bottom-color: transparent!important;
+}
+.VPNavBar .container {
+  background-color: var(--vp-c-bg)
+}
+.VPNavBar .divider{
+  padding-left: 0!important;
+}
 .dark .VPSidebar {
   --vp-c-divider: #FFFBD525;
 }
