@@ -20,6 +20,7 @@ body {
 
 
 :root {
+  --vp-c-bg-alt: #f5f5f5;
   --vp-c-brand-1: #BE3830;
   --vp-c-brand-2: #c63f36;
   --vp-c-brand-3: #CF4840;
@@ -62,7 +63,15 @@ html.dark body {
 .dark .VPNavBarTitle {
   --vp-c-text-1: #F6D553;
 }
-
+.dark .VPNavBarTitle .title {
+  border-bottom-color: transparent!important;
+}
+.VPNavBar .container {
+  background-color: var(--vp-c-bg)
+}
+.VPNavBar .divider{
+  padding-left: 0!important;
+}
 .dark .VPSidebar {
   --vp-c-divider: #FFFBD525;
 }
