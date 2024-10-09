@@ -3,6 +3,7 @@
   "description": "Card is a layout component used for a traditional card look and feel.",
   "category": "Layout",
   "image": {
+    "src": "/warp-portal-poc/components/card.svg",
     "alt": "Card component"
   },
   "frameworks": [

@@ -3,6 +3,7 @@
   "description": "Warp's icon set is designed to help users understand actions and information, and to draw attention to elements.",
   "category": "Actions",
   "image": {
+    "src": "/warp-portal-poc/components/icons.svg",
     "alt": "Icons component"
   },
   "frameworks": [

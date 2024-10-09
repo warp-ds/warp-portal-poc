@@ -3,6 +3,7 @@
   "description": "Combo box also known as an autocomplete or autosuggest.",
   "category": "Actions",
   "image": {
+    "src": "/warp-portal-poc/components/combobox.svg",
     "alt": "Combo box component"
   },
   "frameworks": [
