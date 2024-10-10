@@ -1,62 +1,52 @@
 <script setup>
 const pages = [{
   title: "Tokens",
-  description: "Todo",
-  href: "tokens",
+  description: "Introduction to Warp tokens, our structure, supported brands and a token overview.",
+  href: "tokens/intro",
 },
 {
-  title: "Native styling",
-  description: "Todo",
-  href: "styling/native/",
-},
-{
-  title: "Web styling",
-  description: "Todo",
+  title: "CSS classes",
+  description: "UnoCSS classes for layout and styling on web",
   href: "styling/web/unocss",
 },
 {
   title: "Illustrations",
-  description: "Todo",
+  description: "Figma links to our different brands' illustration libraries.",
   href: "illustrations/",
 },
 {
   title: "Typography",
-  description: "Todo",
+  description: "Guidelines on UX Writing, font styles and links to our brand fonts.",
   href: "typography/",
 },
 {
   title: "Accessibility",
-  description: "Todo",
+  description: "Requirements, accessibility playbook and useful Figma plugins.",
   href: "accessibility/",
 },
 {
-  title: "Design principles",
-  description: "Todo",
-  href: "design-principles/",
-},
-{
   title: "Brands",
-  description: "Todo",
+  description: "Supported brands and brand guidelines.",
   href: "brands/",
 },
 {
   title: "Data visualisation",
-  description: "Todo",
+  description: "Getting started, chart types, colour usage and success criteria.",
   href: "data-visualization/getting-started/",
 },
 {
   title: "Elevation",
-  description: "Todo",
+  description: "Elevation as a concept, the basics and surface type overview.",
   href: "elevation/",
 },
 {
   title: "Dark mode",
-  description: "Todo",
+  description: "Support in WARP and guidance for switching modes in Figma.",
   href: "dark-mode",
 },
 {
   title: "Motion",
-  description: "Todo",
+  description: "Guidelines for motion.",
   href: "motion/",
 }]
 </script>

@@ -11,4 +11,4 @@ Make sure all Fabric libraries are disabled so you don't accidentally use styles
 :::
 
 **FINN first**
-The default styling for all components in WARP is FINN, you can switch to other brands whenever you want thanks to Figma variables and tokens. Read more about this in "Switch brands"
+The default styling for all components in WARP is FINN, you can switch to other brands whenever you want thanks to Figma variables and tokens.

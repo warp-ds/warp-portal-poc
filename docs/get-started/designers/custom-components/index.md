@@ -11,16 +11,11 @@ Semantic tokens are not connected to any specific component and can be used to c
 ### Access the semantic tokens
 You find the semantic tokens in the right sidebar and they practically work like a normal Figma style.
 
-We are working on a more in-depth guide on semantic tokens, it will be linked from here.
+You can find an overview of our semantic tokens here: [foundations > tokens > overview](../../../foundations/tokens/overview/index.md)
 
-::: image-block
 ![Figma interface showing multiple backgorund options and "Primary-Subtle" is highligted](/images/get-started/access-the-semantic-tokens.png)
-:::
 
-### Modes
-**Switch modes**
-Connecting the design tokens to Figma variables makes it possible to easily switch between brands and light/dark modes. This is also available in the right sidebar, more on mode switching in the “Switch brands” section
+### Switch modes
+Connecting the design tokens to Figma variables makes it possible to easily switch between brands and light/dark modes. You can do this by selecting an element using WARP tokens and using the right sidebar to switch modes within "Appearance"
 
-::: image-block
-![Figma interface showing a selected button and the available modes for NMP brands and light/dark mode options](/images/foundations/switch-modes.png)
-:::
+![Figma interface showing a selected button and the available modes for NMP brands and light/dark mode options](/images/foundations/figma-button-modes.png)
