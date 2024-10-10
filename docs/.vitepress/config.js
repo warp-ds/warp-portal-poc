@@ -270,9 +270,7 @@ export default defineConfig({
             { text: 'Overview', link: '/foundations/tokens/overview/' },
           ] 
         },
-          { text: 'Styling', collapsed: true, items: [
-            { text: 'Native', link: '/foundations/styling/native/' },
-            { text: 'Web', collapsed: true, items: [
+          { text: 'CSS classes', collapsed: true, items: [
                   {
                     text: 'Introduction',
                     collapsed: true,
@@ -525,12 +523,10 @@ export default defineConfig({
                       { text: 'Screen Readers', link: '/foundations/styling/web/screen-readers' },
                     ],
                   },
-            ]}
           ]},
           { text: 'Illustrations', link: '/foundations/illustrations/' },
           { text: 'Typography', link: '/foundations/typography/' },
           { text: 'Accessibility', link: '/foundations/accessibility/' },
-          { text: 'Design Princples', link: '/foundations/design-principles/' },
           { text: 'Brands', link: '/foundations/brands/' },
           {
             text: 'Data visualisation',

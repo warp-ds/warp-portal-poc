@@ -1,75 +1,80 @@
 # WARP in Figma
-Description of all files in the WARP Figma space.
+Introduction to the [WARP Design System](https://www.figma.com/files/1308388678941179368/team/1148531441799778110) workspace.
 
-## The "WARP Design System" Figma space
-Contains all libraries and documentation for you to get started with designing for Schibsted Marketplaces.
+## WARP Design System
+These files contain all files and libraries for you to get started with designing for Schibsted Marketplaces.
 
-::: image-block
-![Overview of design system file structure in Figma for designers](/images/get-started/figma-warp-overview.jpg)
-:::
+![Overview of design system file structure in Figma for designers](/images/get-started/figma-warp-overview.png)
 
-### Get started
+### 01. Get started
 Guidance and onboarding to the WARP design system.
+
+[Start here](https://www.figma.com/design/8q1w2m8ssGlrYTQUaehU0m/01.-Start-here?m=auto): content here is already migrated to this page. This file will be removed soon. <br><br>
+[Auto-layout Guidelines](https://www.figma.com/design/exuWKnSlbdxvMBCRdyI6A9/Auto-layout-Guidelines?m=auto&t=9n7H4cvMNGuOgEYS-6): learning resource for working with auto-layout. <br><br>
+[Figma for Dummies](https://www.figma.com/design/OKVEGRzXQgQPmWIS4JTqcT/Figma-for-Dummies?m=auto&t=9n7H4cvMNGuOgEYS-6): learning resource for using Figma. <br><br>
+[Figma Dev Mode](https://www.figma.com/design/BP6InHzYBpcg3e4dk3uHcs/Figma-Dev-Mode?m=auto&t=9n7H4cvMNGuOgEYS-6): learning resource for Figma's dev mode.
 
 ::: image-block
 ![Overview of the "Get started" project in Figma for designers](/images/get-started/figma-warp-get-started.jpg)
 :::
 
-### Documentation
-Component overview: contains all our components, their variants themes and documentation for usage.
+### 02. Documentation
 
-Dataviz: contains guidelines for data visualisation
+[Component overview](https://www.figma.com/design/nkiRpuVu6XRfvY96BA80H8/Component-overview?m=auto): component documentation. The content in here will be migrated from Figma to this page. <br><br>
+[DataViz Guidelines (Beta)](https://www.figma.com/design/nGpxtM37E56I832ZDR3lRt/DataViz-Guidelines-(Beta)?m=auto): guidelines for data visualisation.
 
 ::: image-block
 ![Overview of the "Documentation" project in Figma for designers](/images/get-started/figma-warp-documentation.jpg)
 :::
 
-### Libraries
-Components: The latest version of the WARP component library, contains themeable components that are usable by all Schibsted Marketplaces
+### 03. Libraries
 
-Design tools: Generic design elements that you can use in presentations, mockups, or to help organise things in your Figma files
-
-Icons: A large icon library containing all old Fabric icons and newer ones
-
-Components (deprecated): An old version of the WARP component library, this will be phased out and should not be used in newer projects
+[WARP - Components](https://www.figma.com/design/oHBCzDdJxHQ6fmFLYWUltf/WARP---Components?m=auto): contains all tokens and themable components used for Schibsted Marketplaces. <br><br>
+[WARP - Icons](https://www.figma.com/design/yEx16ew6S0Xgd579dN4hsM/WARP---Icons?m=auto): icon library containing all supported icons. <br><br>
+[WARP - DataViz (Beta)](https://www.figma.com/design/jKb3gWUebdHyRBsK0naqB6/WARP---DataViz-(Beta)?m=auto): library with data visualisation colours and components. <br><br>
+[WARP - Design Tools](https://www.figma.com/design/pZ8kIMvs615cJfbIzatP03/WARP---Design-Tools?m=auto): standardised design elements that you can use in presentations, mockups, or to help organise things in your Figma files.
 
 ::: image-block
 ![Overview of the "Libraries" project in Figma for designers](/images/get-started/figma-warp-libraries.jpg)
 :::
 
-### Example pages
-A collection of example pages that shows brand specific tokens in play. Use it to reverse engineer the WARP design tokens if you will!
-These files will most likely be deprecated during 2024 as Figma continuously are releasing updates to the variables functionality.
+### 04. Examples
+
+1. [Example pages](): generic web/app designs showing brand specific tokens in play. You can use this to understand how tokens are used.  
 
 ::: image-block
 ![Overview of the "Examples" project in Figma for designers](/images/get-started/figma-warp-examples.jpg)
 :::
 
 ## Libraries
-In order to use the WARP design system properly you need to enable our libraries.
-### Libraries needed
-The components and icon libraries are automatically added to every new Figma file created in SMP.
+To speed up your multi-brand design flow, we've enabled the component and icon library whenever a new file is created within the Nordic Marketplaces organisation.
 
 ::: image-block
 ![Figma library overview with 2 added WARP libraries "WARP - Components 2.0" and "WARP - Icons"](/images/get-started/figma-warp-libraries-added.jpg)
 :::
 
-### How to add libraries
-#### Open libraries
+## How to add libraries
+A quick guide in case you need more libraries.
+
+### 1 Open libraries
+Go to your desired design file and open libraries.
+<br><br>
 Hotkeys
+<br>
 Mac: ⌥option + ⌘command + O
+<br>
 Win: ctrl + alt + O
 
 ::: image-block
 ![Figma dropdown highlighting the option "libraries"](/images/get-started/figma-dropdown-libraries.jpg)
 :::
 
-#### Enabled libraries
-We've automatically added the following libraries whenever you create a new file within the Nordic Marketplaces organisation:
+### 2 Search and enable
+Search for the desired library and select "Add to file".
 
-* Warp - Components
-* Warp - Icons
+::: image-block
+![Figma dropdown highlighting the option "libraries"](/images/get-started/figma-libraries-dataviz.png)
+:::
 
-### Removing other libraries
-
+## Removing other libraries
 You might want to consider disabling other libraries to not accidentally pick any non-WARP components. All WARP libraries are marked with the "Warp"-prefix.

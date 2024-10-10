@@ -1,26 +1,29 @@
 # Accessibility
-Designing and building for accessibility will make our products better for more people.
+The products we build in SMP have to be accessible and inclusive for everyone. SMP must meet WCAG 2.2 AA requirements.
 
-## A11y in WARP
-### Requirements in SMP
-The products we build in SMP should be accessible and inclusive for everyone. SMP should meet WCAG 2.2 AA requirements.
+## Accessibility playbook
+The SMP a11y team has a playbook where you'll find essential tips and tools to help you create accessible and user-centered products. This covers a variety of topics, including accessibility guidelines, testing procedures, best practices, and legal requirements.
 
-We’re aiming for WARP to meet the accessibility standards and component and style we provide should be accessible.
+**Website**<br>
+[Accessibility Playbook](https://zeroheight.com/23ed9d143/p/504116-accessibility-playbook)
 
-::: image-block
-![Overview of different types font styles](/images/foundations/a11y-icon.png)
-:::
-
-### Accessibility playbook
-The SMP a11y team is working on a playbook which contains what we need to know in order to work efficiently with accessibility. We will link to that here when available.
-
-We’ll update this space with WARP specific accessibility information when the playbook is released.
-
-#smp-accessibility
+**Slack support**<br>
+[#smp-accessibility](https://sch-chat.slack.com/archives/C06MRNFR8)
 
 ## Figma Plugins
-### Colour contrast
-There are a few things we need to test for when it comes to accessibility. 
-One of the main things you as a designer can do is to make sure the colour contrasts are good enough.
+### Contrast checkers
+As a designer you need to make sure the colour contrasts are good enough. 
 
-The contrast between text and the background should be at least 4.5:1.There are many plugins for checking contrast, some popular ones are Contrast & Stark.
+The contrast between text and the background should be at least 4.5:1.
+
+There are multiple plugins for checking contrast, here are some popular ones.
+
+| Figma plugin | Link                                                                                                                                       |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Contrast     | [Contrast](https://www.figma.com/community/plugin/748533339900865323/contrast)                                                             |
+| Stark        | [Stark - Contrast & Accessibility Checker](https://www.figma.com/community/plugin/732603254453395948/stark-contrast-accessibility-checker) |
+| Polychrom    | [Polychrom Contrast Checker](https://www.figma.com/community/plugin/1281280685402026529/polychrom)                                         |
+
+::: image-block
+![Figma plugin "Contrast" checking for accessibility](/images/foundations/figma-plugin-contrast.png)
+:::

@@ -1,4 +1,4 @@
-# Chart Type
+# Chart types
 
 A chart is a visual representation of data that tells a specific story. You need to choose the chart that most clearly communicates the main insight you want to convey.
 

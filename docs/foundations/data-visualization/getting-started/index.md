@@ -1,4 +1,4 @@
-# Getting Started
+# Getting started
 
 Here you will find guidelines about data visualisation in customer facing products and services.
 

@@ -1,4 +1,4 @@
-# Colour usage in data visualisation
+# Colour usage
 
 Colour plays a pivotal role in data visualisation. It is among the initial aspects we perceive on a screen and can be strategically utilised to guide a user's focus.
 

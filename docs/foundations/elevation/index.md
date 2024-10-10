@@ -1,8 +1,9 @@
 # Elevation
-Elevation is the distance between different surfaces on the z-axis.
+Elevation is a concept used to visually differentiate the height between different elements. In light mode this is easy with the use of shadows but in dark mode we can’t rely as much on shadows to show the height difference. 
+
 
 ## The basics
-Elevation is a concept used to visually differentiate the height between different elements. In light mode this is easy with the use of shadows but in dark mode we can’t rely as much on shadows to show the height difference. 
+Elevation is the distance between different surfaces on the z-axis.
 
 Think of dark mode as a dark room with a small light source on the ceiling: the closer an object is to the light, the lighter its surface appears. In light mode, we can use shadows to make this clear. However, in dark mode shadows are less effective for showing differences in height.
 
