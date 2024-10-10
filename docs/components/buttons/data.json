@@ -1,6 +1,6 @@
 {
   "title": "Buttons",
-  "description": "Buttons are used to perform actions, with different visuals for different needs.",
+  "description": "Buttons initiate events or actions within a page, informing users of what to expect next.",
   "category": "Actions",
   "image": {
     "src": "/warp-portal-poc/components/buttons.svg",
