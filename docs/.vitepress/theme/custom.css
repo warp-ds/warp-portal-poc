@@ -22,8 +22,12 @@
   --vp-c-bg: #FFFFFF;
   --vp-c-bg-inverted: #131B2D;
   --vp-c-bg-soft: #f6f6f7;
-  --vp-c-bg-soft-inverted: #182237;  
+  --vp-c-bg-soft-inverted: #182237;
   --vp-c-bg-alt: #f5f5f5;
+  /* These are for svgs, to make them contrasty enough both in light and dark mode */
+  --vp-c-svg1: #FFFBD5;
+  --vp-c-svg2: #131B2D;
+  --vp-c-svg3: #9EACC9;
 }
 
 /* Dark mode */
@@ -49,6 +53,10 @@ html.dark {
   --vp-code-block-bg: #0b0f1d;
 
   --vp-c-border: #5C5C66;
+
+  --vp-c-svg1: #FFFBD5;
+  --vp-c-svg2: #9EACC9;
+  --vp-c-svg3: #D4D9E3;
 }
 
 /* Map the custom doc content to the --vp tokens, or set them directly */
