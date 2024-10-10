@@ -1,6 +1,6 @@
 {
   "title": "Checkbox",
-  "description": "Checkboxes allow users to select multiple items from a list of individual items, or to mark one individual item as selected.",
+  "description": "Checkboxes allow users to select one or more options from a number of choices.",
   "category": "Forms",
   "image": {
     "src": "/warp-portal-poc/components/checkbox.svg",

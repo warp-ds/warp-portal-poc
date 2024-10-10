@@ -1,6 +1,6 @@
 {
   "title": "Attention",
-  "description": "",
+  "description": "Attention shows information that highlight content.",
   "category": "Overlays",
   "image": {
     "src": "/warp-portal-poc/components/attention.svg",

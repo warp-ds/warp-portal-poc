@@ -1,6 +1,6 @@
 {
   "title": "Card",
-  "description": "Card is a layout component used for a traditional card look and feel.",
+  "description": "Card is an interactive layout component to display information.",
   "category": "Layout",
   "image": {
     "src": "/warp-portal-poc/components/card.svg",

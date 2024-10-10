@@ -1,6 +1,6 @@
 {
   "title": "Switch",
-  "description": "The Switch component allows users to toggle between validity for a condition.",
+  "description": "The Switch component allows users to toggle between two states.",
   "category": "Forms",
   "image": {
     "src": "/warp-portal-poc/components/switch.svg",
