@@ -15,7 +15,7 @@ For the web implementation of a "spinner", see [CSS - Animation - Spinner](../..
 :::
 
 ## Example
-
+<ThemeSwitcher />
 <spinner-example />
 
 ## Usage

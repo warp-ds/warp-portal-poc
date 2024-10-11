@@ -15,7 +15,7 @@
 <components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Example
-
+<ThemeSwitcher />
 <button-example />
 
 ## Usage
@@ -30,7 +30,7 @@ icon, an `aria-label` prop must be provided for accessibility.
 
 ## Frameworks
 
-<tabs-content> 
+<tabs-content>
   <template #react>
     <react />
   </template>
