@@ -15,11 +15,8 @@ They are overlays that prevent users from interacting with the rest of the appli
 
 <components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
-
-<components-status react='released' vue='released' elements='released' android='released'  ios='released'/>
-
 ## Example
-
+<ThemeSwitcher />
 <modal-example />
 
 ## Usage

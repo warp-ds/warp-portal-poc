@@ -11,10 +11,8 @@ Pagination is used on various listing pages. It's typically found at the end of 
 
 <components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
-<components-status react='released' />
-
 ## Example
-
+<ThemeSwitcher />
 <pagination-example />
 
 ### Accessibility

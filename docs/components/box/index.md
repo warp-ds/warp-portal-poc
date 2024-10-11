@@ -15,7 +15,7 @@
 <components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Example
-
+<ThemeSwitcher />
 <box-example />
 
 ## Usage
@@ -34,7 +34,7 @@ Consider using more suitable roles for your specific Box, as described on
 
 ## Frameworks
 
-<tabs-content> 
+<tabs-content>
   <template #react>
    <react />
   </template>

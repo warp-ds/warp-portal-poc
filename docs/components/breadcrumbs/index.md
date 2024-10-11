@@ -13,7 +13,7 @@
 <components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Example
-
+<ThemeSwitcher />
 <breadcrumbs-example />
 
 ## Usage
@@ -34,7 +34,7 @@ Usually this is the last crumb in the  trail.
 
 ## Frameworks
 
-<tabs-content> 
+<tabs-content>
   <template #react>
     <react />
   </template>

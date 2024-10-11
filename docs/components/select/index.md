@@ -14,7 +14,7 @@ Selects (sometimes known as "dropdowns" or "pickers") allow users to choose from
 <components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Example
-
+<ThemeSwitcher />
 <select-example />
 
 ## Usage

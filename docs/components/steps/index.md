@@ -14,7 +14,7 @@
 <components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Examples
-
+<ThemeSwitcher />
 <steps-example />
 
 ## Usage

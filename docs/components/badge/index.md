@@ -15,7 +15,7 @@
 <components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
 ## Example
-
+<ThemeSwitcher />
 <badge-example />
 
 ## Usage
@@ -26,7 +26,7 @@
 
 ## Frameworks
 
-<tabs-content> 
+<tabs-content>
   <template #react>
     <react />
   </template>
