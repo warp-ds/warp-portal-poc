@@ -9,6 +9,7 @@
 :root {
   /* Tokens that are the same in light and dark mode */
   --vp-radius: 4px;
+  --vp-c-bg-banner: #182237;
 
   /* Light mode */
   --vp-c-brand-1: #BE3830;

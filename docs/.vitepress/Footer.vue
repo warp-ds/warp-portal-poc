@@ -48,14 +48,14 @@ const baseUrl = import.meta.env.BASE_URL;
   height: 104px;
   background: url('stars-background.svg') no-repeat center/cover;
 }
-
+/*
 .footer::after {
-  top: -8px;
+   top: -8px;
   height: 8px;
   background: url('hero-wavy-line.svg') no-repeat center/cover;
   transform: scaleY(-1);
 }
-
+*/
 .footer-column {
   flex: 1;
   margin: 0 20px;
