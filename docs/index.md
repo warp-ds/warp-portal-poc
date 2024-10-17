@@ -159,7 +159,6 @@ const componentData = [
 </div>
 
 <style scoped>
-
 /* Cards styling */
 .cards {
   margin-top: 40px;
@@ -197,6 +196,10 @@ const componentData = [
 .card{
   display: flex;
   position: relative;
+  border: 1px solid var(--vp-c-card-border, transparent);
+}
+.card:hover{
+  --vp-c-card-border: var(--vp-c-brand-1)
 }
 .card.type1 {
   flex-direction: column;
@@ -358,7 +361,7 @@ h2.card-title {
 .banner-link {
   margin-top: 16px;
   text-decoration: none;
-  color: #131B2D;
+  color: var(--vp-c-brand-1);
 }
 
 .banner-link.collaborate {
