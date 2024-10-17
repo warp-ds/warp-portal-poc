@@ -45,13 +45,5 @@ export default {
     app.component('IconStarFull32', IconStarFull32);
     app.component('Cards', Cards);
     app.component('Card', Card);
-
-
-    if (!import.meta.env.SSR) {
-      const component = await import('../poc-1-div.js');
-
-
-      app.use(component)
-    }
   },
 };

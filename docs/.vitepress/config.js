@@ -196,7 +196,6 @@ export default defineConfig({
       { text: 'Get started', link: '/get-started/' },
       { text: 'Foundations', link: '/foundations/' },
       { text: 'Components', link: '/components/' },
-      { text: 'POCs', link: '/pocs' },
       {
         text: 'What\'s new',
         link: '/blog/',
@@ -592,14 +591,6 @@ export default defineConfig({
             { text: 'Utilities', link: '/components/utilities/' },
           ],
         },
-      ],
-      '/pocs/': [
-        {
-          text: 'POCs',
-          items: [
-            { text: 'Poc-1', link: '/pocs/poc-1' },
-          ]
-        }
       ],
     },
   },
