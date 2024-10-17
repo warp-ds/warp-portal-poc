@@ -39,6 +39,9 @@
   --vp-c-svg1: #FFFBD5;
   --vp-c-svg2: #131B2D;
   --vp-c-svg3: #9EACC9;
+  --vp-c-svg10: #EBEEF6;
+  --vp-c-svg11: #131B2D;
+  --vp-c-svg12: #FFFFFF;
 }
 
 /* Dark mode */
@@ -66,6 +69,9 @@ html.dark {
   --vp-c-svg1: #FFFBD5;
   --vp-c-svg2: #9EACC9;
   --vp-c-svg3: #D4D9E3;
+  --vp-c-svg10: #1B263E;
+  --vp-c-svg11: #FFFFFF;
+  --vp-c-svg12: #000000;
 }
 
 /* Map the custom doc content to the --vp tokens, or set them directly */

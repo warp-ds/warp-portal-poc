@@ -1,45 +1,60 @@
 ---
 layout: home
-hero:
-  name: The design system for Schibsted Marketplaces
-  text:
-  tagline: Design, build and ship coherent experience with WARP
-  image: warp-hero.svg
-  actions:
-  - theme: brand
-    text: Get Started →
-    link: get-started
 ---
 
 <script setup>
 const baseUrl = import.meta.env.BASE_URL
+import ClassesCard from './src/css-classes-card.svg';
+import IconsCard from './src/icons-card.svg';
+import ColorsCard from './src/colors-card.svg';
+import TokensCard from './src/tokens-card.svg';
+import heroSVG from './src/warp-hero.svg';
 const componentData = [
   {
     title: 'CSS classes',
     href: 'foundations/styling/web/unocss',
-    image: {src: 'css-classes-card.svg', alt: 'A paper with two curly braces.'},
+    image: { component: ClassesCard, alt: 'A paper with two curly braces.' },
     description: 'Explore how to use pre-defined utility-first CSS classes'
   },
   {
     title: 'Icons',
     href: 'components/icons',
-    image: {src: 'icons-card.svg', alt: 'Three talk bubbles that are smiling and have closed eyes'},
+    image: { component: IconsCard, alt: 'Three talk bubbles that are smiling and have closed eyes' },
     description: 'Browse our library of UI icons'
   },
   {
     title: 'Colors',
     href: 'foundations/styling/web/background-color#quick-reference',
-    image: {src: 'colors-card.svg', alt: 'Two abstract shapes in grey and black colors, one bigger than the other'},
-    description: 'Get quick access to predefined color palettes for backgrounds, text and border'
+    image: { component: ColorsCard, alt: 'Two abstract shapes in grey and black colors, one bigger than the other' },
+    description: 'Get quick access to predefined color palettes for backgrounds, text, and border'
   },
   {
     title: 'Tokens',
     href: 'foundations/tokens',
-    image: {src: 'tokens-card.svg', alt: 'Two abstract shapes in grey and black colors, one bigger than the other'},
+    image: { component: TokensCard, alt: 'Two abstract shapes in grey and black colors, one bigger than the other' },
     description: 'Discover design tokens for managing color, typography, and spacing'
   }
-]
+];
 </script>
+
+<div class="VPHero has-image VPHomeHero">
+  <div class="container">
+    <div class="main">
+      <h1 class="name"><span class="clip">The design system for Schibsted Marketplaces</span></h1>
+      <p class="tagline">Design, build and ship coherent experience with WARP</p>
+      <div class="actions">
+        <div class="action">
+          <a class="vp-font-size-4 brand" href="/warp-portal-poc/get-started">Get Started →</a>
+        </div>
+      </div>
+    </div>
+    <div class="image">
+      <div class="image-container">
+        <heroSVG class="VPImage image-src" />
+      </div>
+    </div>
+  </div>
+</div>
 
 <cards class="cards cols2to1">
   <card class="card type2">
@@ -102,13 +117,12 @@ const componentData = [
   </card>
 </cards>
 
-
 <cards class="cards cols4to1">
   <card v-for="component in componentData" :key="component.title" class="card type1">
     <h3 class="card-title custom-heading">
       <a :href="component.href" class="card-link">{{ component.title }}</a>
     </h3>
-    <img class="card-image" :src="component.image.src" :alt="component.image.alt"/>
+    <component :is="component.image.component" :aria-label="component.image.alt" class="card-image" />
     <p class="card-description">{{ component.description }}</p>
   </card>
 </cards>
@@ -145,6 +159,7 @@ const componentData = [
 </div>
 
 <style scoped>
+
 /* Cards styling */
 .cards {
   margin-top: 40px;
@@ -363,5 +378,230 @@ h2.card-title {
   margin-right: 6px;
   align-self: flex-end;
 }
-</style>
 
+.VPHero {
+  margin-top: calc((var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) * -1);
+  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 0px 24px;
+  position: relative; /* Ensure the pseudo-element is positioned relative to this */
+}
+
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100px;
+  right: -100px;
+  bottom: 0;
+  background-image: url('./stars-background.svg');
+  background-repeat: repeat-x;
+  background-position: bottom;
+  z-index: -1;
+}
+
+.VPHero.has-image .container {
+  text-align: center;
+}
+
+.VPHero .container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1152px;
+}
+
+.VPHero .main {
+  position: relative;
+  z-index: 10;
+  order: 2;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.VPHero.has-image .name,
+.VPHero.has-image .text {
+  margin: 0 auto;
+}
+
+.VPHero .name {
+  color: var(--vp-home-hero-name-color);
+}
+
+.VPHero .name,
+.VPHero .text {
+  max-width: 392px;
+  letter-spacing: -0.4px;
+  line-height: 40px;
+  font-size: 32px;
+  font-weight: 700;
+  white-space: pre-wrap;
+}
+
+.VPHero .clip {
+  background: var(--vp-home-hero-name-background);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: var(--vp-home-hero-name-color);
+}
+
+.VPHero.has-image .tagline {
+  margin: 0 auto;
+}
+
+.VPHero .tagline {
+  padding-top: 8px;
+  max-width: 392px;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: pre-wrap;
+  color: var(--vp-c-text-2);
+}
+
+.VPHero.has-image .actions {
+  justify-content: center;
+}
+
+.VPHero .actions {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -6px;
+  padding-top: 24px;
+}
+
+.VPHero .action {
+  flex-shrink: 0;
+  padding: 6px;
+}
+
+.VPHero .image {
+  order: 1;
+  margin: -76px -24px -48px;
+}
+
+.VPHero .image-container {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  height: 320px;
+}
+
+.VPHero .image-src {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  max-width: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 640px) {
+  .VPHero {
+    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px) 0px 24px;
+  }
+
+  .VPHero .name,
+  .VPHero .text {
+    max-width: 576px;
+    line-height: 56px;
+    font-size: 48px;
+  }
+
+  .VPHero .tagline {
+    padding-top: 12px;
+    max-width: 576px;
+    line-height: 32px;
+    font-size: 20px;
+  }
+
+  .VPHero .actions {
+    padding-top: 32px;
+  }
+
+  .VPHero .image {
+    margin: -108px -24px -48px;
+  }
+
+  .VPHero .image-container {
+    width: 392px;
+    height: 392px;
+  }
+
+}
+
+@media (min-width: 960px) {
+  .VPHero {
+    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px) 0;
+  }
+
+  .VPHero.has-image .container {
+    text-align: left;
+  }
+
+  .VPHero .container {
+    flex-direction: row;
+  }
+
+  .VPHero.has-image .main {
+    max-width: 592px;
+  }
+
+  .VPHero .main {
+    order: 1;
+    width: calc((100% / 3) * 2);
+  }
+
+  .VPHero.has-image .name,
+  .VPHero.has-image .text {
+    margin: 0;
+  }
+
+  .VPHero .name,
+  .VPHero .text {
+    line-height: 64px;
+    font-size: 56px;
+  }
+
+  .VPHero.has-image .tagline {
+    margin: 0;
+  }
+
+  .VPHero .tagline {
+    line-height: 36px;
+    font-size: 24px;
+  }
+
+  .VPHero.has-image .actions {
+    justify-content: flex-start;
+  }
+
+  .VPHero .image {
+    flex-grow: 1;
+    order: 2;
+    margin: 0;
+    min-height: 100%;
+  }
+
+  .VPHero .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transform: translate(-32px, -32px);
+  }
+
+  .VPHero .image-bg {
+    max-width: 495px;
+    width: 100%;
+  }
+
+
+}
+
+.dark .VPHero .image-bg {
+  --vp-home-hero-image-background-image: linear-gradient(135deg, rgba(4, 121, 144, 0.25) 0%, rgba(138, 105, 156, 0.25) 100%);
+  --vp-home-hero-image-filter: blur(32px);
+}
+
+</style>
