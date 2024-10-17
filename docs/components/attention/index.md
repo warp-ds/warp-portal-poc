@@ -2,13 +2,16 @@
   import React from './react.md';
   import Vue from './vue.md';
   import Elements from './elements.md';
-  import iOS from './ios.md';
   import data from './data.json';
   import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
 # Attention
 {{ data.description }}
+
+::: warning Web only
+For the iOS and Android implementation of Attention, see [Components - Callout](/components/callout/) and [Components - Tooltip](/components/tooltip/).
+:::
 
 <components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
@@ -37,8 +40,5 @@
   </template>
   <template #elements>
     <elements />
-  </template>
-  <template #iOS>
-    <iOS />
   </template>
 </tabs-content>

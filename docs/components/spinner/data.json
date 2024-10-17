@@ -8,6 +8,10 @@
   },
   "frameworks": [
     {
+      "name": "Android",
+      "status": "released"
+    },
+    {
       "name": "iOS",
       "status": "released"
     },
