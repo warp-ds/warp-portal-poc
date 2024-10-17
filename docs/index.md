@@ -9,27 +9,6 @@ hero:
   - theme: brand
     text: Get Started →
     link: get-started
-
-features:
-  - icon:
-      src: components-icon.svg
-      width: 158px
-      height: 162.17px
-      alt: UI mockup with multiple horizontal bars representing text, buttons and icons, alongside small colored squares and circular icons at the bottom with one indicating a checkmark and another showing a double-arrow icon.
-    title: Components
-    details: UI controls and utilities to help you build great experiences
-    link: components
-    linkText: See all components
-
-  - icon:
-      src: foundations-icon.svg
-      width: 126px
-      height: 181px
-      alt: Abstract illustration with red circles, geometric shapes, and stylized figures.
-    title: Foundations
-    details: Guidelines for colour palettes, typography, icons and more.
-    link: foundations
-    linkText: Explore foundations
 ---
 
 <script setup>
@@ -65,12 +44,13 @@ const componentData = [
 <cards class="cards cols2to1">
   <card class="card type2">
     <div>
-      <h2 class="card-title vp-font-size-2">Components</h2>
-      <p class="card-description">UI controls and utilities to help you build great experiences</p>
-      <a class="card-link" href="components">See all components <span class="vpi-arrow-right link-text-icon"></span></a>
+      <h2 class="card-title vp-font-size-2">Foundations</h2>
+      <p class="card-description">Guidelines for colour palettes, typography, icons, styling and more.</p>
+      <a class="card-link" href="foundations">Explore foundations <span class="vpi-arrow-right link-text-icon"></span></a>
     </div>
     <div>
-      <svg width="158" height="163" viewBox="0 0 158 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg role="img" aria-labeledby="componentSvg" width="158" height="163" viewBox="0 0 158 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <title id="componentSvg">UI mockup with multiple horizontal bars representing text, buttons and icons, alongside small colored squares and circular icons at the bottom with one indicating a checkmark and another showing a double-arrow icon.</title>
         <rect x="6" width="148" height="91.3438" rx="4.625" fill="var(--vp-c-svg4, #EBEBF2)"/>
         <rect x="15.25" y="13.875" width="24.2812" height="4.625" rx="2.3125" fill="var(--vp-c-svg2, #131B2D )"/>
         <rect x="43" y="13.875" width="35.8438" height="4.625" rx="2.3125" fill="var(--vp-c-svg2, #131B2D )"/>
@@ -95,12 +75,13 @@ const componentData = [
   </card>
   <card class="card type2">
     <div>
-      <h2>Components</h2>
-      <p>UI controls and utilities to help you build great experiences</p>
-      <a href="components">See all components <span class="vpi-arrow-right link-text-icon"></span></a>
+      <h2 class="card-title vp-font-size-2">Components</h2>
+      <p class="card-description">UI controls and utilities to help you build great experiences</p>
+      <a class="card-link" href="components">See all components <span class="vpi-arrow-right link-text-icon"></span></a>
     </div>
     <div>
-      <svg width="126" height="181" viewBox="0 0 126 181" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg role="img" aria-labeledby="foundationSvg" width="126" height="181" viewBox="0 0 126 181" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <title id="foundationSvg">Abstract illustration with red circles, geometric shapes, and stylized figures.</title>
         <rect width="80" height="80" rx="40" fill="#BE3830"/>
         <path d="M34.7321 46.0099H24.9621L23.1623 50.9913H20.077L28.1759 28.7195H31.5504L39.6171 50.9913H36.5319L34.7321 46.0099ZM33.8965 43.6317L29.8471 32.319L25.7976 43.6317H33.8965Z" fill="#FFFBD5"/>
         <path d="M42.0541 42.1212C42.0541 40.3214 42.4184 38.7466 43.1468 37.3968C43.8753 36.0256 44.8716 34.965 46.1357 34.2151C47.4212 33.4652 48.846 33.0903 50.4101 33.0903C51.9527 33.0903 53.2918 33.4224 54.4274 34.0866C55.5629 34.7508 56.4092 35.5864 56.9663 36.5934V33.3795H59.923V50.9913H56.9663V47.7132C56.3878 48.7417 55.5201 49.5987 54.3631 50.2843C53.2275 50.9485 51.8992 51.2806 50.3779 51.2806C48.8139 51.2806 47.3998 50.8949 46.1357 50.1236C44.8716 49.3523 43.8753 48.2703 43.1468 46.8776C42.4184 45.485 42.0541 43.8995 42.0541 42.1212ZM56.9663 42.1533C56.9663 40.8249 56.6985 39.6679 56.1628 38.6824C55.6272 37.6968 54.8987 36.9469 53.9774 36.4327C53.0776 35.897 52.0813 35.6292 50.9886 35.6292C49.8959 35.6292 48.8996 35.8863 47.9997 36.4005C47.0998 36.9148 46.3821 37.6646 45.8464 38.6502C45.3108 39.6358 45.043 40.7928 45.043 42.1212C45.043 43.471 45.3108 44.6494 45.8464 45.6564C46.3821 46.642 47.0998 47.4026 47.9997 47.9382C48.8996 48.4524 49.8959 48.7095 50.9886 48.7095C52.0813 48.7095 53.0776 48.4524 53.9774 47.9382C54.8987 47.4026 55.6272 46.642 56.1628 45.6564C56.6985 44.6494 56.9663 43.4817 56.9663 42.1533Z" fill="#FFFBD5"/>
@@ -212,11 +193,22 @@ const componentData = [
   align-items: center;
   min-height: 280px;
   gap: 20px;
+  padding: 20px 60px;
 }
 
 .card-title {
   position: static;
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
+.card.type1 .card-title{
+  padding: 16px 16px 0 16px;
+}
+.card.type1 .card-description{
+  padding: 0px 16px 16px 16px;
+}
+
 /* need to override the h2 coming from md styling */
 h2.card-title {
   border-top: 0;
@@ -239,10 +231,11 @@ h2.card-title {
 
 .card-image {
   order: -1;
+  background-color: var(--vp-c-bg-soft);
 }
 
 .card-description {
-  margin: 16px;
+
 }
 
 /* Banner styling */
@@ -336,11 +329,6 @@ h2.card-title {
 
 .vp-doc p {
   margin-top: 6px;
-}
-
-.VPHome{
-  margin-bottom: 0px !important;
-  outline: 1px dashed red;
 }
 
 
