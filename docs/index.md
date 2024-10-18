@@ -11,6 +11,7 @@ import TokensCard from './src/tokens-card.svg';
 import heroSVG from './src/warp-hero.svg';
 import FoundationsSVG from './src/foundations-card.svg';
 import CompSVG from './src/comp-card.svg';
+import starsBackground from './src/stars-background.svg';
 const cardData = {
   CardType1: [
     {
@@ -378,7 +379,7 @@ h2.card-title {
   left: -100px;
   right: -100px;
   bottom: 0;
-  background-image: url('./stars-background.svg');
+  background-image: url('/stars-background.svg');
   background-repeat: repeat-x;
   background-position: bottom;
   z-index: -1;
