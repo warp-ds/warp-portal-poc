@@ -1,0 +1,22 @@
+<svg role="img" aria-labeledby="componentSvg" width="158" height="163" viewBox="0 0 158 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title id="componentSvg">UI mockup with multiple horizontal bars representing text, buttons and icons, alongside small colored squares and circular icons at the bottom with one indicating a checkmark and another showing a double-arrow icon.</title>
+  <rect x="6" width="148" height="91.3438" rx="4.625" fill="var(--vp-c-svg4, #EBEBF2)"/>
+  <rect x="15.25" y="13.875" width="24.2812" height="4.625" rx="2.3125" fill="var(--vp-c-svg2, #131B2D )"/>
+  <rect x="43" y="13.875" width="35.8438" height="4.625" rx="2.3125" fill="var(--vp-c-svg2, #131B2D )"/>
+  <rect x="15.25" y="27.75" width="92.5" height="3.46875" rx="1.73438" fill="var(--vp-c-svg3,#9EACC9)"/>
+  <rect x="15.25" y="35.8438" width="115.625" height="3.46875" rx="1.73438" fill="var(--vp-c-svg3, #9EACC9 )"/>
+  <rect x="15.25" y="43.9375" width="69.375" height="3.46875" rx="1.73438" fill="var(--vp-c-svg3, #9EACC9 )"/>
+  <rect x="110.062" y="65.9062" width="34.6875" height="11.5625" rx="2.3125" fill="var(--vp-c-svg2, #131B2D )"/>
+  <rect x="82.3125" y="65.9062" width="23.125" height="11.5625" rx="2.3125" fill="var(--vp-c-svg3, #9EACC9 )"/>
+  <rect y="117.172" width="11" height="11" rx="2" fill="var(--vp-c-svg4, #EBEBF2)"/>
+  <rect x="17" y="120.672" width="51" height="4" rx="2" fill="var(--vp-c-svg4, #EBEBF2)"/>
+  <rect y="134.172" width="11" height="11" rx="2" fill="var(--vp-c-svg3, #9EACC9 )"/>
+  <rect x="17" y="137.672" width="51" height="4" rx="2" fill="var(--vp-c-svg3, #9EACC9 )"/>
+  <rect y="151.172" width="11" height="11" rx="2" fill="var(--vp-c-svg3, #9EACC9 )"/>
+  <rect x="17" y="154.672" width="51" height="4" rx="2" fill="var(--vp-c-svg3, #9EACC9 )"/>
+  <rect x="88" y="124.172" width="31.3471" height="31.3469" rx="15.6735" fill="var(--vp-c-svg4, #EBEBF2)"/>
+  <path d="M97.3469 138.961L101.701 143.315L108.667 135.478" stroke="var(--vp-c-svg2, #131B2D )" stroke-width="1.30613" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="126.653" y="124.172" width="31.3471" height="31.3469" rx="15.6735" fill="var(--vp-c-svg4, #EBEBF2)"/>
+  <path d="M148.204 133.968L136.449 145.723" stroke="var(--vp-c-svg2, #131B2D )" stroke-width="1.30613" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M136.449 133.968L148.204 145.723" stroke="var(--vp-c-svg2, #131B2D )" stroke-width="1.30613" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
