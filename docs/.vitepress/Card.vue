@@ -16,3 +16,12 @@
     <slot></slot>
   </article>
 </template>
+
+<style scoped>
+  .docs-card{
+    border: 1px solid var(--vp-c-card-border, transparent);
+  }
+  .docs-card:hover{
+    --vp-c-card-border: var(--vp-c-brand-1)
+  }
+</style>

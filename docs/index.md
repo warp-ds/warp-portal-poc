@@ -193,13 +193,14 @@ const componentData = [
   font-size: var(--vp-font-size-4);
   line-height: var(--vp-line-height-4);
 }
+
 .card{
   display: flex;
   position: relative;
-  border: 1px solid var(--vp-c-card-border, transparent);
+  xborder: 1px solid var(--vp-c-card-border, transparent);
 }
 .card:hover{
-  --vp-c-card-border: var(--vp-c-brand-1)
+  x--vp-c-card-border: var(--vp-c-brand-1)
 }
 .card.type1 {
   flex-direction: column;
