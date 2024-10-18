@@ -1,5 +1,6 @@
 <script setup>
   import iOS from './ios.md';
+  import Android from './android.md';
   import data from './data.json';
   import { mapFrameworkStatuses } from '../utils.js';
 </script>
@@ -24,6 +25,13 @@ For the web implementation of a "spinner", see [CSS - Animation - Spinner](../..
 
 <component-questions />
 
-## iOS implementation
+## Frameworks
 
-<iOS />
+<tabs-content>
+  <template #android>
+    <android />
+  </template>
+  <template #iOS>
+    <iOS />
+  </template>
+</tabs-content>

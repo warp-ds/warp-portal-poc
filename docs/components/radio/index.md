@@ -1,6 +1,7 @@
 <script setup>
   import Vue from './vue.md';
   import React from './react.md';
+  import Android from './android.md';
   import data from './data.json';
   import { mapFrameworkStatuses } from '../utils.js';
 </script>
@@ -29,5 +30,8 @@
   </template>
   <template #vue>
     <vue />
+  </template>
+  <template #android>
+    <android />
   </template>
 </tabs-content>

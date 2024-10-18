@@ -2,6 +2,8 @@
   import Vue from './vue.md';
   import Elements from './elements.md';
   import React from './react.md';
+  import Android from './android.md';
+  import iOS from './ios.md';
   import OtherTable from '../../.vitepress/OtherTable.vue';
   import data from './data.json';
   import { mapFrameworkStatuses } from '../utils.js';
@@ -89,6 +91,12 @@ Click any icon to open usage modal.
   </template>
   <template #elements>
     <elements />
+  </template>
+  <template #android>
+    <android />
+  </template>
+    <template #iOS>
+    <iOS />
   </template>
 </tabs-content>
 
