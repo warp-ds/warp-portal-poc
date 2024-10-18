@@ -11,32 +11,48 @@ import TokensCard from './src/tokens-card.svg';
 import heroSVG from './src/warp-hero.svg';
 import FoundationsSVG from './src/foundations-card.svg';
 import CompSVG from './src/comp-card.svg';
-const componentData = [
-  {
-    title: 'CSS classes',
-    href: 'foundations/styling/web/unocss',
-    image: { component: ClassesCard, alt: 'A paper with two curly braces.' },
-    description: 'Explore how to use pre-defined utility-first CSS classes'
-  },
-  {
-    title: 'Icons',
-    href: 'components/icons',
-    image: { component: IconsCard, alt: 'Three talk bubbles that are smiling and have closed eyes' },
-    description: 'Browse our library of UI icons'
-  },
-  {
-    title: 'Colors',
-    href: 'foundations/styling/web/background-color#quick-reference',
-    image: { component: ColorsCard, alt: 'Two abstract shapes in grey and black colors, one bigger than the other' },
-    description: 'Get quick access to predefined color palettes for backgrounds, text, and border'
-  },
-  {
-    title: 'Tokens',
-    href: 'foundations/tokens',
-    image: { component: TokensCard, alt: 'Two abstract shapes in grey and black colors, one bigger than the other' },
-    description: 'Discover design tokens for managing color, typography, and spacing'
-  }
-];
+const cardData = {
+  CardType1: [
+    {
+      title: 'CSS classes',
+      href: 'foundations/styling/web/unocss',
+      image: { component: ClassesCard, alt: 'A paper with two curly braces.' },
+      description: 'Explore how to use pre-defined utility-first CSS classes',
+    },
+    {
+      title: 'Icons',
+      href: 'components/icons',
+      image: { component: IconsCard, alt: 'Three talk bubbles that are smiling and have closed eyes' },
+      description: 'Browse our library of UI icons',
+    },
+    {
+      title: 'Colors',
+      href: 'foundations/styling/web/background-color#quick-reference',
+      image: { component: ColorsCard, alt: 'Two abstract shapes in grey and black colors, one bigger than the other' },
+      description: 'Get quick access to predefined color palettes for backgrounds, text, and border',
+    },
+    {
+      title: 'Tokens',
+      href: 'foundations/tokens',
+      image: { component: TokensCard, alt: 'Two abstract shapes in grey and black colors, one bigger than the other' },
+      description: 'Discover design tokens for managing color, typography, and spacing',
+    },
+  ],
+  CardType2: [
+    {
+      title: 'Foundations',
+      description: 'Guidelines for colour palettes, typography, icons, styling and more.',
+      href: 'foundations',
+      image: { component: FoundationsSVG, alt: 'Icon representing foundations.' },
+    },
+    {
+      title: 'Components',
+      description: 'UI controls and utilities to help you build great experiences.',
+      href: 'components',
+      image: { component: CompSVG, alt: 'Icon representing components.' },
+    },
+  ],
+};
 </script>
 
 <div class="VPHero has-image VPHomeHero">
@@ -58,36 +74,28 @@ const componentData = [
   </div>
 </div>
 
+<!-- Cards for CardType2 -->
 <cards class="cards cols2to1">
-  <card class="card type2">
+  <card v-for="card in cardData.CardType2" :key="card.title" class="card type2">
     <div>
-      <h2 class="card-title vp-font-size-2">Foundations</h2>
-      <p class="card-description">Guidelines for colour palettes, typography, icons, styling and more.</p>
-      <a class="card-link" href="foundations">Explore foundations <span class="vpi-arrow-right link-text-icon"></span></a>
+      <h2 class="card-title vp-font-size-2">{{ card.title }}</h2>
+      <p class="card-description">{{ card.description }}</p>
+      <a :href="card.href" class="card-link">Explore {{ card.title.toLowerCase() }} <span class="vpi-arrow-right link-text-icon"></span></a>
     </div>
     <div class="card-image">
-      <ComponentsSVG />
-    </div>
-  </card>
-  <card class="card type2">
-    <div>
-      <h2 class="card-title vp-font-size-2">Components</h2>
-      <p class="card-description">UI controls and utilities to help you build great experiences</p>
-      <a class="card-link" href="components">See all components <span class="vpi-arrow-right link-text-icon"></span></a>
-    </div>
-    <div>
-     <CompSVG />
+      <component :is="card.image.component" :aria-label="card.image.alt" />
     </div>
   </card>
 </cards>
 
+<!-- Cards for CardType1 -->
 <cards class="cards cols4to1">
-  <card v-for="component in componentData" :key="component.title" class="card type1">
+  <card v-for="card in cardData.CardType1" :key="card.title" class="card type1">
     <h3 class="card-title custom-heading">
-      <a :href="component.href" class="card-link">{{ component.title }}</a>
+      <a :href="card.href" class="card-link">{{ card.title }}</a>
     </h3>
-    <component :is="component.image.component" :aria-label="component.image.alt" class="card-image" />
-    <p class="card-description">{{ component.description }}</p>
+    <component :is="card.image.component" :aria-label="card.image.alt" class="card-image" />
+    <p class="card-description">{{ card.description }}</p>
   </card>
 </cards>
 
