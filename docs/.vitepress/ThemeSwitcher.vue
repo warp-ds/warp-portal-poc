@@ -1,7 +1,7 @@
 <script setup>
 import { inject } from 'vue';
 
-const { current: currentTheme, themes: warpThemes  } = inject('warpThemeSwitcher');
+const { current: currentTheme, themes: warpThemes, updateTheme  } = inject('warpThemeSwitcher');
 </script>
 
 <template>
@@ -9,7 +9,7 @@ const { current: currentTheme, themes: warpThemes  } = inject('warpThemeSwitcher
     <div class="theme-switcher">
       <label class="label" for="themeSelect">Example theme:</label>
       <div class="select" title="Select theme to be applied to examples">
-        <select id="themeSelect" v-model="currentTheme">
+        <select id="themeSelect" :value="currentTheme" @change="(e) => updateTheme(e.target.value)">
           <option v-for="[name, value] in Object.entries(warpThemes)" :key="name" :value="value">{{ name }}</option>
         </select>
       </div>

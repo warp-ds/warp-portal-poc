@@ -24,8 +24,6 @@ export default {
   ...DefaultTheme,
   Layout() {
    return h(DefaultTheme.Layout, null, {
-    //  'nav-bar-content-before': () => h(ThemeSwitcher),
-    //  'nav-screen-content-before': () => h(ThemeSwitcher)
     'layout-bottom': () => h(Footer),
    })
   },
