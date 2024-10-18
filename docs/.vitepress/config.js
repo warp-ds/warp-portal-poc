@@ -5,7 +5,7 @@ import uno from 'unocss/vite';
 import { classes as componentClasses } from '@warp-ds/css/component-classes/classes';
 import { supported as supportedClasses } from '../supported.js';
 import markdownItContainer from 'markdown-it-container';
-
+import svgLoader from 'vite-svg-loader'; // Import the svg loader
 
 const base = '/warp-portal-poc';
 
@@ -143,6 +143,7 @@ export default defineConfig({
         }],
         safelist: [...componentClasses, ...supportedClasses, ...docsClasses],
       }),
+      svgLoader(),  // Add the svgLoader plugin here
     ],
   },
   head: [
