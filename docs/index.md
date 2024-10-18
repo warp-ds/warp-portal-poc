@@ -11,7 +11,6 @@ import TokensCard from './src/tokens-card.svg';
 import heroSVG from './src/warp-hero.svg';
 import FoundationsSVG from './src/foundations-card.svg';
 import CompSVG from './src/comp-card.svg';
-import starsBackground from './src/stars-background.svg';
 const cardData = {
   CardType1: [
     {
