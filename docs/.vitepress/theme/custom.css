@@ -9,6 +9,17 @@
 :root {
   /* Tokens that are the same in light and dark mode */
   --vp-radius: 4px;
+  --vp-c-bg-banner: #182237;
+
+  --vp-font-size-1: 52px;
+  --vp-font-size-2: 36px;
+  --vp-font-size-3: 24px;
+  --vp-font-size-4: 18px;
+
+  --vp-line-height-1: 52px;
+  --vp-line-height-2: 44px;
+  --vp-line-height-3: 36px;
+  --vp-line-height-4: 28px;
 
   /* Light mode */
   --vp-c-brand-1: #BE3830;
@@ -28,6 +39,9 @@
   --vp-c-svg1: #FFFBD5;
   --vp-c-svg2: #131B2D;
   --vp-c-svg3: #9EACC9;
+  --vp-c-svg10: #EBEEF6;
+  --vp-c-svg11: #131B2D;
+  --vp-c-svg12: #FFFFFF;
 }
 
 /* Dark mode */
@@ -51,12 +65,13 @@ html.dark {
   --vp-code-bg: #0b0f1d;
   --vp-custom-block-tip-code-bg: var(--vp-code-bg);
   --vp-code-block-bg: #0b0f1d;
-
   --vp-c-border: #5C5C66;
-
   --vp-c-svg1: #FFFBD5;
   --vp-c-svg2: #9EACC9;
   --vp-c-svg3: #D4D9E3;
+  --vp-c-svg10: #1B263E;
+  --vp-c-svg11: #FFFFFF;
+  --vp-c-svg12: #000000;
 }
 
 /* Map the custom doc content to the --vp tokens, or set them directly */
@@ -66,12 +81,9 @@ html.dark {
   --vp-c-input-border-focus: var(--vp-c-brand-1);
   --vp-c-input-text: var(--vp-c-text-1);
   --vp-c-input-text-inverted: var(--vp-c-text-1-inverted);
-
   --vp-input-radius: var(--vp-radius);
-
   --vp-c-button-bg: var(--vp-c-bg);
   --vp-c-button-bg-active: var(--vp-bg-inverted);
-
   --vp-c-pill-bg: var(--vp-c-bg-soft);
   --vp-c-pill-bg-active: var(--vp-c-bg-soft-inverted);
 }
@@ -241,4 +253,8 @@ html.dark body {
 
 .doc-input:focus {
   border: 1px solid var(--vp-c-input-border-focus);
+}
+
+.VPHome {
+  margin-bottom: 0px !important;
 }

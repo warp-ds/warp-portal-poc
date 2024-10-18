@@ -1,12 +1,14 @@
 <template>
   <footer class="footer">
     <div class="footer-column logo-column">
-      <img src="/warp-logo.svg" alt="Warp Logo" width="122" />
+      <div style="width:122px;">
+        <WarpLogo />
+      </div>
     </div>
     <div class="footer-column">
       <h3 class="footer-column-title">Collaborate</h3>
       <a class="footer-link" :href="`${baseUrl}collaborate/request-new-component`">Request new component</a>
-      <a class="footer-link" :href="`${baseUrl}collaborate/request-component-changes`">Reuqest component changes</a>
+      <a class="footer-link" :href="`${baseUrl}collaborate/request-component-changes`">Request component changes</a>
     </div>
     <div class="footer-column">
       <h3 class="footer-column-title">Help</h3>
@@ -18,7 +20,8 @@
 </template>
 
 <script setup>
-const baseUrl = import.meta.env.BASE_URL;
+  const baseUrl = import.meta.env.BASE_URL;
+  import WarpLogo from '../src/warp-logo.svg';
 </script>
 
 <style scoped>
@@ -49,14 +52,14 @@ const baseUrl = import.meta.env.BASE_URL;
   height: 104px;
   background: url('stars-background.svg') no-repeat center/cover;
 }
-
+/*
 .footer::after {
-  top: -8px;
+   top: -8px;
   height: 8px;
   background: url('hero-wavy-line.svg') no-repeat center/cover;
   transform: scaleY(-1);
 }
-
+*/
 .footer-column {
   flex: 1;
   margin: 0 20px;
