@@ -94,7 +94,9 @@ const cardData = {
     <h3 class="card-title custom-heading">
       <a :href="card.href" class="card-link">{{ card.title }}</a>
     </h3>
-    <component :is="card.image.component" :aria-label="card.image.alt" class="card-image" />
+    <div class="card-image">
+      <component :is="card.image.component" :aria-label="card.image.alt" class="card-image" />
+    </div>
     <p class="card-description">{{ card.description }}</p>
   </card>
 </cards>
@@ -201,14 +203,24 @@ const cardData = {
 .card.type1 .card-description{
   padding: 0px 16px 16px 16px;
 }
-.card.type2 .card-image{
+.card.type2 .card-image svg {
   width: 100%;
   max-width: 100%;
+  max-height: 220px
 }
-@media (min-width: 1280) {
-  .card.type2 .card-image{
-    width: unset;
-  }
+.card.type1 .card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height:150px;
+}
+
+.card.type1 .card-image svg {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 /* need to override the h2 coming from md styling */
 h2.card-title {
@@ -233,10 +245,6 @@ h2.card-title {
 .card.type1 .card-image {
   order: -1;
   background-color: var(--vp-c-bg-soft);
-}
-
-.card-description {
-
 }
 
 /* Banner styling */
