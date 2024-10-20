@@ -2,9 +2,8 @@
   "title": "Spinner",
   "description": "A spinner informs users about the loading of content.",
   "category": "Overlays",
-  "image": {
-    "src": "/warp-portal-poc/components/spinner.svg",
-    "alt": "Spinner component"
+  "placeholder": {
+    "label": "Spinner component"
   },
   "frameworks": [
     {

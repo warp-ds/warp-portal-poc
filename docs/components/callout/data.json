@@ -2,9 +2,8 @@
   "title": "Callout",
   "description": "Callouts are snippets of information, drawing attention to important content.",
   "category": "Overlays",
-  "image": {
-    "src": "/warp-portal-poc/components/attention.svg",
-    "alt": "Callout component"
+  "placeholder": {
+    "label": "Callout component"
   },
   "frameworks": [
     {

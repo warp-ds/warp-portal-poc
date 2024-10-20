@@ -2,9 +2,8 @@
   "title": "Toast",
   "description": "Toasts are brief user feedback messages that overlay content.",
   "category": "Feedback",
-  "image": {
-    "src": "/warp-portal-poc/components/toast.svg",
-    "alt": "Toast component"
+  "placeholder": {
+    "label": "Toast component"
   },
   "frameworks": [
     {

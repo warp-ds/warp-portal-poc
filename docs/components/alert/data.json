@@ -2,9 +2,8 @@
   "title": "Alert",
   "description": "Alerts show high-signal messages meant to be noticed and prompting users to take action.",
   "category": "Feedback",
-  "image": {
-    "src": "/warp-portal-poc/components/alert.svg",
-    "alt": "Alert component"
+  "placeholder": {
+    "label": "Alert component"
   },
   "frameworks": [
     {

@@ -2,9 +2,8 @@
   "title": "Radio",
   "description": "Radios allow users to select a single option from a list.",
   "category": "Forms",
-  "image": {
-    "src": "/warp-portal-poc/components/radio.svg",
-    "alt": "Radio component"
+  "placeholder": {
+    "label": "Radio component"
   },  "frameworks": [
     {
       "name": "React",

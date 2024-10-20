@@ -2,9 +2,8 @@
   "title": "Select",
   "description": "A dropdown component allows users to choose a single value from a list of options in a limited space.",
   "category": "Forms",
-  "image": {
-    "src": "/warp-portal-poc/components/select.svg",
-    "alt": "Select component"
+  "placeholder": {
+    "label": "Select component"
   },
   "frameworks": [
     {

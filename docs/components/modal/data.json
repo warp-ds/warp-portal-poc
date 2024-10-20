@@ -2,9 +2,8 @@
   "title": "Modal",
   "description": "A modal is a dialog that intentionally calls for users attention. Models interrupt users workflow by design.",
   "category": "Overlays",
-  "image": {
-    "src": "/warp-portal-poc/components/modal.svg",
-    "alt": "Modal component"
+  "placeholder": {
+    "label": "Modal component"
   },
   "frameworks": [
     {

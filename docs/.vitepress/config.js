@@ -143,7 +143,7 @@ export default defineConfig({
         }],
         safelist: [...componentClasses, ...supportedClasses, ...docsClasses],
       }),
-      svgLoader(),  // Add the svgLoader plugin here
+      svgLoader(),
     ],
   },
   head: [

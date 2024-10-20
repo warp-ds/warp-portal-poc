@@ -2,9 +2,8 @@
   "title": "Badge",
   "description": "Badge is used for showing a small amount of non-interactive color-categorized metadata, like a status or count.",
   "category": "Layout",
-  "image": {
-    "src": "/warp-portal-poc/components/badge.svg",
-    "alt": "Badge component"
+  "placeholder": {
+    "label": "Badge component"
   },
   "frameworks": [
     {
