@@ -4,7 +4,7 @@
   import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
-# Button Group
+# Button group
 
 {{ data.description }}
 

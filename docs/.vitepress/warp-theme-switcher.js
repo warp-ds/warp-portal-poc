@@ -1,4 +1,4 @@
-import { computed } from "vue";
+import { computed, reactive } from "vue";
 
 export default {
   install: (app) => {
@@ -7,6 +7,11 @@ export default {
       'Finn': 'finn-no',
       'Tori': 'tori-fi'
     };
+
+    const state = reactive({
+      currentTheme: (typeof window !== 'undefined' && localStorage.getItem('warpTheme')) || themes.Finn
+    });
+
     const rewriteStylesheets = (theme) => {
       const roots = [document, ...Array.from(document.querySelectorAll('*')).filter((el) => !!el.shadowRoot).map((el) => el.shadowRoot)];
       roots.forEach((root) => {
@@ -20,23 +25,26 @@ export default {
       });
     };
 
-    const current = computed({
-      get() {
-        if (!localStorage.getItem('warpTheme')) {
-          localStorage.setItem('warpTheme', themes.Finn);
-          rewriteStylesheets(themes.Finn);
-        }
-        return localStorage.getItem('warpTheme');
-      },
-      set(theme) {
-        localStorage.setItem('warpTheme', theme);
-        rewriteStylesheets(theme);
-      }
-    });
+    const updateTheme = (theme) => {
+      localStorage.setItem('warpTheme', theme);
+      state.currentTheme = theme;  // Update the reactive state
+      rewriteStylesheets(theme);
+    };
 
     app.provide('warpThemeSwitcher', {
       themes,
-      current
+      current: computed(() => state.currentTheme),
+      updateTheme
     });
+
+    // Listen for storage changes
+    if (typeof window !== 'undefined') {
+      window.addEventListener('storage', (event) => {
+        if (event.key === 'warpTheme') {
+          state.currentTheme = event.newValue;
+          rewriteStylesheets(event.newValue);
+        }
+      });
+    }
   }
 }

@@ -5,7 +5,7 @@
   import { mapFrameworkStatuses } from '../utils.js';
 </script>
 
-# Text Area
+# Text area
 {{ data.description }}
 
 <components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
@@ -20,7 +20,7 @@
 
 ### Accessibility
 
-If a visible label isn't specified, an `aria-label` must be provided to the Text Area for accessibility.
+If a visible label isn't specified, an `aria-label` must be provided to the text area for accessibility.
 If the field is labeled by a separate element, an `aria-labelledby` prop must be provided using the id of the labeling element instead.
 
 <component-questions />
