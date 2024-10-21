@@ -2,10 +2,6 @@
 /* [vp] = vitepress, tokens used in the documentation interface itself */
 /* [c] = color, omit if not a color */
 
-/* Todo: Clean everything up to follow this prefix  */
-
-
-
 :root {
   /* Tokens that are the same in light and dark mode */
   --vp-radius: 4px;
