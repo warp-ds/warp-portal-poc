@@ -9,7 +9,7 @@ export default {
     };
 
     const state = reactive({
-      currentTheme: localStorage.getItem('warpTheme') || themes.Finn
+      currentTheme: (typeof window !== 'undefined' && localStorage.getItem('warpTheme')) || themes.Finn
     });
 
     const rewriteStylesheets = (theme) => {
@@ -38,11 +38,13 @@ export default {
     });
 
     // Listen for storage changes
-    window.addEventListener('storage', (event) => {
-      if (event.key === 'warpTheme') {
-        state.currentTheme = event.newValue;
-        rewriteStylesheets(event.newValue);
-      }
-    });
+    if (typeof window !== 'undefined') {
+      window.addEventListener('storage', (event) => {
+        if (event.key === 'warpTheme') {
+          state.currentTheme = event.newValue;
+          rewriteStylesheets(event.newValue);
+        }
+      });
+    }
   }
 }
