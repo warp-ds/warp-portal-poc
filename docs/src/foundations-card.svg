@@ -1,4 +1,4 @@
-<svg role="img" aria-labeledby="componentSvg" width="158" height="163" viewBox="0 0 158 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg role="img" aria-labeledby="componentSvg" viewBox="0 0 158 163" fill="none" xmlns="http://www.w3.org/2000/svg">
   <title id="componentSvg">UI mockup with multiple horizontal bars representing text, buttons and icons, alongside small colored squares and circular icons at the bottom with one indicating a checkmark and another showing a double-arrow icon.</title>
   <rect x="6" width="148" height="91.3438" rx="4.625" fill="var(--vp-c-svg4, #EBEBF2)"/>
   <rect x="15.25" y="13.875" width="24.2812" height="4.625" rx="2.3125" fill="var(--vp-c-svg2, #131B2D )"/>
