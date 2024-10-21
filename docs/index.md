@@ -33,7 +33,7 @@ const cardData = {
     },
     {
       title: 'Tokens',
-      href: 'foundations/tokens',
+      href: 'foundations/tokens/intro/',
       image: { component: TokensCard, alt: 'Two abstract shapes in grey and black colors, one bigger than the other' },
       description: 'Discover design tokens for managing color, typography, and spacing',
     },
