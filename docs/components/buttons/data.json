@@ -2,9 +2,8 @@
   "title": "Buttons",
   "description": "Buttons initiate events or actions within a page, informing users of what to expect next.",
   "category": "Actions",
-  "image": {
-    "src": "/warp-portal-poc/components/buttons.svg",
-    "alt": "Button component"
+  "placeholder": {
+    "label": "Button component"
   },
   "frameworks": [
     {

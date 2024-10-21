@@ -2,9 +2,8 @@
   "title": "Tabs",
   "description": "Tabs are used to group content, allowing users to navigate views without leaving the page.",
   "category": "Layout",
-  "image": {
-    "src": "/warp-portal-poc/components/tabs.svg",
-    "alt": "Tabs component"
+  "placeholder": {
+    "label": "Tabs component"
   },
   "frameworks": [
     {

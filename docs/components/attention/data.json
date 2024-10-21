@@ -2,9 +2,8 @@
   "title": "Attention",
   "description": "Attention shows information that highlight content.",
   "category": "Overlays",
-  "image": {
-    "src": "/warp-portal-poc/components/attention.svg",
-    "alt": "Attention component"
+  "placeholder": {
+    "label": "Attention component"
   },
   "frameworks": [
     {

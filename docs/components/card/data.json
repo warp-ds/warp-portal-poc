@@ -2,9 +2,8 @@
   "title": "Card",
   "description": "Card is an interactive layout component to display information.",
   "category": "Layout",
-  "image": {
-    "src": "/warp-portal-poc/components/card.svg",
-    "alt": "Card component"
+  "placeholder": {
+    "label": "Card component"
   },
   "frameworks": [
     {

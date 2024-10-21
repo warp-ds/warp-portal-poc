@@ -2,9 +2,8 @@
   "title": "Tooltip",
   "description": "A tooltip is a message box that is displayed when a user hovers over or gives focus to a UI element.",
   "category": "Overlays",
-  "image": {
-    "src": "/warp-portal-poc/components/attention.svg",
-    "alt": "Tooltip component"
+  "placeholder": {
+    "label": "Tooltip component"
   },
   "frameworks": [
     {

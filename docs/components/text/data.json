@@ -2,9 +2,8 @@
   "title": "Text",
   "description": "Pre-defined styles provide a font and size.",
   "category": "Layout",
-  "image": {
-    "src": "/warp-portal-poc/components/text.svg",
-    "alt": "Text component"
+  "placeholder": {
+    "label": "Text component"
   },
   "frameworks": [
     {

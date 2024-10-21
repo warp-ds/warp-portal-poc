@@ -2,9 +2,8 @@
   "title": "Checkbox",
   "description": "Checkboxes allow users to select one or more options from a number of choices.",
   "category": "Forms",
-  "image": {
-    "src": "/warp-portal-poc/components/checkbox.svg",
-    "alt": "Checkbox component"
+  "placeholder": {
+    "label": "Checkbox component"
   },
   "frameworks": [
     {

@@ -2,9 +2,8 @@
   "title": "Text field",
   "description": "A single-line text input component.",
   "category": "Forms",
-  "image": {
-    "src": "/warp-portal-poc/components/textfield.svg",
-    "alt": "Text field component"
+  "placeholder": {
+    "label": "Text field component"
   },
   "frameworks": [
     {
