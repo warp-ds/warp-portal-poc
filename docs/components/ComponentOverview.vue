@@ -5,8 +5,8 @@ import { ref, computed } from 'vue';
 
 // Import all JSON data and corresponding placeholder.svg files
 const components = import.meta.glob('./*/data.json', { eager: true });
-const svgComponents = import.meta.glob('./*/placeholder.svg', { eager: true, import: 'default' });
-console.log('Available SVG components:', Object.keys(svgComponents));
+const placeholderSvgs = import.meta.glob('./*/placeholder.svg', { eager: true, import: 'default' });
+console.log('Available SVG components:', Object.keys(placeholderSvgs));
 
 // Import default placeholder SVG
 import defaultSvg from '../src/placeholder-default.svg';
@@ -15,7 +15,7 @@ const validateComponentData = (data, folderPath) => {
   const svgPath = `${folderPath}/placeholder.svg`;
 
   // Check if the specific placeholder.svg exists, otherwise use the default
-  const svg = svgComponents[svgPath] || defaultSvg;
+  const svg = placeholderSvgs[svgPath] || defaultSvg;
 
   return {
     title: data.title || 'Untitled Component',  // Default title if missing
