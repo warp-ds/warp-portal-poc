@@ -49,8 +49,8 @@
 
 <components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
-## WARP library
-Our icon library contains of ~300 icons. We also have access to the Streamline icon library with more than 17.000 icons that we can use and adjust in any way we like.
+## Icons in Figma
+Our icon library contains of ~300 icons. We also have access to the [Streamline icon library](https://home.streamlinehq.com/) with more than 17.000 icons that we can use and adjust in any way we like.
 We offer three different sizes, 16px, 24px and 32px.
 
 ### Need new icons?
