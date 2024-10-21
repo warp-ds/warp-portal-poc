@@ -169,6 +169,17 @@ html.dark body {
 .vp-doc p {
   line-height: 1.5;
 }
+/* Ensure tables behave like tables and take full width */
+.vp-doc table {
+  display: table;   /* Override any display: block */
+  min-width: 100%;  /* Ensure the table is at least 100% of its container */
+}
+
+/* Wrap tables inside a container to handle horizontal overflow */
+.vp-doc .table-container {
+  overflow-x: auto;
+  width: 100%;  /* Ensure the container itself takes up the full width */
+}
 
 .line-through {
   text-decoration-line: line-through;
