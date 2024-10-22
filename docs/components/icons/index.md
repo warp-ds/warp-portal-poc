@@ -47,16 +47,13 @@
 # Icons
 {{ data.description }}
 
+Warp icon library contains of ~300 icons in sizes 16px, 24px and 32px. It's based on the [Streamline icon library](https://home.streamlinehq.com/) with more than 17.000 icons.
+
 <components-status v-bind="mapFrameworkStatuses(data.frameworks)" />
 
-## WARP library
-Our icon library contains of ~300 icons. We also have access to the Streamline icon library with more than 17.000 icons that we can use and adjust in any way we like.
-We offer three different sizes, 16px, 24px and 32px.
+## Need new icons?
+If you need a new icon or adjustments to an existing one, please make a request in #nmp-warp-design-system in Slack.
 
-![alt text](https://i.imgur.com/OvMZBs9.jpg)
-
-### Need new icons?
-If you need a new icon or adjustments to a existing one, please make a request in #nmp-warp-design-system in Slack.
 
 ## Usage
 

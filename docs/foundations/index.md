@@ -6,7 +6,7 @@ const pages = [{
 },
 {
   title: "CSS classes",
-  description: "UnoCSS classes for layout and styling on web",
+  description: "UnoCSS classes for layout and styling on web.",
   href: "styling/web/unocss",
 },
 {
