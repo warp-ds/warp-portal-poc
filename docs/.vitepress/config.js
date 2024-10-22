@@ -187,7 +187,7 @@ export default defineConfig({
   themeConfig: {
     lastUpdated: true, // Add this to show the last updated timestamp
     editLink: {
-      pattern: 'https://github.com/warp-ds/warp-portal-poc/edit/main/docs/src/:path' // Edit link for GitHub
+      pattern: 'https://github.com/warp-ds/warp-portal-poc/edit/main/docs/:path' // Edit link for GitHub
     },
     search: { provider: 'local' },
     logo: '/warp-logo-small.svg',
