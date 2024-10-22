@@ -349,7 +349,7 @@ export default defineConfig({
                     text: 'Iconography',
                     collapsed: true,
                     items: [
-                      { text: 'Icon Color', link: 'foundations/foundations/styling/web/icon-color' },
+                      { text: 'Icon Color', link: '/foundations/styling/web/icon-color' },
                     ],
                   },
                   {
