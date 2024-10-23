@@ -8,7 +8,7 @@ We are always available in our slack channel and we really want that to be a blo
 
 ## Team 
 <div style="display:flex; gap:8px;">
-    <img src="/images/help/henrik-ståhl.png" style="width: 50px;" alt="Picture of Henrik Ståhl"/> 
+    <img src="/help/henrik-ståhl.png" style="width: 50px;" alt="Picture of Henrik Ståhl"/> 
     <div>
         Henrik Ståhl 
         <br>
@@ -17,7 +17,7 @@ We are always available in our slack channel and we really want that to be a blo
 </div>
 <br>
 <div style="display:flex; gap:8px;">
-    <img src="/images/help/adi.png" style="width: 50px;" alt="Picture of Adrian Dick"/> 
+    <img src="/help/adi.png" style="width: 50px;" alt="Picture of Adrian Dick"/> 
     <div>
         Adrian Dick 
         <br>
@@ -26,7 +26,7 @@ We are always available in our slack channel and we really want that to be a blo
 </div>
 <br>
 <div style="display:flex; gap:8px;">
-    <img src="/images/help/prash.png" style="width: 50px;" alt="Picture of Prash Mehra"/> 
+    <img src="/help/prash.png" style="width: 50px;" alt="Picture of Prash Mehra"/> 
     <div>
         Prash Mehra 
         <br>
@@ -35,7 +35,7 @@ We are always available in our slack channel and we really want that to be a blo
 </div>
 <br>
 <div style="display:flex; gap:8px;">
-    <img src="/images/help/julita.png" style="width: 50px;" alt="Picture of Julita Barkauskaite"/> 
+    <img src="/help/julita.png" style="width: 50px;" alt="Picture of Julita Barkauskaite"/> 
     <div>
         Julita Barkauskaite
         <br>
@@ -44,7 +44,7 @@ We are always available in our slack channel and we really want that to be a blo
 </div>
 <br>
 <div style="display:flex; gap:8px;">
-    <img src="/images/help/mohsen.png" style="width: 50px;" alt="Picture of Mohsen Hosseinpour"/> 
+    <img src="/help/mohsen.png" style="width: 50px;" alt="Picture of Mohsen Hosseinpour"/> 
     <div>
         Mohsen Hosseinpour
         <br>
@@ -53,7 +53,7 @@ We are always available in our slack channel and we really want that to be a blo
 </div>
 <br>
 <div style="display:flex; gap:8px;">
-    <img src="/images/help/felicia.png" style="width: 50px;" alt="Picture of Felicia Häggqvist"/> 
+    <img src="/help/felicia.png" style="width: 50px;" alt="Picture of Felicia Häggqvist"/> 
     <div>
         Felicia Häggqvist
         <br>
@@ -62,7 +62,7 @@ We are always available in our slack channel and we really want that to be a blo
 </div>
 <br>
 <div style="display:flex; gap:8px;">
-    <img src="/images/help/snorre.png" style="width: 50px;" alt="Picture of Snorre Nygaard"/> 
+    <img src="/help/snorre.png" style="width: 50px;" alt="Picture of Snorre Nygaard"/> 
     <div>
         Snorre Nygaard
         <br>
@@ -71,7 +71,7 @@ We are always available in our slack channel and we really want that to be a blo
 </div>
 <br>
 <div style="display:flex; gap:8px;">
-    <img src="/images/help/balbina.png" style="width: 50px;" alt="Picture of Balbina Kotula"/> 
+    <img src="/help/balbina.png" style="width: 50px;" alt="Picture of Balbina Kotula"/> 
     <div>
         Balbina Kotula
         <br>
@@ -80,7 +80,7 @@ We are always available in our slack channel and we really want that to be a blo
 </div>
 <br>
 <div style="display:flex; gap:8px;">
-    <img src="/images/help/jono.png" style="width: 50px;" alt="Picture of Jon Olav Eikenes"/> 
+    <img src="/help/jono.png" style="width: 50px;" alt="Picture of Jon Olav Eikenes"/> 
     <div>
         Jon Olav Eikenes
         <br>
@@ -89,7 +89,7 @@ We are always available in our slack channel and we really want that to be a blo
 </div>
 <br>
 <div style="display:flex; gap:8px;">
-    <img src="/images/help/yuri.png" style="width: 50px;" alt="Picture of Yuri Shatalov"/> 
+    <img src="/help/yuri.png" style="width: 50px;" alt="Picture of Yuri Shatalov"/> 
     <div>
         Yuri Shatalov
         <br>
@@ -98,7 +98,7 @@ We are always available in our slack channel and we really want that to be a blo
 </div>
 <br>
 <div style="display:flex; gap:8px;">
-    <img src="/images/help/daniel.png" style="width: 50px;" alt="Picture of Daniel Talakoubi"/> 
+    <img src="/help/daniel.png" style="width: 50px;" alt="Picture of Daniel Talakoubi"/> 
     <div>
         Daniel Talakoubi
         <br>
@@ -107,7 +107,7 @@ We are always available in our slack channel and we really want that to be a blo
 </div>
 <br>
 <div style="display:flex; gap:8px;">
-    <img src="/images/help/henrik-sahlin.png" style="width: 50px;" alt="Picture of Henrik Sahlin"/> 
+    <img src="/help/henrik-sahlin.png" style="width: 50px;" alt="Picture of Henrik Sahlin"/> 
     <div>
         Henrik Sahlin
         <br>
@@ -116,7 +116,7 @@ We are always available in our slack channel and we really want that to be a blo
 </div>
 <br>
 <div style="display:flex; gap:8px;">
-    <img src="/images/help/fredrik.png" style="width: 50px;" alt="Picture of Fredrik Øverlie"/> 
+    <img src="/help/fredrik.png" style="width: 50px;" alt="Picture of Fredrik Øverlie"/> 
     <div>
         Fredrik Øverlie
         <br>

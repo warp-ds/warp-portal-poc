@@ -8,7 +8,7 @@ Elevation is the distance between different surfaces on the z-axis.
 Think of dark mode as a dark room with a small light source on the ceiling: the closer an object is to the light, the lighter its surface appears. In light mode, we can use shadows to make this clear. However, in dark mode shadows are less effective for showing differences in height.
 
 ::: image-block
-![Illustration a plain interface with one half in light mode and the other in dark mode](/images/foundations/elevation.png)
+![Illustration a plain interface with one half in light mode and the other in dark mode](/foundations/elevation.png)
 :::
 
 ## Why use elevation?
@@ -26,7 +26,7 @@ By defining elevation tokens as part of a design system, consistency can be main
 Designers can easily switch between light and dark modes without needing to redefine elevation values, streamlining the design process and ensuring a cohesive user experience.
 
 ::: image-block
-![A card component where the semantic tokens "Surface/Default" and "Surface/Elevated-200" are visualised in both light and dark mode](/images/foundations/why-use-elevation.png)
+![A card component where the semantic tokens "Surface/Default" and "Surface/Elevated-200" are visualised in both light and dark mode](/foundations/why-use-elevation.png)
 :::
 
 ## Surface types 
@@ -35,7 +35,7 @@ In WARP there are five surfaces that all represent a different elevation value. 
 All SMP brands use the same grayscale to make accessibility easier to maintain.
 
 ::: image-block
-![An overview of WARP's different available surfaces: 1 "Surface/Sunken", 2 "Surface/Default", 3 "Surface/Elevated-100", 4 "Surface/Elevated-200" and 5 "Surface/Elevated-300"](/images/foundations/surface-overview.png)
+![An overview of WARP's different available surfaces: 1 "Surface/Sunken", 2 "Surface/Default", 3 "Surface/Elevated-100", 4 "Surface/Elevated-200" and 5 "Surface/Elevated-300"](/foundations/surface-overview.png)
 :::
 
 ### Sunken

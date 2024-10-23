@@ -10,13 +10,13 @@ Astro is the UX writers guide to create effective, localised, and accessible con
 **Slack support**<br> 
 [#smp-uxwriting](https://sch-chat.slack.com/archives/C05A5JGK269)
 
-![Text spelling "Astro"](/images/foundations/astro.png)
+![Text spelling "Astro"](/foundations/astro.png)
 
 ## Figma: font style scale
 The following examples shows an overview of FINN's font style scale in Figma. All brand fonts are handled the same, but you can find an overview in our [WARP Component library](https://www.figma.com/design/oHBCzDdJxHQ6fmFLYWUltf/WARP---Components?node-id=11099-1148)
 
 ::: image-block
-![Overview of different types font styles](/images/foundations/font-style-scale.png)
+![Overview of different types font styles](/foundations/font-style-scale.png)
 :::
 
 ## Brand fonts

@@ -2,7 +2,7 @@
 
 Here you will find guidelines about data visualisation in customer facing products and services.
 
-![A bar chart, donut chart and bubble graph](/dataviz-graphs.svg)
+![A bar chart, donut chart and bubble graph](/foundations/dataviz-graphs.svg)
 
 ## What do you need to think about?
 
@@ -29,7 +29,7 @@ Before you make a visualisation it can be useful to define the goal of the visua
 - Should your visualisation **explain** an insight, or allow people to **explore** on their own?
 - Should your visualisation enable people to **read** off the information in detail, or rather provide them an overall **feeling** of the data?
 
-![A scale ranging from Explain to Explore, and another scale ranging from Read to Feel](/dataviz-explain-explore-read-feel.svg)
+![A scale ranging from Explain to Explore, and another scale ranging from Read to Feel](/foundations/dataviz-explain-explore-read-feel.svg)
 
 ### Explain vs Explore
 
@@ -47,14 +47,14 @@ A good visualisation communicates insight in a clear and engaging way without th
 
 Consider this example:
 
-![A pile of bottles next to The Eiffel tower. Text: Every day the equivalent of a bottle pile half the size of the Eiffel Tower in Paris is sold around the world. ](/dataviz-eiffel.jpg)
+![A pile of bottles next to The Eiffel tower. Text: Every day the equivalent of a bottle pile half the size of the Eiffel Tower in Paris is sold around the world. ](/foundations/dataviz-eiffel.jpg)
 Source: [REUTERS](https://www.reuters.com/graphics/ENVIRONMENT-PLASTIC/0100B275155/index.html)
 
 The visualisation above puts a number (that otherwise would be very abstract) into a context that makes it possible to understand. In addition, the visual form itself grabs your attention and makes the insight memorable. Text is used to explain the visuals.
 
 It seems that the goal of this visualisation is to explain a specific message, rather than make you explore a dataset. In addition, the goal seems to be to make you feel something and get an overall understanding rather than enable you to read off exact values.
 
-![A scale where a dot is placed close to 'Explain' and far from 'Explore'. Another scale with a dot placed close to 'Feel' and far from 'Read' ](/dataviz-explain-feel.svg)
+![A scale where a dot is placed close to 'Explain' and far from 'Explore'. Another scale with a dot placed close to 'Feel' and far from 'Read' ](/foundations/dataviz-explain-feel.svg)
 
 
 ## Which visualisation library should you use?
