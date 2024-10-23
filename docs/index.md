@@ -15,7 +15,7 @@ const cardData = {
   CardType1: [
     {
       title: 'CSS classes',
-      href: 'foundations/styling/web/unocss',
+      href: 'foundations/css-classes/unocss',
       image: { component: ClassesCard, alt: 'A paper with two curly braces.' },
       description: 'Explore how to use pre-defined utility-first CSS classes',
     },
@@ -27,7 +27,7 @@ const cardData = {
     },
     {
       title: 'Colors',
-      href: 'foundations/styling/web/background-color#quick-reference',
+      href: 'foundations/css-classes/background-color#quick-reference',
       image: { component: ColorsCard, alt: 'Two abstract shapes in grey and black colors, one bigger than the other' },
       description: 'Get quick access to predefined color palettes for backgrounds, text, and border',
     },
