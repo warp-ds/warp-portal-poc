@@ -1,12 +1,14 @@
-# warp-portal-poc
-
-This project is an attempt to create a proof of concept of a complete Warp Design System documentation site.
+# Warp Docs
 
 ## Development
 
 ### Install dependencies
 Run `pnpm install`.
 
-### Run the app
+### Run the docs
 
-Run `pnpm docs:dev` to run the app locally.
+Start the development server, with hot reloading:
+
+```bash
+pnpm docs:dev
+```

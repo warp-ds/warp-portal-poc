@@ -329,7 +329,7 @@ In addition to renamed icons, we've added missing 16px versions of functional ic
   </li>
 </ul>
 
-You can see all available icons in our documentation [here](https://warp-ds.github.io/warp-portal-poc/components/icons/).
+You can see all available icons in our documentation [here](https://warp-ds.github.io/docs/components/icons/).
 
 <style scoped>
   .post-blog-table p {

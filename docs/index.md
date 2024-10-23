@@ -62,7 +62,7 @@ const cardData = {
       <p class="tagline">Design, build and ship coherent experience with WARP</p>
       <div class="actions">
         <div class="action">
-          <a class="vp-font-size-4 brand" href="/warp-portal-poc/get-started">Get Started →</a>
+          <a class="vp-font-size-4 brand" href="/docs/get-started">Get Started →</a>
         </div>
       </div>
     </div>
