@@ -7,7 +7,7 @@ Fabric (the old FINN design system) is being replaced by WARP. You will have to 
 Make sure all Fabric libraries are disabled so you don't accidentally use styles or components that are not connected to WARP.
 
 ::: image-block
-![Fabric logo pointed to the WARP logo](/images/get-started/migration.png)
+![Fabric logo pointed to the WARP logo](/get-started/migration.png)
 :::
 
 **FINN first**
