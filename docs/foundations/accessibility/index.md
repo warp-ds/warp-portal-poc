@@ -25,5 +25,5 @@ There are multiple plugins for checking contrast, here are some popular ones.
 | Polychrom    | [Polychrom Contrast Checker](https://www.figma.com/community/plugin/1281280685402026529/polychrom)                                         |
 
 ::: image-block
-![Figma plugin "Contrast" checking for accessibility](/images/foundations/figma-plugin-contrast.png)
+![Figma plugin "Contrast" checking for accessibility](/foundations/figma-plugin-contrast.png)
 :::

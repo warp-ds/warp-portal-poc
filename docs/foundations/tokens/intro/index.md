@@ -29,5 +29,5 @@ If you are building a component that doesn’t exist in WARP you can still use s
 This is a visualization of all the semantic colour tokens existing in WARP, use it as a reference to see what’s available and the difference between brands.
 
 ::: image-block
-![Displays how the hexvalue "#0063FB" points to the primitive color "Blue-600", used in the semantic token "color-background-primary", ultimately pointing to the pill component](/images/foundations/design-token-structure.png)
+![Displays how the hexvalue "#0063FB" points to the primitive color "Blue-600", used in the semantic token "color-background-primary", ultimately pointing to the pill component](/foundations/design-token-structure.png)
 :::

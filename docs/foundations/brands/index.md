@@ -1,7 +1,7 @@
 # Brands
 WARP multiple brands within the Schibsted Marketplaces. Everything you design will potentially be used on several marketplaces so it’s a good idea to read up on the different brand guidelines.
 
-![Overview of different types font styles](/images/foundations/multibrand.png)
+![Overview of different types font styles](/foundations/multibrand.png)
 
 ## Brand guidelines
 An overview with links to our brand guidelines.
