@@ -38,12 +38,11 @@ const showAll = () => {
   <div class="py-16 rounded-8 mb-16">
     <div class="pt-8 mb-16">
       <!-- Input field for text filtering -->
-      <label class="block bold" for="filter-input">By name</label>
+      <label class="block bold" for="filter-input">Filter by name</label>
       <input
         v-model="localQuery"
         name="filter-input"
         class="doc-input"
-        placeholder="Filter by name..."
       />
     </div>
     <p class="block bold mb-4!">Supported on platform</p>

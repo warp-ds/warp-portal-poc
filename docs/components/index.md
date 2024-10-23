@@ -7,6 +7,6 @@ import ComponentOverview from './ComponentOverview.vue';
 </script>
 
 # Overview
-All WARP components for Figma, React, Vue, Elements, iOS, and Android.
+Explore All WARP Components Across Figma, React, Vue, Elements, iOS, and Android.
 
 <ComponentOverview />
