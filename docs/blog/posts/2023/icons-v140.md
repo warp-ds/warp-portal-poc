@@ -53,4 +53,4 @@ We have added new icons :tada: All requests up until Dec 7th should have been ha
   </li>
 </ul>
 
-You can see all available icons in our documentation [here](https://warp-ds.github.io/warp-portal-poc/components/icons/).
+You can see all available icons in our documentation [here](https://warp-ds.github.io/docs/components/icons/).

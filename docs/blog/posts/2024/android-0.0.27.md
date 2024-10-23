@@ -24,7 +24,7 @@ fun WarpCheckbox(
 )
 ```
 
-* Checkbox component now available in Warp, ([more info here](https://warp-ds.github.io/warp-portal-poc/components/checkbox/))
+* Checkbox component now available in Warp, ([more info here](https://warp-ds.github.io/docs/components/checkbox/))
 * Supports Finn, Tori & DBA
 * Supports legacy layouts written in XML
 

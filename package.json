@@ -1,7 +1,7 @@
 {
-  "name": "warp-portal-poc",
+  "name": "docs",
   "version": "1.0.0",
-  "description": "Proof of concept of a complete documentation of the Warp Design System",
+  "description": "Documentation of the Warp Design System",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

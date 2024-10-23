@@ -39,7 +39,7 @@ const componentData = Object.keys(components).map(path => {
 
   return {
     ...validateComponentData(rawData, folderPath),  // Validate each component's data
-    href: `/warp-portal-poc/components/${folderPath}`
+    href: `/docs/components/${folderPath}`
   };
 });
 

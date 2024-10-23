@@ -62,7 +62,7 @@ const cardData = {
       <p class="tagline">Design, build and ship coherent experience with WARP</p>
       <div class="actions">
         <div class="action">
-          <a class="vp-font-size-4 brand" href="/warp-portal-poc/get-started">Get Started →</a>
+          <a class="vp-font-size-4 brand" href="get-started">Get Started →</a>
         </div>
       </div>
     </div>
@@ -110,7 +110,7 @@ const cardData = {
   <div class="banner-column">
     <h2 class="banner-title">Collaborate</h2>
     <p class="banner-content">Contributing to the WARP design system, requesting new components or adjustments to existing ones.</p>
-    <a :href="`${baseUrl}collaborate/request-new-component`" class="banner-link collaborate">
+    <a href="collaborate/request-new-component" class="banner-link collaborate">
       Collaborate with us
       <span class="vpi-arrow-right link-text-icon"></span>
     </a>
